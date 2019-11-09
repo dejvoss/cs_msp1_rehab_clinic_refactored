@@ -11,53 +11,62 @@
 
     <!-- FONTS FROM GOOGLE FONT -->
     <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans|Montserrat&display=swap" rel="stylesheet">
-    
+
     <!-- LINK TO MY CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="container-fluid">
+    <div class="container-fluid">
         <div class="row">
-            <!-- LOGO -->
-            <div class="col">
+            <header class="col-12 col-sm-12 col-md-6">
+                <!-- LOGO -->
+
                 <img class="img-logo" src="images/logo-only.jpg"
                     alt="picture with logo - spin between palms and signature - Ewelina Zaremba Rehabilitacja Terapie Manualne">
-            </div>
-            <!-- NAME -->
-            <div class="col">
-                <h1>Rehabilitation</h1>
-                <h2>Ewelina Zaremba</h2>
-                    <p>your Manual therapist</p>
-                    
-            </div>
-            <!-- MENU -->
-            <nav class="col">
-                <btn>
 
-                </btn>
-                <ul>
-                    <li>
-                        For whom
-                    </li>
-                    <li>
-                        Treatments
-                    </li>
-                    <li>
-                        Patients
-                    </li>
-                    <li>
-                        Contact
-                    </li>
-                    <li>
-                        About me
-                    </li>
-                </ul>
+                <!-- TITLE -->
+                <h1>Ewelina Zaremba</h1>
+                <h2>Manual therapist</h2>
+
+                <!-- MENU - BOOTSTRAP NAVBAR BUTTON WITOUT EXPAND OPTION -->
+            </header>
+            <nav class="navbar navbar-light col-12 col-sm-12 col-md-6 my-nav-button">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </nav>
+
+        </div>
+    </div>
+    <!-- MENU - BOOTSTRAP NAVBAR COLLAPSED MENU -->
+    <nav class="navbar navbar-light my-nav-bar">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">For whom</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Treatments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Patients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About me</a>
+                </li>
+
+            </ul>
         </div>
 
-    </header>
-
+    </nav>
     <section>
 
     </section>
