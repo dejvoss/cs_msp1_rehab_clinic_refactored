@@ -231,14 +231,14 @@ section, .carouselExampleFade, .carousel-inner, .carousel-item {
     width: 80vw;
     height: 50vh;
     left: 10vw;
-    bottom: 23vh;
+    bottom: 20vh;
     border-radius: 50px;
     padding: 20px;
 }
 
 
 .my-carousel-item1{
-    background-image: url("../images/women-therapy2.jpg");
+    background-image: url("../images/women-therapy.jpg");
     background-size: 98vw;
     background-repeat: no-repeat;
 }
