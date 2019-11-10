@@ -11,36 +11,41 @@
 
     <!-- FONTS FROM GOOGLE FONT -->
     <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans|Montserrat&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- LINK TO MY CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <header class="col-12 col-sm-12 col-md-6">
-                <!-- LOGO -->
+    <header>
 
-                <img class="img-logo" src="images/logo-only.jpg"
+        <!-- LOGO -->
+        <div class="row">
+            <div class="col img-logo">
+                <img src="images/logo-only.png"
                     alt="picture with logo - spin between palms and signature - Ewelina Zaremba Rehabilitacja Terapie Manualne">
 
-                <!-- TITLE -->
-                <h1>Ewelina Zaremba</h1>
-                <h2>Manual therapist</h2>
+            </div>
+            <!-- HEADINGS -->
+            <div class="col headings">
+                <h1>Rehabilitation</h1>
+                <h2>Ewelina Zaremba</h2>
+                <p>Manual therapist</p>
 
                 <!-- MENU - BOOTSTRAP NAVBAR BUTTON WITOUT EXPAND OPTION -->
-            </header>
-            <nav class="navbar navbar-light col-12 col-sm-12 col-md-6 my-nav-button">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
-
+            </div>
+            <div class="col col-menu-btn">
+                <nav class="navbar navbar-light my-nav-button">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fa fa-bars"></i></span>
+                    </button>
+                </nav>
+            </div>
         </div>
-    </div>
+    </header>
+
     <!-- MENU - BOOTSTRAP NAVBAR COLLAPSED MENU -->
     <nav class="navbar navbar-light my-nav-bar">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -67,11 +72,81 @@
         </div>
 
     </nav>
-    <section>
+    <section class="carousel-section">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active my-carousel-item1">
 
+                    <div class="captions">
+                        <h3>I am here to help you</h3>
+                        <p>Call me to make an appointemt</p>
+                        <button type="button" class="btn btn-primary">Call</button>
+                        <p>or visit me directly</p>
+                        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#address"
+                        aria-expanded="false" aria-controls="address">Address</button>
+                    </div>
+
+                </div>
+                <div class="carousel-item my-carousel-item2">
+
+                    <div class="captions">
+                        <h3>Pain should never be a reason to stop your journey</h3>
+                        <p>Check how can i help you</p>
+                        <button type="button" class="btn btn-primary">Treatments</button>
+                    </div>
+                </div>
+                <div class="carousel-item my-carousel-item3">
+
+                    <div class="captions">
+                        <h3>Quality measured by happy patients</h3>
+                        <p>Check what people say it</p>
+                        
+                            <button type="button" class="btn btn-primary">Opinion</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </section>
-    <footer>
-
+    <section class="collapse-section">
+        <div class="collapse" id="address">
+            <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
+                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+        </div>
+        <div class="collapse" id="therapies">
+            <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
+                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+        </div>
+        <div class="collapse" id="opinion">
+            <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
+                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="row row-footer">
+            <div class="col col-footer-1">
+                <h5>Rehabilitation</h5>
+                <h6>Ewelina Zaremba</h6>
+                <h5>Manual therapist</h5>
+            </div>
+            <div class="col col-footer-2">
+                <p>© Maken for your health</p>
+            </div>
+        </div>
     </footer>
     <!-- LINK TO BOOTSTRAP JAVA -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

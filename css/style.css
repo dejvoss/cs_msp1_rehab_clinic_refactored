@@ -1,28 +1,83 @@
+/* ------------------------------------------------- SPACE SIZING MARGINS */
+body {
+    height: 100vh;
+    width: 100vw;
+    margin:0;
+    padding: 0;
+}
+
+.row,
+.col
+ {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+header, header .row {
+    height: 12vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    margin-top: 0.5vh;
+    height: 10vh;
+}
+
+.col-menu-btn {
+    height: 12vh;
+    margin: 0;
+    padding: 0;
+}
+
+.section-carousel, .carouselExampleFade, .carousel-inner, .carousel-item {
+    height: 63vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.collapse-section {
+    height: 20vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.row-footer {
+height: 5vh;
+margin: 0;
+padding: 0;
+}
+
+
 /* ------------------------------------------------- FONTS */
 
 body {
     font-family: 'Montserrat', 'Open Sans', sans-serif;
     text-transform: uppercase;
     text-align: center;
-    color: #8d8d8d;
-    font-size: 20px;
+
 }
 
-h2 
+h1 
  {
     font-family: 'Open Sans', sans-serif;
-    color: #3d3d3d;
-    font-size: 20px;
+
+ 
 }
 
-h1,
-h3,
-h4,
-h5,
-h6 {
+h2, h6 {
     font-family: 'Anton', sans-serif;
     color: #3d3d3d;
-    font-size: 26px;
+}
+h3,
+h4,
+h5 {
+    font-family: 'Anton', sans-serif;
+
 }
 
 /* ------------------------ MENU FONTS COLOR */
@@ -34,30 +89,95 @@ h6 {
 .navbar-light .navbar-nav .nav-link {
     color: #8d8d8d;
 }
+/* ------------------------ FONTS SIZES */
+h1 {
+    font-size: 3.5vh;
 
-/* ------------------------------------------------- HEADER */
-header {
-    height: 12vh;
-    text-align: left;
-    margin-top: 10px;
 }
-.img-logo {
-    display: flex;
+header h2 {
+    font-size: 2.5vh;
+}
+
+header p {
+    font-size: 2vh;
+}
+
+.col-footer-1 
+h5, h6
+ {
+    font-size: 3vh;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+h3, h4 {
+    font-size: 5vh;
+}
+
+.captions p {
+    font-size: 2.5vh;
+}
+
+/* ------------------------------------------------- COLORS */
+body {
+    color: #8d8d8d;
+}
+
+.col-menu-btn {
+    background-color: #295162;
+}
+
+.col-footer-1 {
+    background-color: #295162;
+}
+
+/* ------------------------------------------------- HEADER SIZE AND POSITION*/
+header, header .row {
+    text-align: center;
+    background-color: white;
+
+}
+header img {
     float: left;
-    height:100%;
-    margin-top: -5px;
-    margin-right: 5px;
 }
 
-/* ------------------------------------------------- NAV-BUTTON */
+.headings h1{
+    padding-right: 2px;
+}
+.headings h1, h2, p {
+    margin-bottom: .2vh;
+
+}
+
+.headings {
+    height: 10vh;
+    margin: auto;
+
+}
+
+.img-logo {
+    flex-grow: 0;
+    padding-right: 0;
+    margin: auto;
+}
+
+.col-menu-btn {
+    border-radius: 2px;
+}
+/* ------------------------------------------------- NAV-BUTTON*/
 
 .navbar-light .navbar-toggler {
-    color: #8d8d8d;
+    color: white;
     border: none;
+    font-size: 5vh;
     margin: auto;
-    display: flex;
-    float: right;
+
 }   
+
+.my-nav-button {
+    height: 100%;
+}
+
 /* remove button border after click on it */
 button:focus {
     outline: none; 
@@ -67,4 +187,96 @@ button:focus {
 
 .my-nav-bar {
     text-align: center;
+    position: fixed;
+    top: 12vh;
+    width: 100vw;
+    height: 83vh;
+    z-index: 2;
+    margin: auto;
+    padding: 0;
 }
+
+.navbar-collapse {
+    height: 83vh;
+    width: 100vw;
+
+}
+
+.navbar-nav{
+background-color: rgba(41,81,98, .85);
+height: 83vh;
+font-weight: 800;
+}
+
+a.nav-link:hover {
+    background-color: #57BDC2;
+}
+
+/* ------------------------------------------------- SECTION - CAROUSEL*/
+
+/* MAKE HEIGHT FULL VIEWPORT MINUS HEADER */
+
+section, .carouselExampleFade, .carousel-inner, .carousel-item {
+    background-color: #295162;
+    border: 1px solid #295162;
+    margin: 0;
+    padding: 0;
+}
+
+.captions {
+    
+    background-color: rgba(87,189,194, .6);
+    color: white;
+    position: fixed;
+    width: 80vw;
+    height: 50vh;
+    left: 10vw;
+    bottom: 23vh;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+
+.my-carousel-item1{
+    background-image: url("../images/women-therapy2.jpg");
+    background-size: 98vw;
+    background-repeat: no-repeat;
+}
+
+
+.my-carousel-item2{
+    background-image: url("../images/man-pain-back.jpg");
+    background-size: 98vw;
+    background-repeat: no-repeat;
+}
+
+
+.my-carousel-item3{
+    background-image: url("../images/happy-people.jpg");
+    background-size: 98vw;
+    background-repeat: no-repeat;
+}
+
+/* ---- CAROUSE CONTROL- z index need 
+to be at least on same level as my-nav-bar to be enabled  */
+
+.carousel-control-prev, .carousel-control-next {
+    z-index: 2;
+}
+
+/* ------------------------------------------------- FOOTER */
+
+.col-footer-1 {
+    display: inline-flex;
+    float: left;
+}
+
+footer
+h5, h6, p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ------------------------------------------------- MEDIA */
