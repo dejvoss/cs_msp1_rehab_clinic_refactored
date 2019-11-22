@@ -1,0 +1,418 @@
+/* -------------------------------- General rules -------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #8d8d8d;
+    background-color: white;
+    /* background-image: url("../images/women-therapy.jpg");
+    background-position: top;
+    background-size: 100vw;
+    background-repeat: no-repeat; */
+}
+
+h3 {
+    font-family: 'Anton', sans-serif;
+    color: #3d3d3d;
+}
+
+.row{
+    padding: 0;
+    margin: 0;
+}
+.container-fluid {
+    margin:0;
+    padding:0;
+}
+
+/* -------------------------------- General rules -------------------------------- */
+
+/* -------------------------------- Header -------------------------------- */
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+
+
+    /* border-bottom: 1px solid #295162; */
+}
+.header-container{
+    background-color: white;
+}
+/* logo image */
+ header img {
+    height: 12vh;
+    /* float: middle; */
+    margin: auto;
+
+    /* background-color: white;
+    border-radius: 50%; */
+} 
+
+
+/* adjust size of header headings */
+.web-header-2 {
+    font-family: "Anton", "sans-serif";
+    color: #295162;
+    font-size: 3vh;
+}
+.col-headings-home {
+    padding-left: 0;
+    margin-left: 0;
+}
+.my-col-headings {
+    float: right;
+    margin: auto;
+}
+
+.web-header-1 {
+    font-size: 3vh;
+    color: #295162;
+   
+}
+
+.web-header-3 {
+    font-size: 3vh;
+    font-family: "Open Sans", "sans-serif";
+    color: #295162;
+    
+}
+/* -------------------------------- Header -------------------------------- */
+
+/* -------------------------------- MENU BUTTON -------------------------------- */
+/* remove border from menu button */
+.navbar-toggler {
+    border: none;
+}
+/* change menu button color  */
+
+.my-menu-icon {
+    color: #3d3d3d;
+    font-size: 4vh;
+}
+/* remove border from menu button after click on it */
+.navbar-toggler:focus {
+    outline: none;
+}
+/* center menu button */
+.my-nav-button {
+    display: block;
+}
+.col-menu-btn {
+    margin: auto;
+}
+/* -------------------------------- MENU BUTTON -------------------------------- */
+
+
+/* -------------------------------- NAVIGATION MENU BAR -------------------------------- */
+/* remove space between header and 1st section by changing size of navigation bar */
+
+.my-nav-bar {
+    padding: 0;
+
+}
+
+.my-navbar {
+    width: 100vw;
+
+}
+
+/* -------------------------------- NAVIGATION MENU BAR -------------------------------- */
+
+/* -------------------------------- CAROUSEL-SECTION -------------------------------- */
+.section-carousel {
+    /* margin-top: -16vh; */
+
+    
+}
+.img-slide {
+    max-height: 86vh;
+    border-left: 40px solid white;
+    border-right: 40px solid white;
+}
+/* -------------------------------- HOME SECTION -------------------------------- */
+.section-home {
+    /* height: 100vh; */
+    color: #3d3d3d;
+    /* height: 100vh; */
+}
+.col-headings-home{
+    margin: 15vh 0 15vh 0;
+    padding: 30px;
+    position: static;
+    background-color: rgba(250,250,250, .6);
+}
+
+/* -------------------------------- HOME SECTION -------------------------------- */
+
+/* -------------------------------- FOR WHOM SECTION -------------------------------- */
+ /* .section-for-whom {
+    background-image: url("../images/man-pain-back.jpg");
+    background-size: 50vw;
+    background-position-x: 50vw;
+    background-repeat: no-repeat;
+    margin-top: 45vh;
+} */
+
+.col-text-for-whom {
+    background-color: #295162;
+    margin-top: 20vh; 
+    position: static;
+    margin-left:20px;
+
+} 
+
+
+/* -------------------------------- FOR WHOM SECTION -------------------------------- */
+
+/* -------------------------------- SECTION ABOUT -------------------------------- */
+
+.list-image {
+    width: 25vw;
+}
+
+
+.section-about img {
+    width: 50vw;
+    margin-top: 50%;
+}
+
+
+
+.img-map {
+    width: 50vw;
+}
+/* -------------------------------- FOOTER -------------------------------- */
+/* .card-img-top {
+    width: 100%;
+} */
+
+/* ------------------------------------------------- SPACE SIZING MARGINS */
+/* 
+.col-menu-btn {
+    height: 12vh;
+    margin: 0;
+    padding: 0;
+}
+
+.section-carousel, .carouselExampleFade, .carousel-inner, .carousel-item {
+    height: 63vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.collapse-section {
+    height: 20vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.row-footer {
+height: 5vh;
+margin: 0;
+padding: 0;
+}
+
+
+/* ------------------------------------------------- FONTS */
+
+/* 
+h1 
+ {
+    font-family: 'Open Sans', sans-serif;
+
+ 
+}
+
+h2, h6 {
+    font-family: 'Anton', sans-serif;
+    color: #3d3d3d;
+}
+h3,
+h4,
+h5 {
+    font-family: 'Anton', sans-serif;
+
+}
+
+/* ------------------------ MENU FONTS COLOR */
+ /* 
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #3d3d3d;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #8d8d8d;
+}
+/* ------------------------ FONTS SIZES */
+/* 
+h1 {
+    font-size: 3.5vh;
+
+}
+header h2 {
+    font-size: 2.5vh;
+}
+
+header p {
+    font-size: 2vh;
+}
+
+.col-footer-1 
+h5, h6
+ {
+    font-size: 3vh;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+h3, h4 {
+    font-size: 5vh;
+}
+
+
+/* ------------------------------------------------- COLORS */
+/* 
+.col-menu-btn {
+    background-color: #295162;
+}
+
+.col-footer-1 {
+    background-color: #295162;
+}
+
+/* ------------------------------------------------- HEADER SIZE AND POSITION*/
+/* 
+header, header .row {
+    text-align: center;
+    background-color: white;
+
+}
+header img {
+    float: left;
+}
+
+.headings h1{
+    padding-right: 2px;
+}
+.headings h1, h2, p {
+    margin-bottom: .2vh;
+
+}
+
+.headings {
+    height: 10vh;
+    margin: auto;
+
+}
+
+.img-logo {
+    flex-grow: 0;
+    padding-right: 0;
+    margin: auto;
+}
+
+.col-menu-btn {
+    border-radius: 2px;
+}
+/* ------------------------------------------------- NAV-BUTTON*/
+/* 
+.navbar-light .navbar-toggler {
+    color: white;
+    border: none;
+    font-size: 5vh;
+    margin: auto;
+
+}   
+
+.my-nav-button {
+    height: 100%;
+}
+
+/* remove button border after click on it */
+/* 
+button:focus {
+    outline: none; 
+}
+
+/* ------------------------------------------------- NAV-MENU */
+/* 
+.my-nav-bar {
+    text-align: center;
+    position: fixed;
+    top: 12vh;
+    width: 100vw;
+    height: 83vh;
+    z-index: 2;
+    margin: auto;
+    padding: 0;
+}
+
+.navbar-collapse {
+    height: 83vh;
+    width: 100vw;
+
+}
+
+.navbar-nav{
+background-color: rgba(41,81,98, .85);
+height: 83vh;
+font-weight: 800;
+}
+
+a.nav-link:hover {
+    background-color: #57BDC2;
+}
+
+
+/* ------------------------------------------------- FOOTER */
+/* 
+.col-footer-1 {
+    display: inline-flex;
+    float: left;
+}
+
+footer
+h5, h6, p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+ */
+
+
+ /* ---------------------------------------------------------------- MEDIA -------------------------------- */
+ /* -------------------------------- HEADER AND MAIN SECTION -------------------------------- */
+ /* change the header color on the small and medium scrrens */
+
+@media (max-width:600px) {
+    /* header{
+        background-color: #ffffff;
+    } */
+    .section-home {
+        background-image: url("../images/women-therapy.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        height: 100%;
+    }
+    .col-headings-home {
+        margin:0;
+    }
+}
+
+@media (min-width:600px) and (max-width:800px) {
+    .col-headings-home {
+        margin-top: 0 ;
+    }
+}
+ /* -------------------------------- HEADER AND MAIN SECTION -------------------------------- */
+
