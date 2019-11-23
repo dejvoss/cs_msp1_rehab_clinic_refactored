@@ -17,25 +17,23 @@
 </head>
 
 <body>
-  <header>
+  <header id="home">
     <!-- LOGO -->
     <div class="container-fluid header-container">
       <div class="row">
-        <div class="col">
-          <!-- <div class="img-logo"> -->
-          <img class="img-logo" src="images/logo-only.png"
-            alt="picture with logo - spin between palms and signature - Ewelina Zaremba Rehabilitacja Terapie Manualne" />
-          <!-- </div> -->
-
-          <!-- HEADINGS -->
-          <div class="my-col-headings">
+          <a class="link-logo" href="#home">
+          <div class="col my-col-headings">
+            
+              <img class="img-logo" src="images/logo-only.png"
+              alt="picture with logo - spin between palms and signature - Ewelina Zaremba Rehabilitacja Terapie Manualne" />
             <h1 class="web-header-1">Ewelina Zaremba</h1>
             <h2 class="web-header-2">Rehabilitation Clinic</h2>
             <h2 class="web-header-3">Manual Therapist</h2>
 
             <!-- MENU - BOOTSTRAP NAVBAR BUTTON WITOUT EXPAND OPTION -->
+          
           </div>
-        </div>
+        </a>
         <div class="col col-menu-btn">
           <nav class="navbar navbar-light my-nav-button">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -53,7 +51,8 @@
     <div class="collapse navbar-collapse my-navbar" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#section-home">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#section-home" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#section-for-whom">For whom</a>

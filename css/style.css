@@ -1,6 +1,7 @@
 /* -------------------------------- General rules -------------------------------- */
 html {
     scroll-behavior: smooth;
+
 }
 
 body {
@@ -9,10 +10,6 @@ body {
     text-align: center;
     color: #8d8d8d;
     background-color: white;
-    /* background-image: url("../images/women-therapy.jpg");
-    background-position: top;
-    background-size: 100vw;
-    background-repeat: no-repeat; */
 }
 
 h3 {
@@ -29,52 +26,31 @@ header {
     position: sticky;
     top: 0;
     z-index: 20;
-
-
-    /* border-bottom: 1px solid #295162; */
-}
-.header-container{
     background-color: white;
 }
-/* logo image */
- header img {
-    height: 12vh;
-    /* float: middle; */
-    margin: auto;
 
-    /* background-color: white;
-    border-radius: 50%; */
+/* logo image */
+.img-logo {
+    height: 12vh; 
 } 
 
-
-/* adjust size of header headings */
+/* FONTS IN HEADER */
+.my-col-headings > *{
+    font-size: 3vh;
+    color: #295162;
+    display: inline;
+}
 .web-header-2 {
     font-family: "Anton", "sans-serif";
-    color: #295162;
-    font-size: 3vh;
 }
-.col-headings-home {
-    padding-left: 0;
-    margin-left: 0;
-    
-}
-.my-col-headings {
-    float: right;
-    margin: auto;
-}
-
-.web-header-1 {
-    font-size: 3vh;
-    color: #295162;
-   
-}
-
 .web-header-3 {
-    font-size: 3vh;
     font-family: "Open Sans", "sans-serif";
-    color: #295162;
-    
 }
+
+.link-logo:hover {
+    text-decoration: none;
+}
+
 /* -------------------------------- Header -------------------------------- */
 
 /* -------------------------------- MENU BUTTON -------------------------------- */
@@ -107,7 +83,11 @@ header {
 
 .my-nav-bar {
     padding: 0;
-
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 25;
+    background-color: rgba(41,81,98, .8);
 }
 
 .my-navbar {
