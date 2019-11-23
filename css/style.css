@@ -172,38 +172,31 @@ header {
     margin: 0;
     padding: 0;
 }
-
 .section-carousel, .carouselExampleFade, .carousel-inner, .carousel-item {
     height: 63vh;
     width: 100vw;
     margin: 0;
     padding: 0;
 }
-
 .collapse-section {
     height: 20vh;
     width: 100vw;
     margin: 0;
     padding: 0;
 }
-
 .row-footer {
 height: 5vh;
 margin: 0;
 padding: 0;
 }
-
-
 /* ------------------------------------------------- FONTS */
 
 /* 
 h1 
  {
     font-family: 'Open Sans', sans-serif;
-
  
 }
-
 h2, h6 {
     font-family: 'Anton', sans-serif;
     color: #3d3d3d;
@@ -212,15 +205,12 @@ h3,
 h4,
 h5 {
     font-family: 'Anton', sans-serif;
-
 }
-
 /* ------------------------ MENU FONTS COLOR */
  /* 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: #3d3d3d;
 }
-
 .navbar-light .navbar-nav .nav-link {
     color: #8d8d8d;
 }
@@ -228,16 +218,13 @@ h5 {
 /* 
 h1 {
     font-size: 3.5vh;
-
 }
 header h2 {
     font-size: 2.5vh;
 }
-
 header p {
     font-size: 2vh;
 }
-
 .col-footer-1 
 h5, h6
  {
@@ -245,53 +232,41 @@ h5, h6
     white-space: nowrap;
     overflow: hidden;
 }
-
 h3, h4 {
     font-size: 5vh;
 }
-
-
 /* ------------------------------------------------- COLORS */
 /* 
 .col-menu-btn {
     background-color: #295162;
 }
-
 .col-footer-1 {
     background-color: #295162;
 }
-
 /* ------------------------------------------------- HEADER SIZE AND POSITION*/
 /* 
 header, header .row {
     text-align: center;
     background-color: white;
-
 }
 header img {
     float: left;
 }
-
 .headings h1{
     padding-right: 2px;
 }
 .headings h1, h2, p {
     margin-bottom: .2vh;
-
 }
-
 .headings {
     height: 10vh;
     margin: auto;
-
 }
-
 .img-logo {
     flex-grow: 0;
     padding-right: 0;
     margin: auto;
 }
-
 .col-menu-btn {
     border-radius: 2px;
 }
@@ -302,19 +277,15 @@ header img {
     border: none;
     font-size: 5vh;
     margin: auto;
-
 }   
-
 .my-nav-button {
     height: 100%;
 }
-
 /* remove button border after click on it */
 /* 
 button:focus {
     outline: none; 
 }
-
 /* ------------------------------------------------- NAV-MENU */
 /* 
 .my-nav-bar {
@@ -327,31 +298,24 @@ button:focus {
     margin: auto;
     padding: 0;
 }
-
 .navbar-collapse {
     height: 83vh;
     width: 100vw;
-
 }
-
 .navbar-nav{
 background-color: rgba(41,81,98, .85);
 height: 83vh;
 font-weight: 800;
 }
-
 a.nav-link:hover {
     background-color: #57BDC2;
 }
-
-
 /* ------------------------------------------------- FOOTER */
 /* 
 .col-footer-1 {
     display: inline-flex;
     float: left;
 }
-
 footer
 h5, h6, p {
     margin-bottom: 0;
@@ -388,4 +352,3 @@ h5, h6, p {
     }
 }
  /* -------------------------------- HEADER AND MAIN SECTION -------------------------------- */
-

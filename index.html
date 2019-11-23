@@ -21,17 +21,17 @@
     <!-- LOGO -->
     <div class="container-fluid header-container">
       <div class="row">
-          <a class="link-logo" href="#home">
+        <a class="link-logo" href="#">
           <div class="col my-col-headings">
-            
-              <img class="img-logo" src="images/logo-only.png"
+
+            <img class="img-logo" src="images/logo-only.png"
               alt="picture with logo - spin between palms and signature - Ewelina Zaremba Rehabilitacja Terapie Manualne" />
             <h1 class="web-header-1">Ewelina Zaremba</h1>
             <h2 class="web-header-2">Rehabilitation Clinic</h2>
             <h2 class="web-header-3">Manual Therapist</h2>
 
             <!-- MENU - BOOTSTRAP NAVBAR BUTTON WITOUT EXPAND OPTION -->
-          
+
           </div>
         </a>
         <div class="col col-menu-btn">
@@ -49,10 +49,13 @@
   <!-- MENU - BOOTSTRAP NAVBAR COLLAPSED MENU -->
   <nav class="navbar navbar-light my-nav-bar">
     <div class="collapse navbar-collapse my-navbar" id="navbarSupportedContent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="my-menu-icon"><i class="fa fa-times"></i></span>
+            </button>
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#section-home" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#section-for-whom">For whom</a>
@@ -61,10 +64,10 @@
           <a class="nav-link" href="#section-therapies">Treatments</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Patients</a>
+          <a class="nav-link" href="#recommendation">Patients</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">My place</a>
+          <a class="nav-link" href="#address">Address</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
@@ -126,113 +129,107 @@
   <!-- SECTION THERAPIES -->
   <section class="container-fluid" id="section-therapies">
     <div class="row">
-      <div class="col">
-        <div class="card-group">
-          <div class="card">
-            <img src="images/kinesiotaping.jpg" class="card-img-top"
-              alt="Woman with kinesiotaping application for back pain.">
-            <div class="card-body">
-              <h5 class="card-title">Kinesiotaping</h5>
-              <p class="card-text">Kinesiotaping is dynamic slicing, it involves sticking various parts of the body with
-                special colored tapes to relieve pain and also to prevent injuries.</p>
-              <p class="card-text"><small class="text-muted">Therpay duration: 30 min</small></p>
+
+      <div class="card col-12 col-md-6">
+        <img src="images/kinesiotaping.jpg" class="card-img-top"
+          alt="Woman with kinesiotaping application for back pain.">
+        <div class="card-body">
+          <h5 class="card-title">Kinesiotaping</h5>
+          <p class="card-text">Kinesiotaping is dynamic slicing, it involves sticking various parts of the body with
+            special colored tapes to relieve pain and also to prevent injuries.</p>
+          <p class="card-text"><small class="text-muted">Therpay duration: 30 min</small></p>
+        </div>
+      </div>
+      <div class="card col-12 col-md-6">
+        <img src="images/scar-therapy.jpg" class="card-img-top"
+          alt="Applying cupping therapy on the man arm to reduce the visibility of the scar">
+        <div class="card-body">
+          <h5 class="card-title">Scar therapy</h5>
+          <p class="card-text">Scar therapy is introduced in post-operative rehabilitation to reduce the visibility
+            of the scar, as well as improve functionality (reduce the feeling of pulling).
+            <a class="link-read-more" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+              aria-controls="collapseExample">
+              more...
+            </a>
+            <div class="collapse" id="collapseExample">
+              <p>The scarring is caused by injuries or various types of surgical procedures in which the continuity
+                of the skin and deeper tissues is broken. It cannot be prevented, but you can affect its appearance
+                and proper healing, which will reduce the risk of later complications.</p>
             </div>
-          </div>
-          <div class="card">
-            <img src="images/scar-therapy.jpg" class="card-img-top"
-              alt="Applying cupping therapy on the man arm to reduce the visibility of the scar">
-            <div class="card-body">
-              <h5 class="card-title">Scar therapy</h5>
-              <p class="card-text">Scar therapy is introduced in post-operative rehabilitation to reduce the visibility
-                of the scar, as well as improve functionality (reduce the feeling of pulling).
-                <a class="link-read-more" data-toggle="collapse" href="#collapseExample" role="button"
-                  aria-expanded="false" aria-controls="collapseExample">
-                  more...
-                </a>
-                <div class="collapse" id="collapseExample">
-                  <p>The scarring is caused by injuries or various types of surgical procedures in which the continuity
-                    of the skin and deeper tissues is broken. It cannot be prevented, but you can affect its appearance
-                    and proper healing, which will reduce the risk of later complications.</p>
-                </div>
-                <p class="card-text"><small class="text-muted">Therpay duration: 30 min</small></p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/needle-therapy.jpg" class="card-img-top" alt="Relaxed woman during needle therapy">
-            <div class="card-body">
-              <h5 class="card-title">Trigger needle therapy</h5>
-              <p class="card-text">Needle therapy is one of the most effective forms of trigger point therapy. It aims
-                to locate the trigger point of a given muscle, followed by a needle puncture in this area, which will
-                cause local muscle contraction. Thanks to this procedure, the muscle relaxes and the symptoms disappear.
-              </p>
-              <p class="card-text"><small class="text-muted">Therpay duration: 30 min</small></p>
-            </div>
-          </div>
+            <p class="card-text"><small class="text-muted">Therpay duration: 30 min</small></p>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col">
-        <div class="card-group">
-          <div class="card">
-            <img src="images/sport-massage.jpg" class="card-img-top"
-              alt="A woman dressed in sports during a sports massage by a professional masseur">
-            <div class="card-body">
-              <h5 class="card-title">Sports massage</h5>
-              <p class="card-text">It is a form of bodywork geared toward participants in athletics. It is used to help
-                prevent injuries, to prepare the body for athletic activity and maintain it in optimal condition, and to
-                help athletes recover from workouts and injuries.</p>
-              <p class="card-text"><small class="text-muted">Therpay duration: 60 min</small></p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/relaxing-massage.jpg" class="card-img-top"
-              alt="Young woman receiving a relaxing back massage">
-            <div class="card-body">
-              <h5 class="card-title">Relaxing massage</h5>
-              <p class="card-text">Smooth, gentle, flowing style that promotes general relaxation, relieves muscular
-                tension, plus improves circulation and range of movement. This is the style of massage you'll find
-                performed at day spas.
-
-            </div>
-            <p class="card-text"><small class="text-muted">Therpay duration: 60 min</small></p>
-          </div>
-
-          <div class="card">
-            <img src="images/massage.jpg" class="card-img-top" alt="Relaxed woman during needle therapy">
-            <div class="card-body">
-              <h5 class="card-title">Massage</h5>
-              <p class="card-text">Treatment which aims to relax, revive and heal the body. Using manual hands-on
-                movements and manipulation of the soft tissues and muscles in the body, massage therapy works to promote
-                healing and enhance a person's overall well-being. </p>
-              <p class="card-text"><small class="text-muted">Therpay duration: 30 min</small></p>
-            </div>
-          </div>
+      <div class="card col-12 col-md-6">
+        <img src="images/needle-therapy.jpg" class="card-img-top" alt="Relaxed woman during needle therapy">
+        <div class="card-body">
+          <h5 class="card-title">Trigger needle therapy</h5>
+          <p class="card-text">Needle therapy is one of the most effective forms of trigger point therapy. It aims
+            to locate the trigger point of a given muscle, followed by a needle puncture in this area, which will
+            cause local muscle contraction. Thanks to this procedure, the muscle relaxes and the symptoms disappear.
+          </p>
+          <p class="card-text"><small class="text-muted">Therpay duration: 30 min</small></p>
+        </div>
+      </div>
+      <div class="card col-12 col-md-6">
+        <img src="images/sport-massage.jpg" class="card-img-top"
+          alt="A woman dressed in sports during a sports massage by a professional masseur">
+        <div class="card-body">
+          <h5 class="card-title">Sports massage</h5>
+          <p class="card-text">It is a form of bodywork geared toward participants in athletics. It is used to help
+            prevent injuries, to prepare the body for athletic activity and maintain it in optimal condition, and to
+            help athletes recover from workouts and injuries.</p>
+          <p class="card-text"><small class="text-muted">Therpay duration: 60 min</small></p>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="card-group">
-        <div class="card">
-          <img src="images/Lymphatic-drainage.jpg" class="card-img-top"
-            alt="Patient at the physiotherapy gets lymphatic drainage">
-          <div class="card-body">
-            <h5 class="card-title">Lymphatic drainage</h5>
-            <p class="card-text">It is kind of a therapeutic massage treatment. The massage uses very light pressure and
-              long, gentle, rhythmic strokes to increase the flow of lymph and reduce toxins in your body.</p>
-            <p class="card-text"><small class="text-muted">Therpay duration: from 30 to 60 min</small></p>
-          </div>
-        </div>
+      <div class="card col-12 col-md-6">
+        <img src="images/relaxing-massage.jpg" class="card-img-top" alt="Young woman receiving a relaxing back massage">
+        <div class="card-body">
+          <h5 class="card-title">Relaxing massage</h5>
+          <p class="card-text">Smooth, gentle, flowing style that promotes general relaxation, relieves muscular
+            tension, plus improves circulation and range of movement. This is the style of massage you'll find
+            performed at day spas.
 
-        <div class="card">
-          <img src="images/manual-therap.jpg" class="card-img-top" alt="Young woman receiving a relaxing back massage">
-          <div class="card-body">
-            <h5 class="card-title">Manual therapy</h5>
-            <p class="card-text">Physical treatment treat musculoskeletal pain and disability; it most includes kneading
-              and manipulation of muscles, joint mobilization and joint manipulation.
-          </div>
-          <p class="card-text"><small class="text-muted">Therpay duration: 45 min</small></p>
         </div>
+        <p class="card-text"><small class="text-muted">Therpay duration: 60 min</small></p>
+      </div>
+
+      <div class="card col-12 col-md-6">
+        <img src="images/massage.jpg" class="card-img-top" alt="Relaxed woman during needle therapy">
+        <div class="card-body">
+          <h5 class="card-title">Massage</h5>
+          <p class="card-text">Treatment which aims to relax, revive and heal the body. Using manual hands-on
+            movements and manipulation of the soft tissues and muscles in the body, massage therapy works to promote
+            healing and enhance a person's overall well-being. </p>
+          <p class="card-text"><small class="text-muted">Therpay duration: 30 min</small></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="card col-12 col-md-6">
+        <img src="images/Lymphatic-drainage.jpg" class="card-img-top"
+          alt="Patient at the physiotherapy gets lymphatic drainage">
+        <div class="card-body">
+          <h5 class="card-title">Lymphatic drainage</h5>
+          <p class="card-text">It is kind of a therapeutic massage treatment. The massage uses very light pressure and
+            long, gentle, rhythmic strokes to increase the flow of lymph and reduce toxins in your body.</p>
+          <p class="card-text"><small class="text-muted">Therpay duration: from 30 to 60 min</small></p>
+        </div>
+      </div>
+
+      <div class="card col-12 col-md-6">
+        <img src="images/manual-therap.jpg" class="card-img-top" alt="Young woman receiving a relaxing back massage">
+        <div class="card-body">
+          <h5 class="card-title">Manual therapy</h5>
+          <p class="card-text">Physical treatment treat musculoskeletal pain and disability; it most includes kneading
+            and manipulation of muscles, joint mobilization and joint manipulation.
+        </div>
+        <p class="card-text"><small class="text-muted">Therpay duration: 45 min</small></p>
       </div>
     </div>
   </section>
@@ -247,170 +244,171 @@
       </p>
       <p>In my clinic, I will help you to fight with:</p>
       <ul class="list-unstyled pain-type">
-        <li class="media"><img src="images/l-b-pain.jpg" class="mr-3 list-image" alt="...">
+        <li class="media"><img src="images/l-b-pain.jpg" class="mr-3 list-image" alt="Man in office feeling low back pain">
           <div class="media-body">
             <h5 class="mt-0 mb-1">lower back pain</h5>
-            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-            lacinia congue felis in faucibus.</p>
+            <p>Common causes of low back pain (lumbar backache) include lumbar strain, nerve irritation, lumbar radiculopathy, bony encroachment, and conditions of the bone and joints.  The condition is characterized by localized discomfort in the low back area with onset after an event that mechanically stressed the lumbar tissues.</p>
           </div>
         </li>
-        <li class="media"><img src="images/u-p-pain.jpg" class="mr-3 list-image" alt="...">
+        <li class="media">
           <div class="media-body">
             <h5 class="mt-0 mb-1">upper back pain</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-            lacinia congue felis in faucibus.
+            Pain in the upper back is usually the result of poor posture, muscle overuse, or injury. Treatment may include home remedies, such as rest and gentle exercises, or possibly seeing a physical therapist. Upper back pain can appear anywhere between these bones.
           </div>
+          <img src="images/u-p-pain.jpg" class="mr-3 list-image" alt="Man in white t-shirt holds hand on his aching shoulder, upper back">
         </li>
-        <li class="media"><img src="images/sciatica.jpg" class="mr-3 list-image" alt="...">
+        <li class="media"><img src="images/sciatica.jpg" class="mr-3 list-image" alt="the picture shows an animated figure of a man suffering from sciatica pain">
           <div class="media-body">
             <h5 class="mt-0 mb-1">sciatica</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-            lacinia congue felis in faucibus.
+            Sciatica refers to pain that radiates along the path of the sciatic nerve, which branches from your lower back through your hips and buttocks and down each leg. Typically, sciatica affects only one side of your body.
           </div>
         </li>
-        <li class="media"><img src="images/join-injuries.jpg" class="mr-3 list-image" alt="...">
+        <li class="media">
           <div class="media-body">
             <h5 class="mt-0 mb-1">pain caused by joint injuries</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-            lacinia congue felis in faucibus.
+            Joint pain can be caused by injury affecting any of the ligaments, bursae, or tendons surrounding the joint. 
           </div>
+          <img src="images/join-injuries.jpg" class="mr-3 list-image" alt="man palm with marked on red pain place holding computer mouse">
         </li>
-        <li class="media"><img src="images/muscle-pain.jpg" class="mr-3 list-image" alt="...">
+        <li class="media"><img src="images/muscle-pain.jpg" class="mr-3 list-image" alt="Woman dressed n sportswear is suffering calf pain">
           <div class="media-body">
             <h5 class="mt-0 mb-1">muscle pain</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-            lacinia congue felis in faucibus.
+            Muscle pain may arise due to injury or overexertion, infections of the soft tissues, or inflammatory conditions.
           </div>
         </li>
-        <li class="media"><img src="images/headache.jpg" class="mr-3 list-image" alt="...">
+        <li class="media">
           <div class="media-body">
             <h5 class="mt-0 mb-1">headaches</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-            lacinia congue felis in faucibus.
+            A headache can be a sign of stress or emotional distress, or it can result from a medical disorder, such as migraine or high blood pressure, anxiety, or depression. It can lead to other problems. People with chronic migraine headaches, for example, may find it hard to attend work or school regularly.
           </div>
+          <img src="images/headache.jpg" class="mr-3 list-image" alt="Businesswoman in the office suffering hadache">
         </li>
-        <li class="media"><img src="images/numbness.jpg" class="mr-3 list-image" alt="...">
+        <li class="media"><img src="images/numbness.jpg" class="mr-3 list-image" alt="Man in shirt is suffering numbness in palm">
           <div class="media-body">
             <h5 class="mt-0 mb-1">numbness of limbs and fingers</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-            lacinia congue felis in faucibus.
+            Numbness, tingling felt in fingers, hands, feet, arms and legs. There are several different causes for experiencing such abnormal sensations. Injury to a nerve in your neck may cause feelings of numbness anywhere along your arm or hand, whereas, an injury in the lower back region can cause numbness or tingling in your legs.
           </div>
         </li>
-        <li class="media"><img src="images/discopathy.jpg" class="mr-3 list-image" alt="...">
+        <li class="media">
           <div class="media-body">
             <h5 class="mt-0 mb-1">discopathy</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-            lacinia congue felis in faucibus.
+            Discopathy can be identified by a pain at the nape of the neck or the back depending on the affected area. Lumbago and lower back pains are usually the most common symptoms.
+
           </div>
+          <img src="images/discopathy.jpg" class="mr-3 list-image" alt="An image of the spine with a discopathy part approximated through a magnifying glass.">
         </li>
-        <li class="media"><img src="images/neuralgia.jpg" class="mr-3 list-image" alt="...">
+        <li class="media"><img src="images/neuralgia.jpg" class="mr-3 list-image" alt="Woman suffering hadache caused by neuralgia.">
           <div class="media-body">
             <h5 class="mt-0 mb-1">neuralgia</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-            lacinia congue felis in faucibus.
+            Neuralgia is a stabbing, burning, and often severe pain due to an irritated or damaged nerve. The nerve may be anywhere in the body, and the damage may be caused by several things.
           </div>
         </li>
-        <li class="media"><img src="images/neck-tension.jpg" class="mr-3 list-image" alt="...">
+        <li class="media">
           <div class="media-body">
             <h5 class="mt-0 mb-1">neck tension</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-            lacinia congue felis in faucibus.
+            Your neck contains flexible muscles that support the weight of your head. These muscles can be injured and irritated from overuse and postural problems. Neck pain can also sometimes be attributed to worn joints or compressed nerves, but neck tension typically refers to muscle spasms or soft tissue injuries.
           </div>
+          <img src="images/neck-tension.jpg" class="mr-3 list-image" alt="Young woman holds hand on neck">
         </li>
-        <li class="media"><img src="images/posture-defecs.jpg" class="mr-3 list-image" alt="...">
+        <li class="media"><img src="images/posture-defecs.jpg" class="mr-3 list-image" alt="Picture of 3 human postures with differents defects">
           <div class="media-body">
             <h5 class="mt-0 mb-1">posture defects</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-            lacinia congue felis in faucibus.
+            Postural dysfunction or “Poor” posture is defined as when our spine is positioned in unnatural positions, in which the curves are emphasised and this results in the joints, muscles and vertebrae being in stressful positions. Symptoms of postural dysfunction may include painful and visible symptoms.
           </div>
         </li>
-        <li class="media"><img src="images/tension-fatigue.jpg" class="mr-3 list-image" alt="...">
+        <li class="media">
           <div class="media-body">
             <h5 class="mt-0 mb-1">states of tension and fatigue</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-            vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-            lacinia congue felis in faucibus.
+            Fatigue is a feeling of constant tiredness or weakness and can be physical, mental or a combination of both. It can affect anyone, and most adults will experience fatigue at some point in their life.
           </div>
+          <img src="images/tension-fatigue.jpg" class="mr-3 list-image" alt="Tired business woman - above woman head is storm and many of data">
         </li>
       </ul>
     </div>
   </section>
 
-  <section class="section-patients">
+  <section class="section-patients container-fluid" id="recommendation">
     <h3>Quality measured in patient satisfaction.</h3>
-    <div class="card">
+    <div class="row">
+    <div class="card col-12 col-sm-6 col-md-4">
       <div class="card-header">
-        Quote
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
       </div>
       <div class="card-body">
         <blockquote class="blockquote mb-0">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            posuere erat a ante.
+              Professional help, Ewelina knows her stuff, the problem with the shoulder was solved after 3 meetings. greetings
           </p>
           <footer class="blockquote-footer">
-            Someone famous in <cite title="Source Title">Source Title</cite>
+              Bartoszka Gp in<cite title="Source Title">Google places</cite>
           </footer>
         </blockquote>
       </div>
     </div>
-    <div class="card">
+    <div class="card col-12 col-sm-6 col-md-4">
       <div class="card-header">
-        Quote
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
       </div>
       <div class="card-body">
         <blockquote class="blockquote mb-0">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            posuere erat a ante.
+              An individual approach, a very nice and warm person, back pain that I have been struggling with for a long time ceased after the third visit
           </p>
           <footer class="blockquote-footer">
-            Someone famous in <cite title="Source Title">Source Title</cite>
+              Karol Jasiukiewicz in <cite title="Source Title">Google places</cite>
           </footer>
         </blockquote>
       </div>
     </div>
-    <div class="card">
+    <div class="card col-12 col-sm-6 col-md-4">
       <div class="card-header">
-        Quote
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
       </div>
       <div class="card-body">
         <blockquote class="blockquote mb-0">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            posuere erat a ante.
+              I have been struggling with almost all my body for a long time. For this reason, I decided to apply the manual therapy to Ms. Ewelina, only a few visits were enough, and the pain - as with my hand - was eliminated!
+
+              Full of professionalism, commitment and a nice atmosphere!
+              
+              I heartily recommend!
           </p>
           <footer class="blockquote-footer">
-            Someone famous in <cite title="Source Title">Source Title</cite>
+              Klaudia K. in <cite title="Source Title">Google places</cite>
           </footer>
         </blockquote>
       </div>
     </div>
+  </div>
   </section>
-  <section class="section-about">
-    <img src="images/ez.jpg" alt="Photo of a woman - Ewelina Zaremba dressed in a white coat rehabilitator" />
-    <img src="images/gab.jpg" alt="Photo from medical office with massage bed and desk" />
-    <img src="images/gab2.jpg" alt="Photo from medical office with screen" />
-    <img src="images/tools.jpg" alt="Photo with rehabilitation tools like ball and tapes" />
-    <img src="images/tools2.jpg" alt="Photo with therapy tools as knifes" />
-  </section>
-  <section class="address">
+ 
+  <section class="address container-fluid" id="address">
+    <div class="row">
+      <div class="col">
     <img class="img-map"
       src="https://maps.googleapis.com/maps/api/staticmap?scale=1&amp;size=1600x900&amp;style=feature:poi.business|visibility:off&amp;style=feature:water|visibility:simplified&amp;style=feature:road|element:labels.icon|visibility:off&amp;style=feature:road.highway|element:labels|saturation:-90|lightness:25&amp;format=jpg&amp;language=pl&amp;region=PL&amp;markers=color:0x48487f|53.1329181,23.1967525&amp;zoom=16&amp;client=google-presto&amp;signature=61AzFMSc0_mue86SPrYq4C4QAB4"
       alt="Picture of google maps with marked Ewelina Zaremba rehabilitation clinic" />
+    </div>
+    <div class="col">
+      <h3>Ewelina Zaremba</h3>
+      <h3>Rehabilitation Clinic</h3>
     <h4>Sybirkaów 11/2</h4>
     <h4>15-204 Białystok</h4>
+    <p>+48 652 458 852</p>
+  </div>
+  </div>
   </section>
 
   <footer class="container-fluid footer">
