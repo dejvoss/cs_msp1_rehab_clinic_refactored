@@ -13,72 +13,67 @@
   <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans|Montserrat&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!-- LINK TO MY CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style2.css" />
 </head>
 
 <body>
-  <header id="home">
+    <nav class="navbar navbar-expand-lg navbar-light my-navbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#whom-header">For whom</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#treatments-header">Treatments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#recommendation">Patients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#address">Address</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+   
+          </ul>
+          
+        </div>
+      </nav>
+  <header class="header">
     <!-- LOGO -->
     <div class="container-fluid header-container">
-      <div class="row">
         <a class="link-logo" href="#">
-          <div class="col my-col-headings">
-
             <img class="img-logo" src="images/logo-only.png"
-              alt="picture with logo - spin between palms and signature - Ewelina Zaremba Rehabilitacja Terapie Manualne" />
-            <h1 class="web-header-1">Ewelina Zaremba</h1>
-            <h2 class="web-header-2">Rehabilitation Clinic</h2>
-            <h2 class="web-header-3">Manual Therapist</h2>
-
-            <!-- MENU - BOOTSTRAP NAVBAR BUTTON WITOUT EXPAND OPTION -->
-
-          </div>
+              alt="logo picture shows spin between palms" />
+            <div class="header-headings">
+            <h2>Rehabilitation Clinic</h2>
+            <h1>Ewelina Zaremba</h1>
+            <h2>Manual Therapist</h2>
+            </div>
         </a>
-        <div class="col col-menu-btn">
-          <nav class="navbar navbar-light my-nav-button">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="my-menu-icon"><i class="fa fa-bars"></i></span>
-            </button>
-          </nav>
-        </div>
-      </div>
+    </div>
+    <div class="home-captions">
+      <h3>Get back your peace and happiness.</h3>
+      <h4>Manual therapy put back you on the track.</h4>
+      <p>Don't wait. Call soon as possible and make appointment.</p>
     </div>
   </header>
 
-  <!-- MENU - BOOTSTRAP NAVBAR COLLAPSED MENU -->
-  <nav class="navbar navbar-light my-nav-bar">
-    <div class="collapse navbar-collapse my-navbar" id="navbarSupportedContent">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="my-menu-icon"><i class="fa fa-times"></i></span>
-            </button>
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#section-for-whom">For whom</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#section-therapies">Treatments</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#recommendation">Patients</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#address">Address</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-      <!-- button for closing menu -->
 
-    </div>
-  </nav>
+
+
+  <!-- MENU - BOOTSTRAP NAVBAR COLLAPSED MENU -->
+
   <!-- CAROUSEL SECTION - HOME SECTION-->
-  <section class="section-carousel" id="section-home">
+  <!-- <section class="section-carousel" id="section-home">
     <div class="bd-example">
       <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -125,15 +120,158 @@
         </a>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- SECTION THERAPIES -->
-  <section class="container-fluid" id="section-therapies">
-    <div class="row">
 
+      <div class="section-whom-header" id="whom-header">
+        
+          <a href="#section-for-whom" class="section-header-link">
+        
+      <h3>Pain should not be a reason to stop you!</h3>
+      <p>
+        See what types of pain are being treated in my clinic.
+      </p>
+
+    </a>
+    
+    </div>
+    <section class="section-for-whom" id="section-for-whom">
+      <ul class="list-unstyled pain-type">
+        <li class="media"><img src="images/l-b-pain.jpg" class="list-image" alt="Man in office feeling low back pain">
+          <div class="media-body">
+            <a class="media-collapse" data-toggle="collapse" href="#collapse-media1" aria-expanded="false" aria-controls="collapse-media1"><h5 class="mt-0 mb-1">lower back pain</h5></a>
+            <div class="collapse" id="collapse-media1">
+            <p>Common causes of low back pain (lumbar backache) include lumbar strain, nerve irritation, lumbar radiculopathy, bony encroachment, and conditions of the bone and joints.  The condition is characterized by localized discomfort in the low back area with onset after an event that mechanically stressed the lumbar tissues.</p>
+          </div>
+          </div>
+        </li>
+        <li class="media">
+          <div class="media-body">
+              <a class="media-collapse" data-toggle="collapse" href="#collapse-media2" aria-expanded="false" aria-controls="collapse-media2"><h5 class="mt-0 mb-1">upper back pain</h5></a>
+              <div class="collapse" id="collapse-media2">
+            Pain in the upper back is usually the result of poor posture, muscle overuse, or injury. Treatment may include home remedies, such as rest and gentle exercises, or possibly seeing a physical therapist. Upper back pain can appear anywhere between these bones.
+          </div>
+          </div>
+          <img src="images/u-p-pain.jpg" class="list-image" alt="Man in white t-shirt holds hand on his aching shoulder, upper back">
+        </li>
+        <li class="media"><img src="images/sciatica.jpg" class="list-image" alt="the picture shows an animated figure of a man suffering from sciatica pain">
+          <div class="media-body">
+              <a class="media-collapse" data-toggle="collapse" href="#collapse-media3" aria-expanded="false" aria-controls="collapse-media3">
+            <h5 class="mt-0 mb-1">sciatica</h5></a>
+            <div class="collapse" id="collapse-media3">
+            Sciatica refers to pain that radiates along the path of the sciatic nerve, which branches from your lower back through your hips and buttocks and down each leg. Typically, sciatica affects only one side of your body.
+          </div>
+        </div>
+        </li>
+        <li class="media">
+          <div class="media-body">
+              <a class="media-collapse" data-toggle="collapse" href="#collapse-media4" aria-expanded="false" aria-controls="collapse-media4">
+            <h5 class="mt-0 mb-1">pain caused by joint injuries</h5></a>
+            <div class="collapse" id="collapse-media4">
+            Joint pain can be caused by injury affecting any of the ligaments, bursae, or tendons surrounding the joint. 
+          </div>
+        </div>
+          <img src="images/join-injuries.jpg" class="list-image" alt="man palm with marked on red pain place holding computer mouse">
+        </li>
+        <li class="media"><img src="images/muscle-pain.jpg" class=" list-image" alt="Woman dressed n sportswear is suffering calf pain">
+          <div class="media-body">
+              <a class="media-collapse" data-toggle="collapse" href="#collapse-media5" aria-expanded="false" aria-controls="collapse-media5">
+            <h5 class="mt-0 mb-1">muscle pain</h5></a>
+            <div class="collapse" id="collapse-media5">
+            Muscle pain may arise due to injury or overexertion, infections of the soft tissues, or inflammatory conditions.
+          </div>
+          </div>
+        </li>
+        <li class="media">
+          <div class="media-body">
+              <a class="media-collapse" data-toggle="collapse" href="#collapse-media6" aria-expanded="false" aria-controls="collapse-media6">
+            <h5 class="mt-0 mb-1">headaches</h5></a>
+            <div class="collapse" id="collapse-media6">
+            A headache can be a sign of stress or emotional distress, or it can result from a medical disorder, such as migraine or high blood pressure, anxiety, or depression. It can lead to other problems. People with chronic migraine headaches, for example, may find it hard to attend work or school regularly.
+          </div>
+        </div>
+          <img src="images/headache.jpg" class="list-image" alt="Businesswoman in the office suffering hadache">
+        </li>
+        <li class="media"><img src="images/numbness.jpg" class="list-image" alt="Man in shirt is suffering numbness in palm">
+          <div class="media-body">
+              <a class="media-collapse" data-toggle="collapse" href="#collapse-media7" aria-expanded="false" aria-controls="collapse-media7">
+            <h5 class="mt-0 mb-1">numbness of limbs and fingers</h5></a>
+            <div class="collapse" id="collapse-media7">
+            Numbness, tingling felt in fingers, hands, feet, arms and legs. There are several different causes for experiencing such abnormal sensations. Injury to a nerve in your neck may cause feelings of numbness anywhere along your arm or hand, whereas, an injury in the lower back region can cause numbness or tingling in your legs.
+          </div>
+        </div>
+        </li>
+        <li class="media">
+          <div class="media-body">
+              <a class="media-collapse" data-toggle="collapse" href="#collapse-media8" aria-expanded="false" aria-controls="collapse-media8">
+            <h5 class="mt-0 mb-1">discopathy</h5></a>
+            <div class="collapse" id="collapse-media8">
+            Discopathy can be identified by a pain at the nape of the neck or the back depending on the affected area. Lumbago and lower back pains are usually the most common symptoms.
+          </div>
+          </div>
+          <img src="images/discopathy.jpg" class="list-image" alt="An image of the spine with a discopathy part approximated through a magnifying glass.">
+        </li>
+        <li class="media"><img src="images/neuralgia.jpg" class="list-image" alt="Woman suffering hadache caused by neuralgia.">
+          <div class="media-body">
+              <a class="media-collapse" data-toggle="collapse" href="#collapse-media9" aria-expanded="false" aria-controls="collapse-media9">
+            <h5 class="mt-0 mb-1">neuralgia</h5></a>
+            <div class="collapse" id="collapse-media9">
+            Neuralgia is a stabbing, burning, and often severe pain due to an irritated or damaged nerve. The nerve may be anywhere in the body, and the damage may be caused by several things.
+          </div>
+        </div>
+        </li>
+        <li class="media">
+          <div class="media-body">
+              <a class="media-collapse" data-toggle="collapse" href="#collapse-media10" aria-expanded="false" aria-controls="collapse-media10">
+            <h5 class="mt-0 mb-1">neck tension</h5></a>
+            <div class="collapse" id="collapse-media10">
+            Your neck contains flexible muscles that support the weight of your head. These muscles can be injured and irritated from overuse and postural problems. Neck pain can also sometimes be attributed to worn joints or compressed nerves, but neck tension typically refers to muscle spasms or soft tissue injuries.
+          </div>
+        </div>
+          <img src="images/neck-tension.jpg" class="list-image" alt="Young woman holds hand on neck">
+        </li>
+        <li class="media"><img src="images/posture-defecs.jpg" class="list-image" alt="Picture of 3 human postures with differents defects">
+          <div class="media-body">
+              <a class="media-collapse" data-toggle="collapse" href="#collapse-media11" aria-expanded="false" aria-controls="collapse-media11">
+            <h5 class="mt-0 mb-1">posture defects</h5></a>
+            <div class="collapse" id="collapse-media11">
+            Postural dysfunction or “Poor” posture is defined as when our spine is positioned in unnatural positions, in which the curves are emphasised and this results in the joints, muscles and vertebrae being in stressful positions. Symptoms of postural dysfunction may include painful and visible symptoms.
+          </div>
+        </div>
+        </li>
+        <li class="media">
+          <div class="media-body">
+              <a class="media-collapse" data-toggle="collapse" href="#collapse-media12" aria-expanded="false" aria-controls="collapse-media12">
+            <h5 class="mt-0 mb-1">states of tension and fatigue</h5></a>
+            <div class="collapse" id="collapse-media12">
+            Fatigue is a feeling of constant tiredness or weakness and can be physical, mental or a combination of both. It can affect anyone, and most adults will experience fatigue at some point in their life.
+          </div>
+          </div>
+          <img src="images/tension-fatigue.jpg" class="list-image" alt="Tired business woman - above woman head is storm and many of data">
+        </li>
+      </ul>
+
+  </section>
+  
+  <div class="section-treatments-header" id="treatments-header">
+        
+      <a href="#section-therapies" class="section-treatment-header-link">
+    
+  <h3>Different treatments properly selected for the disease!</h3>
+
+
+</a>
+
+</div>
+  <section id="section-therapies">
+        <!-- <img src="images/man-pain-back.jpg" class="section-main-img" alt="Mans holding hands on his painful back "> -->
+
+    <div class="container-fluid">
+    <div class="row">
       <div class="card col-12 col-md-6">
         <img src="images/kinesiotaping.jpg" class="card-img-top"
           alt="Woman with kinesiotaping application for back pain.">
-        <div class="card-body">
+        <div class="card-body threatment-card-body">
           <h5 class="card-title">Kinesiotaping</h5>
           <p class="card-text">Kinesiotaping is dynamic slicing, it involves sticking various parts of the body with
             special colored tapes to relieve pain and also to prevent injuries.</p>
@@ -143,19 +281,14 @@
       <div class="card col-12 col-md-6">
         <img src="images/scar-therapy.jpg" class="card-img-top"
           alt="Applying cupping therapy on the man arm to reduce the visibility of the scar">
-        <div class="card-body">
+        <div class="card-body threatment-card-body">
           <h5 class="card-title">Scar therapy</h5>
           <p class="card-text">Scar therapy is introduced in post-operative rehabilitation to reduce the visibility
             of the scar, as well as improve functionality (reduce the feeling of pulling).
-            <a class="link-read-more" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-              aria-controls="collapseExample">
-              more...
-            </a>
-            <div class="collapse" id="collapseExample">
-              <p>The scarring is caused by injuries or various types of surgical procedures in which the continuity
+              The scarring is caused by injuries or various types of surgical procedures in which the continuity
                 of the skin and deeper tissues is broken. It cannot be prevented, but you can affect its appearance
                 and proper healing, which will reduce the risk of later complications.</p>
-            </div>
+           
             <p class="card-text"><small class="text-muted">Therpay duration: 30 min</small></p>
         </div>
       </div>
@@ -192,9 +325,8 @@
           <p class="card-text">Smooth, gentle, flowing style that promotes general relaxation, relieves muscular
             tension, plus improves circulation and range of movement. This is the style of massage you'll find
             performed at day spas.
-
-        </div>
         <p class="card-text"><small class="text-muted">Therpay duration: 60 min</small></p>
+      </div>
       </div>
 
       <div class="card col-12 col-md-6">
@@ -228,104 +360,14 @@
           <h5 class="card-title">Manual therapy</h5>
           <p class="card-text">Physical treatment treat musculoskeletal pain and disability; it most includes kneading
             and manipulation of muscles, joint mobilization and joint manipulation.
-        </div>
+        
         <p class="card-text"><small class="text-muted">Therpay duration: 45 min</small></p>
       </div>
     </div>
+  </div>
   </section>
   <!-- FOR WHOM SECTION -->
-  <section class="section-for-whom" id="section-for-whom">
-    <div class="container-fluid">
-      <h3>Pain should never be a reason to stop your journey</h3>
-      <p>
-        During my many years of practice, I met people with various
-        diseases. Pain often disturbed their everyday functioning - it
-        should never have. I approach every patient with that sentence.
-      </p>
-      <p>In my clinic, I will help you to fight with:</p>
-      <ul class="list-unstyled pain-type">
-        <li class="media"><img src="images/l-b-pain.jpg" class="mr-3 list-image" alt="Man in office feeling low back pain">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">lower back pain</h5>
-            <p>Common causes of low back pain (lumbar backache) include lumbar strain, nerve irritation, lumbar radiculopathy, bony encroachment, and conditions of the bone and joints.  The condition is characterized by localized discomfort in the low back area with onset after an event that mechanically stressed the lumbar tissues.</p>
-          </div>
-        </li>
-        <li class="media">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">upper back pain</h5>
-            Pain in the upper back is usually the result of poor posture, muscle overuse, or injury. Treatment may include home remedies, such as rest and gentle exercises, or possibly seeing a physical therapist. Upper back pain can appear anywhere between these bones.
-          </div>
-          <img src="images/u-p-pain.jpg" class="mr-3 list-image" alt="Man in white t-shirt holds hand on his aching shoulder, upper back">
-        </li>
-        <li class="media"><img src="images/sciatica.jpg" class="mr-3 list-image" alt="the picture shows an animated figure of a man suffering from sciatica pain">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">sciatica</h5>
-            Sciatica refers to pain that radiates along the path of the sciatic nerve, which branches from your lower back through your hips and buttocks and down each leg. Typically, sciatica affects only one side of your body.
-          </div>
-        </li>
-        <li class="media">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">pain caused by joint injuries</h5>
-            Joint pain can be caused by injury affecting any of the ligaments, bursae, or tendons surrounding the joint. 
-          </div>
-          <img src="images/join-injuries.jpg" class="mr-3 list-image" alt="man palm with marked on red pain place holding computer mouse">
-        </li>
-        <li class="media"><img src="images/muscle-pain.jpg" class="mr-3 list-image" alt="Woman dressed n sportswear is suffering calf pain">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">muscle pain</h5>
-            Muscle pain may arise due to injury or overexertion, infections of the soft tissues, or inflammatory conditions.
-          </div>
-        </li>
-        <li class="media">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">headaches</h5>
-            A headache can be a sign of stress or emotional distress, or it can result from a medical disorder, such as migraine or high blood pressure, anxiety, or depression. It can lead to other problems. People with chronic migraine headaches, for example, may find it hard to attend work or school regularly.
-          </div>
-          <img src="images/headache.jpg" class="mr-3 list-image" alt="Businesswoman in the office suffering hadache">
-        </li>
-        <li class="media"><img src="images/numbness.jpg" class="mr-3 list-image" alt="Man in shirt is suffering numbness in palm">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">numbness of limbs and fingers</h5>
-            Numbness, tingling felt in fingers, hands, feet, arms and legs. There are several different causes for experiencing such abnormal sensations. Injury to a nerve in your neck may cause feelings of numbness anywhere along your arm or hand, whereas, an injury in the lower back region can cause numbness or tingling in your legs.
-          </div>
-        </li>
-        <li class="media">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">discopathy</h5>
-            Discopathy can be identified by a pain at the nape of the neck or the back depending on the affected area. Lumbago and lower back pains are usually the most common symptoms.
 
-          </div>
-          <img src="images/discopathy.jpg" class="mr-3 list-image" alt="An image of the spine with a discopathy part approximated through a magnifying glass.">
-        </li>
-        <li class="media"><img src="images/neuralgia.jpg" class="mr-3 list-image" alt="Woman suffering hadache caused by neuralgia.">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">neuralgia</h5>
-            Neuralgia is a stabbing, burning, and often severe pain due to an irritated or damaged nerve. The nerve may be anywhere in the body, and the damage may be caused by several things.
-          </div>
-        </li>
-        <li class="media">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">neck tension</h5>
-            Your neck contains flexible muscles that support the weight of your head. These muscles can be injured and irritated from overuse and postural problems. Neck pain can also sometimes be attributed to worn joints or compressed nerves, but neck tension typically refers to muscle spasms or soft tissue injuries.
-          </div>
-          <img src="images/neck-tension.jpg" class="mr-3 list-image" alt="Young woman holds hand on neck">
-        </li>
-        <li class="media"><img src="images/posture-defecs.jpg" class="mr-3 list-image" alt="Picture of 3 human postures with differents defects">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">posture defects</h5>
-            Postural dysfunction or “Poor” posture is defined as when our spine is positioned in unnatural positions, in which the curves are emphasised and this results in the joints, muscles and vertebrae being in stressful positions. Symptoms of postural dysfunction may include painful and visible symptoms.
-          </div>
-        </li>
-        <li class="media">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">states of tension and fatigue</h5>
-            Fatigue is a feeling of constant tiredness or weakness and can be physical, mental or a combination of both. It can affect anyone, and most adults will experience fatigue at some point in their life.
-          </div>
-          <img src="images/tension-fatigue.jpg" class="mr-3 list-image" alt="Tired business woman - above woman head is storm and many of data">
-        </li>
-      </ul>
-    </div>
-  </section>
 
   <section class="section-patients container-fluid" id="recommendation">
     <h3>Quality measured in patient satisfaction.</h3>

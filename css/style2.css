@@ -1,0 +1,171 @@
+/* -------------------------------- General rules -------------------------------- */
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #8d8d8d;
+}
+
+h1, h3, h4, h5, h6 {
+    font-family: 'Anton', sans-serif;
+}
+
+h2 {
+    font-family: "Montserrat", "sans-serif";
+}
+/* 
+.container-fluid {
+    margin: 0;
+    padding: 0;
+} */
+
+/* -------------------------------- General rules -------------------------------- */
+
+/* -------------------------------- HEADER -------------------------------- */
+
+.header {
+    color: #3d3d3d;
+    height: 100vh;
+    background-image: url("../images/yoga-woman.jpg");
+    background-size: cover;
+    background-position: top;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.link-logo:hover {
+    text-decoration: none;
+    color: #295162;
+}
+
+.header-headings >*{ 
+    font-size: 3vh;
+    color: #295162;   
+}
+
+.header-headings{
+    float: left;
+
+}
+.img-logo {
+    height: 12vh;
+    float: left;
+} 
+
+.home-captions {
+    position: absolute;
+    left: 5vw;
+    top: 25vh;
+    width: 30%;
+}
+/* -------------------------------- HEADER -------------------------------- */
+
+/* -------------------------------- NAVBAR -------------------------------- */
+.my-navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 20vw;
+    margin-left: 25vw;
+    z-index: 20;
+    background-color: #ffffff;
+    width: 60%;
+}
+
+
+/* -------------------------------- NAVBAR -------------------------------- */
+
+/* -------------------------------- HEADER OF SECTION FOR WHO  -------------------------------- */
+.section-whom-header {
+    background-image: url("../images/man-pain-back.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    margin-top: 90vh;
+}
+
+.section-header-text{
+    width: 50%;
+    margin:auto;
+    padding-top: 15vh;
+}
+.section-header-link {
+    height: 100%;
+    width: 40%;
+    color: #ffffff;
+    display: block;
+    margin:auto;
+    padding-top: 18vh;
+}
+.section-header-link:hover {
+    color: #ffffff;
+
+}
+/* -------------------------------- HEADER OF SECTION FOR WHO  -------------------------------- */
+
+/* -------------------------------- SECTION FOR WHO  -------------------------------- */
+
+.media-body {
+    margin: auto;
+}
+
+.list-image {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+.media-collapse {
+    color: #ffffff;
+    display: block;
+    width: 100%;
+}
+.media-collapse:hover {
+    color: #ffffff;
+
+}
+.section-for-whom {
+    background-color: #295162;
+    color: white;
+}
+
+/* -------------------------------- SECTION FOR WHO  -------------------------------- */
+
+/* -------------------------------- HEADER OF SECTION TREATMENT  -------------------------------- */
+
+.section-treatments-header {
+    background-image: url("../images/women-therapy.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.section-treatment-header-link {
+    display: block;
+    padding-top: 15vh;
+    color: #295162;
+    width: 50%;
+    height: 100%;
+}
+.section-treatment-header-link:hover {
+    color: #295162;
+}
+
+/* -------------------------------- HEADER OF SECTION TREATMENT  -------------------------------- */
+
+.threatment-card-body {
+    position: absolute;
+
+}
+
+
+
+.img-map {
+    width: 50%;
+
+}
