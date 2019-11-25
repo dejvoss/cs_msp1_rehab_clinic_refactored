@@ -74,10 +74,13 @@ h2 {
     left: 20vw;
     margin-left: 25vw;
     z-index: 20;
-    background-color: #ffffff;
+    background-color: transparent;
     width: 60%;
 }
 
+.my-navbar:hover {
+    background-color: #ffffff;
+}
 
 /* -------------------------------- NAVBAR -------------------------------- */
 
@@ -118,13 +121,14 @@ h2 {
 .list-image {
     margin: 0;
     padding: 0;
-    width: 50%;
+    width: 100%;
 }
 
 .media-collapse {
     color: #ffffff;
     display: block;
     width: 100%;
+    height: 100%;
 }
 .media-collapse:hover {
     color: #ffffff;
@@ -133,6 +137,9 @@ h2 {
 .section-for-whom {
     background-color: #295162;
     color: white;
+}
+.img-anchor {
+    width: 50%;
 }
 
 /* -------------------------------- SECTION FOR WHO  -------------------------------- */
@@ -143,6 +150,7 @@ h2 {
     background-image: url("../images/women-therapy.jpg");
     background-size: cover;
     height: 100vh;
+    background-position: top;
 }
 
 .section-treatment-header-link {
@@ -160,12 +168,27 @@ h2 {
 
 .threatment-card-body {
     position: absolute;
-
+    height: 100%;
+    color: transparent;
+    background-color: transparent;
+    transform: color 2s;
+    transform: background-color 2s;
 }
 
+.threatment-card-body:hover {
+    color: white;
+    background-color: white;
+}
 
+.text-duration {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    bottom: 5%;
+}
 
 .img-map {
     width: 50%;
 
 }
+
