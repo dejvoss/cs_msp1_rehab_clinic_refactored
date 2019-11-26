@@ -67,20 +67,66 @@ h2 {
 /* -------------------------------- HEADER -------------------------------- */
 
 /* -------------------------------- NAVBAR -------------------------------- */
-.my-navbar {
-    position: -webkit-sticky;
+.navbar-button {
+    z-index: 1;
     position: sticky;
-    top: 0;
-    left: 20vw;
-    margin-left: 25vw;
-    z-index: 20;
-    background-color: transparent;
-    width: 60%;
+    top: 2%;
+    margin-left: 80%;
+    border: 0;
+    background-color: #4da7a5;
+}
+.navbar-button:focus {
+    outline: 0;
+}
+.my-navbar {
+    z-index: 1;
+    position: sticky;
+    top:2%;
+    padding-left: 0;
+    padding-right: 0
+
+}
+.my-navbar-collapse {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    margin-right: 0;
+
+    padding-top: 10vh;
 }
 
-.my-navbar:hover {
-    background-color: #ffffff;
+.nav-list {
+    height: 100%;
+    background-color: rgba(77, 167, 165,.8);
 }
+
+.my-nav-item, .nav-list {
+    margin-right: 0;
+    padding-right: 0;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #295162;
+}
+.my-nav-link:hover {
+    background-color: #295162;
+
+}
+
+
+
+/* .nav-item {
+    display: inline;
+    float: left;
+} */
+
+
+/* .my-navbar:hover {
+    background-color: #ffffff;
+} */
 
 /* -------------------------------- NAVBAR -------------------------------- */
 
@@ -91,6 +137,7 @@ h2 {
     background-size: cover;
     background-position: top;
     margin-top: 90vh;
+    
 }
 
 .section-header-text{
@@ -142,10 +189,46 @@ h2 {
 .img-anchor {
     width: 50%;
 }
+.pain-type-list {
+    margin-bottom: 0;
 
+}
 @media (min-width:700px) {
     .list-image {
          width: 50%;
+    }
+    .pain-description {
+        width: 50%;
+        height: 100%;
+        float: right;
+        padding: 1%;
+    }
+}
+@media (min-width:859px) {
+    .nav-list {
+        flex-direction: row;
+        width: 70%;
+        margin-left: 15%;
+
+    }
+    .my-nav-item, .my-nav-link {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .my-navbar-collapse {
+        top: 0;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .navbar-button {
+        margin-right: 0;
+
+    }
+    .my-navbar {
+        right: 0;
+        top: 0;
     }
 }
 
@@ -171,31 +254,46 @@ h2 {
     color: #295162;
 }
 
+
 /* -------------------------------- HEADER OF SECTION TREATMENT  -------------------------------- */
+.therapy-card{
+    width: 100%;
+    border: 0;
+}
+
+.card-img-top {
+    margin: 5% 0 5% 0;
+}
 
 .threatment-card-body {
     position: absolute;
     height: 100%;
     color: transparent;
     background-color: transparent;
-    transition: color 5s;
-    transition: background-color 2s;
+    transition: background-color 2s, color 2s;
+    font-weight: bold;
+    padding: 10% ;
 }
 
 .threatment-card-body:hover {
     color: #3d3d3d;
-    background-color: rgba(255,255,255, .5);
+    background-color: rgba(255,255,255, .6);
 }
 
-.text-duration {
+.card-title {
+    color: black;
+
+}
+.text-card-bottom {
     position: absolute;
     width: 50%;
     left: 25%;
-    bottom: 5%;
+    bottom: 2%;
+    color: black;
 }
 
 .img-map {
-    width: 50%;
+    width: 35%;
 
 }
 
