@@ -151,7 +151,7 @@ h2 {
     color: #ffffff;
     display: block;
     margin:auto;
-    padding-top: 18vh;
+    padding-top: 25vh;
 }
 .section-header-link:hover {
     color: #ffffff;
@@ -216,7 +216,7 @@ h2 {
         padding-left: 10px;
     }
     .my-navbar-collapse {
-        top: 0;
+        top: 10;
     }
 
 }
@@ -245,7 +245,7 @@ h2 {
 
 .section-treatment-header-link {
     display: block;
-    padding-top: 15vh;
+    padding-top: 25vh;
     color: #295162;
     width: 50%;
     height: 100%;
