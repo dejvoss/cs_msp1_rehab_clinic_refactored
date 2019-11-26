@@ -210,16 +210,21 @@ h2 {
 @media (min-width:859px) {
     .nav-list {
         flex-direction: row;
-        width: 70%;
-        margin-left: 15%;
+        width: 80%;
+        margin-left: 10%;
 
-    }
-    .my-nav-item, .my-nav-link {
-        padding-right: 10px;
-        padding-left: 10px;
+
     }
     .my-navbar-collapse {
         top: 10;
+    }
+    .nav-list .my-nav-link {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .nav-list .my-nav-link:hover {
+        padding-right: 10px;
+        padding-left: 10px;
     }
 
 }
@@ -229,10 +234,11 @@ h2 {
         margin-right: 0;
 
     }
-    .my-navbar {
+    .my-navbar  {
         right: 0;
         top: 0;
     }
+    
 }
 
 /* -------------------------------- SECTION FOR WHO  -------------------------------- */
@@ -258,7 +264,7 @@ h2 {
 }
 
 
-/* -------------------------------- HEADER OF SECTION TREATMENT  -------------------------------- */
+/* -------------------------------- SECTION TREATMENT  -------------------------------- */
 .therapy-card{
     width: 100%;
     border: 0;
@@ -294,6 +300,91 @@ h2 {
     bottom: 2%;
     color: black;
 }
+
+/* -------------------------------- SECTION TREATMENT  -------------------------------- */
+
+/* -------------------------------- SECTION RECOMMENDATIONS  -------------------------------- */
+
+.section-recommendations {
+    height: 235vh;
+    
+    background-image: url("../images/recommendations.jpg");
+    background-size: cover;
+    background-position: bottom;
+    color: #295162;
+}
+
+.recom-col1, .recom-col2 {
+    background-color: transparent;
+    margin-top: 120vh;
+    border: 0;
+
+    /* bottom: 0; */
+}
+.recom-col-3 {
+
+    background-color: transparent;
+    border: 0;
+}
+
+.recom-header1 {
+    position: absolute;
+    padding-top: 30vh;
+    width: 25%;
+}
+
+.recom-header2 {
+    position: absolute;
+    right: 0;
+    width: 25%;
+    padding-top: 30vh;
+}
+
+.my-rec-card-header {
+    color: green;
+    font-size: 30px;
+    background-color: transparent;
+    border: 0;
+    margin-top: 5vh;
+}
+.recom-quote {
+    text-transform: none;
+    font-style: italic;
+    font-size: 1rem;
+}
+.section-recom-link {
+    color: #295162;
+}
+.section-recom-link:hover {
+    color: #4da7a5;
+}
+
+@media (max-width:576px) {
+    .recom-col-3 {
+        visibility: hidden;
+    }
+    .recom-col2 {
+        margin-top: 0;
+
+    }
+    .recom-header1 {
+        position: absolute;
+        padding-top: 2vh;
+        width: 90%;
+        left: 0;
+    }
+    .recom-header2 {
+        visibility: hidden;
+    }
+    
+}
+
+
+
+
+
+
+
 
 .img-map {
     width: 35%;
