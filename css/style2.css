@@ -11,6 +11,8 @@ body {
     color: #8d8d8d;
 }
 
+
+
 h1, h3, h4, h5, h6 {
     font-family: 'Anton', sans-serif;
 }
@@ -201,7 +203,7 @@ h2 {
          width: 50%;
     }
     .pain-description {
-        width: 50%;
+        width: 48%;
         height: 100%;
         float: right;
         padding: 1%;
@@ -274,7 +276,7 @@ h2 {
     margin: 5% 0 5% 0;
 }
 
-.threatment-card-body {
+/* .threatment-card-body {
     position: absolute;
     height: 100%;
     color: transparent;
@@ -287,18 +289,42 @@ h2 {
 .threatment-card-body:hover {
     color: #3d3d3d;
     background-color: rgba(255,255,255, .6);
-}
+} */
 
 .card-title {
     color: black;
 
 }
-.text-card-bottom {
+/* .text-card-bottom {
     position: absolute;
     width: 50%;
     left: 25%;
     bottom: 2%;
     color: black;
+} */
+
+@media (min-width:1100px) {
+    .threatment-card-body {
+        position: absolute;
+        height: 100%;
+        color: transparent;
+        background-color: transparent;
+        transition: background-color 2s, color 2s;
+        font-weight: bold;
+        padding: 10% ;
+    }
+    
+    .threatment-card-body:hover {
+        color: #3d3d3d;
+        background-color: rgba(255,255,255, .6);
+    }
+    .text-card-bottom {
+        position: absolute;
+        width: 50%;
+        left: 25%;
+        bottom: 2%;
+        color: black;
+    }
 }
 
 /* -------------------------------- SECTION TREATMENT  -------------------------------- */
@@ -306,20 +332,22 @@ h2 {
 /* -------------------------------- SECTION RECOMMENDATIONS  -------------------------------- */
 
 .section-recommendations {
-    height: 235vh;
-    
+    height: 235vh;   
+    margin:0;
+    padding: 0;
     background-image: url("../images/recommendations.jpg");
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     color: #295162;
 }
+
+
 
 .recom-col1, .recom-col2 {
     background-color: transparent;
     margin-top: 120vh;
     border: 0;
 
-    /* bottom: 0; */
 }
 .recom-col-3 {
 
@@ -345,7 +373,7 @@ h2 {
     font-size: 30px;
     background-color: transparent;
     border: 0;
-    margin-top: 5vh;
+  
 }
 .recom-quote {
     text-transform: none;
@@ -360,9 +388,9 @@ h2 {
 }
 
 @media (max-width:576px) {
-    .recom-col-3 {
+    /* .recom-col-3 {
         visibility: hidden;
-    }
+    } */
     .recom-col2 {
         margin-top: 0;
 
@@ -378,16 +406,21 @@ h2 {
     }
     
 }
+/* -------------------------------- SECTION RECOMMENDATIONS  -------------------------------- */
 
-
-
-
+/* -------------------------------- SECTION ADDRESS  -------------------------------- */
+.address {
+    /* background-image: url("../images/direction.jpg"); */
+    background-size: cover;
+    /* height: 100vh; */
+    background-position: middle;
+    margin-bottom: 20%;
+}
 
 
 
 
 .img-map {
-    width: 35%;
+    width: 50%;
 
 }
-
