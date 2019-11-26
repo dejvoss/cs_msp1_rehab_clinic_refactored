@@ -33,7 +33,7 @@ h2 {
 .header {
     color: #3d3d3d;
     height: 100vh;
-    background-image: url("../images/yoga-woman.jpg");
+    background-image: url("../images/running-people.jpg");
     background-size: cover;
     background-position: top;
     position: absolute;
@@ -133,6 +133,9 @@ h2 {
 /* -------------------------------- NAVBAR -------------------------------- */
 
 /* -------------------------------- HEADER OF SECTION FOR WHO  -------------------------------- */
+
+
+
 .section-whom-header {
     background-image: url("../images/man-pain-back.jpg");
     height: 100vh;
@@ -163,7 +166,6 @@ h2 {
 
 /* -------------------------------- SECTION FOR WHO  -------------------------------- */
 
-
 .list-heading {
     margin-top: 1%;
     margin-bottom: 1%;
@@ -189,7 +191,11 @@ h2 {
 }
 .section-for-whom {
     background-color: #295162;
+
     color: white;
+    background-size: cover;
+    background-position: top;
+
 }
 .img-anchor {
     width: 50%;
@@ -419,6 +425,37 @@ h2 {
 
 
 
+
+
+.footer {
+    background-color: #295162;
+    font-size: 12px;
+}
+
+.footer p {
+    padding: 1px;
+    margin: 1px;
+}
+.company-name-col {
+    float: right;
+}
+.footer-img-logo {
+    height: 12vh;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.montserrat-font {
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+}
+
+.col-media {
+    font-size: 24px;
+    color: #ffffff;
+}
+.footer-nav-list {
+    list-style: none;
+}
 
 .img-map {
     width: 50%;
