@@ -36,9 +36,11 @@ h2 {
     background-image: url("../images/running-people.jpg");
     background-size: cover;
     background-position: top;
-    position: absolute;
+    position: fixed;
+    z-index: -1;
     width: 100%;
     top: 0;
+    padding-top: 8vh;
 }
 
 .link-logo:hover {
@@ -83,18 +85,17 @@ h2 {
 .my-navbar {
     z-index: 1;
     position: sticky;
-    top:2%;
+    top: 0;
     padding-left: 0;
     padding-right: 0
 
 }
 .my-navbar-collapse {
     position: absolute;
-    top: 15%;
-    width: 100%;
+    top: 0;
+    width: 80%;
     margin-right: 0;
-
-    padding-top: 10vh;
+    padding-top: 0;
 }
 
 .nav-list {
@@ -132,39 +133,34 @@ h2 {
 
 /* -------------------------------- NAVBAR -------------------------------- */
 
-/* -------------------------------- HEADER OF SECTION FOR WHO  -------------------------------- */
-
-
+/* -------------------------------- SECTION FOR WHO  -------------------------------- */
 
 .section-whom-header {
-    background-image: url("../images/man-pain-back.jpg");
-    height: 100vh;
+    background-image: url("../images/man-pain-back2.jpg");
     background-size: cover;
     background-position: top;
-    margin-top: 90vh;
-    
+    margin-top: 90vh; 
+    padding-top: 5vh;
+    padding-bottom: 50vh;
 }
 
 .section-header-text{
     width: 50%;
     margin:auto;
     padding-top: 15vh;
+
 }
 .section-header-link {
-    height: 100%;
     width: 40%;
     color: #ffffff;
     display: block;
     margin:auto;
-    padding-top: 25vh;
+    padding-top: 5vh;
+    margin-bottom: 15vh;
 }
 .section-header-link:hover {
     color: #ffffff;
-
 }
-/* -------------------------------- HEADER OF SECTION FOR WHO  -------------------------------- */
-
-/* -------------------------------- SECTION FOR WHO  -------------------------------- */
 
 .list-heading {
     margin-top: 1%;
@@ -218,14 +214,12 @@ h2 {
 @media (min-width:859px) {
     .nav-list {
         flex-direction: row;
-        width: 80%;
-        margin-left: 10%;
+        margin-right: 2%;
+        margin-left: 5%;
 
 
     }
-    .my-navbar-collapse {
-        top: 10;
-    }
+
     .nav-list .my-nav-link {
         padding-right: 10px;
         padding-left: 10px;
@@ -251,7 +245,7 @@ h2 {
 
 /* -------------------------------- SECTION FOR WHO  -------------------------------- */
 
-/* -------------------------------- HEADER OF SECTION TREATMENT  -------------------------------- */
+
 
 .section-treatments-header {
     background-image: url("../images/women-therapy.jpg");
@@ -415,15 +409,29 @@ h2 {
 /* -------------------------------- SECTION RECOMMENDATIONS  -------------------------------- */
 
 /* -------------------------------- SECTION ADDRESS  -------------------------------- */
-.address {
-    /* background-image: url("../images/direction.jpg"); */
-    background-size: cover;
-    /* height: 100vh; */
-    background-position: middle;
-    margin-bottom: 20%;
+
+.gallery img {
+    width: 100%;
+    height: auto;
+
 }
 
+.gallery-container {
+    background-color: #295162;
 
+}
+
+.gallery-2nd-row {
+    margin-top: 2%;
+}
+/* place logo img in the middle of gallery */
+
+
+.img-map {
+    margin-top: 5%;
+    width: 80%;
+
+}
 
 
 
@@ -457,7 +465,4 @@ h2 {
     list-style: none;
 }
 
-.img-map {
-    width: 50%;
 
-}
