@@ -1,8 +1,8 @@
 /* -------------------------------- General rules -------------------------------- */
-html {
-    /* scroll-behavior: smooth; */
+/* html {
+    scroll-behavior: smooth;
 
-}
+} */
 
 body {
     font-family: 'Montserrat', 'Open Sans', sans-serif;
@@ -46,7 +46,8 @@ h2 {
 
 .header-headings >*{ 
     font-size: 3vh;
-    color: #295162;   
+    color: white;
+    font-weight: 400;   
 }
 
 .header-headings{
@@ -54,7 +55,7 @@ h2 {
 
 }
 .img-logo {
-    height: 12vh;
+    height: 14vh;
     float: left;
     margin-top: 1%;
 } 
@@ -68,13 +69,14 @@ h2 {
     transform: rotate(5deg); 
 }
 
-.logo-stickedinheader, .header-stickedinheader {
+.logo-stickedinheader  {
     background-color: white;
-    border-radius: 25%;
+    border-radius: 50%;
 
 }
 .header-stickedinheader {
     padding: 1%;
+    color: black;
 }
 
 .btn-appointment {
@@ -446,28 +448,29 @@ h2 {
         padding: 0;
     }
 
-    .header-stickedinheader {
+    .header-headings >*{ 
+         color: black;
+        font-weight: 900;   
+    }
+    
+    .header-headings{
+        float: none;
+    
+    }
+
+    /* .header-stickedinheader {
         padding: 0;
         width: 80%;
-    }
-    .home-captions {
-        position: absolute;
-        left:0;
+    } */
 
-        top: 45vh;
-        width: 99%;
-        color: black;
-        /* background-color: white; */
-        transform: rotate(0); 
-    }
     .header {
         right: 0;
         left: 0;
     }
-    .navbar-button {
+    /* .navbar-button {
         width: 100%;
         margin-left: 0;
-    }
+    } */
     .my-navbar-collapse {
         width: 100%;
         padding-top: 15%;
