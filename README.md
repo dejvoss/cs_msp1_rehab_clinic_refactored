@@ -36,7 +36,7 @@ Different green color type was choosen due to colors of clinic logo.
 3. Bootstrap (4.4.0)
 
 ### Features
-This site is a one page site with smooth scroll effect. Sections are splitted by different full height pictures. Navigation bar is collapsed and is opened in top in row direction on big screens and column direction in small screens. Main background picture shows the board to which is pasted text in home section and map in contact section.
+This site is a one page site. Sections are splitted by different full height pictures. Navigation bar is collapsed and is opened in top in row direction on big screens and column direction in small screens. Main background picture shows the board to which is pasted text in home section and map in contact section.
 
 ### Features left to Implement
 In the future i would like to add:
@@ -45,7 +45,7 @@ In the future i would like to add:
 
 ## Testing
 
-
+Performance test done in [PageSpeedInsights](https://developers.google.com/speed/pagespeed/insights/) with result of 97 for mobile and 99 for desktop.
 
 
 ## Deployment

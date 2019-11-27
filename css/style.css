@@ -1,6 +1,6 @@
 /* -------------------------------- General rules -------------------------------- */
 html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 
 }
 
@@ -224,9 +224,10 @@ h2 {
 
 /* -------------------------------- SECTION FOR WHO  -------------------------------- */
 
-
+/* Treatments section */
 
 .section-treatments-header {
+    scroll-behavior: smooth;
     background-image: url("../images/women-therapy.jpg");
     background-size: cover;
     height: 100vh;
@@ -245,7 +246,7 @@ h2 {
     text-decoration: none;
 }
 
-
+.
 /* -------------------------------- SECTION TREATMENT  -------------------------------- */
 .therapy-card{
     width: 100%;
