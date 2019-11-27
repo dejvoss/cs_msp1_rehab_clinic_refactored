@@ -20,11 +20,6 @@ h1, h3, h4, h5, h6 {
 h2 {
     font-family: "Montserrat", "sans-serif";
 }
-/* 
-.container-fluid {
-    margin: 0;
-    padding: 0;
-} */
 
 /* -------------------------------- General rules -------------------------------- */
 
@@ -70,7 +65,6 @@ h2 {
     top: 25vh;
     width: 45%;
     color: black;
-    /* background-color: white; */
     transform: rotate(5deg); 
 }
 
@@ -224,7 +218,7 @@ h2 {
 
 /* -------------------------------- SECTION FOR WHO  -------------------------------- */
 
-/* Treatments section */
+/* -------------------------------- TREATMENTS SECTION -------------------------------- */
 
 .section-treatments-header {
     scroll-behavior: smooth;
@@ -246,8 +240,6 @@ h2 {
     text-decoration: none;
 }
 
-.
-/* -------------------------------- SECTION TREATMENT  -------------------------------- */
 .therapy-card{
     width: 100%;
     border: 0;
@@ -257,36 +249,12 @@ h2 {
     margin: 5% 0 5% 0;
 }
 
-/* .threatment-card-body {
-    position: absolute;
-    height: 100%;
-    color: transparent;
-    background-color: transparent;
-    transition: background-color 2s, color 2s;
-    font-weight: bold;
-    padding: 10% ;
-}
-
-.threatment-card-body:hover {
-    color: #3d3d3d;
-    background-color: rgba(255,255,255, .6);
-} */
-
 .card-title {
     color: black;
 
 }
-/* .text-card-bottom {
-    position: absolute;
-    width: 50%;
-    left: 25%;
-    bottom: 2%;
-    color: black;
-} */
 
-
-
-/* -------------------------------- SECTION TREATMENT  -------------------------------- */
+/* -------------------------------- TREATMENTS SECTION -------------------------------- */
 
 /* -------------------------------- SECTION RECOMMENDATIONS  -------------------------------- */
 
@@ -299,8 +267,6 @@ h2 {
     background-position: top;
     color: #295162;
 }
-
-
 
 .recom-col1, .recom-col2 {
     background-color: transparent;
@@ -375,7 +341,7 @@ h2 {
     margin-top: 1%;
 }
 
-/* ADDRESS SECTION */
+/* -------------------------------- ADDRESS SECTION --------------------------------*/
 #contact {
     margin-bottom: 5%;
     margin-top: 8%;
@@ -426,10 +392,10 @@ h2 {
     border: 0;
 }
 
-/* ADDRESS SECTION */
+/* -------------------------------- ADDRESS SECTION --------------------------------*/
 
 
-/* FOOTER */
+/* -------------------------------- FOOTER -------------------------------- */
 
 .footer {
     background-color: #295162;
@@ -472,6 +438,8 @@ h2 {
     color: #4da7a5;
     text-decoration: none;
 }
+/* -------------------------------- FOOTER -------------------------------- */
+
 /* -------------------------------------- MEDIA ------------------------------------------------------ */
 @media(max-width:420px) {
     .header-container {
