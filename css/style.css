@@ -85,6 +85,7 @@ h2 {
 
 .btn-appointment {
     background-color: #4da7a5;
+    color: inherit;
     border: 0;
     padding: 1%;
     border-radius: 5%;
@@ -92,6 +93,7 @@ h2 {
 .btn-appointment:hover {
     background-color: #295162;
     color: white;
+    text-decoration: none;
 }
 
 
@@ -375,11 +377,20 @@ h2 {
 /* ADDRESS SECTION */
 #contact {
     margin-bottom: 5%;
+    margin-top: 8%;
+    padding-top: 8%;
     }
+.contact-header {
+    background-color: #295162;
+    color: #ece8e8;
+    transform: rotate(5deg);
+    width: 40%;
+    margin: auto;
 
+}
 
 .img-map {
-    margin-top: 8%;
+    /* margin-top: 8%; */
     width: 45%;
     border: 5px solid #295162;
     transform: rotate(5deg);
@@ -394,6 +405,30 @@ h2 {
     padding: 2%;
 }
 
+.form {
+    width:50%;
+    margin: auto;
+    background-color: white;
+    margin-bottom: 5%;
+    margin-top: 15%;
+    padding: 5%;
+}
+
+.btn-send-form {
+    background-color: #295162;
+    border: 0;
+    color: white;
+}
+
+.btn-send-form:hover {
+    background-color: #4da7a5;
+    border: 0;
+}
+
+/* ADDRESS SECTION */
+
+
+/* FOOTER */
 
 .footer {
     background-color: #295162;
@@ -419,13 +454,24 @@ h2 {
 
 .col-media {
     font-size: 24px;
-    color: #ffffff;
+    padding: 5px;
 }
 .footer-nav-list {
     list-style: none;
 }
 
+.footer-nav-item {
+    margin: 5px;
+}
 
+.footer a {
+    color: #ffffff;
+}
+.footer a:hover {
+    color: #4da7a5;
+    text-decoration: none;
+}
+/* -------------------------------------- MEDIA ------------------------------------------------------ */
 @media(max-width:420px) {
     .header-container {
         padding: 0;
@@ -456,6 +502,14 @@ h2 {
     .my-navbar-collapse {
         width: 100%;
         padding-top: 15%;
+
+    }
+}
+
+@media (max-width:800px) {
+    .form {
+        width:100%;
+        margin-top: 50%;
 
     }
 }
