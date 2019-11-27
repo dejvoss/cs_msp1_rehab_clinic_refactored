@@ -47,6 +47,8 @@ In the future i would like to add:
 
 Performance test done in [PageSpeedInsights](https://developers.google.com/speed/pagespeed/insights/) with result of 97 for mobile and 99 for desktop.
 
+User1: Links in footer are different than in navigation bar, Contact link in footer doesn't work.
+
 
 ## Deployment
 This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named `index.html`.
