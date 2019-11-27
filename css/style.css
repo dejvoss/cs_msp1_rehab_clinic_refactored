@@ -45,9 +45,10 @@ h2 {
 }
 
 .header-headings >*{ 
-    font-size: 3vh;
+    font-size: 5vh;
     color: white;
     font-weight: 400;   
+
 }
 
 .header-headings{
@@ -62,8 +63,8 @@ h2 {
 
 .home-captions {
     position: absolute;
-    left: 29%;
-    top: 25vh;
+    left: 33%;
+    top: 35vh;
     width: 45%;
     color: black;
     transform: rotate(5deg); 
@@ -363,6 +364,7 @@ h2 {
     width: 45%;
     border: 5px solid #295162;
     transform: rotate(5deg);
+    z-index: -1;
 }
 
 .address-col {
@@ -450,7 +452,8 @@ h2 {
 
     .header-headings >*{ 
          color: black;
-        font-weight: 900;   
+        font-weight: 900;  
+        font-size: 3vh; 
     }
     
     .header-headings{
