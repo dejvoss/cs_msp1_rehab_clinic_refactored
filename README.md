@@ -25,7 +25,7 @@ For future Ewelina clients, I wanted to provide them a overview of treatments an
 I wanted to have nice big pictures referring to rehabilitation and all information in one page.
 
 ### Skeleton
-[1st view] (https://dejvoss.github.io/code-inst-ms1-project/skeleton.jpg)
+[1st view] (https://github.com/dejvoss/code-inst-ms1-project/blob/master/skeleton.JPG)
 
 ### Surface
 Different green color type was choosen due to colors of clinic logo.
