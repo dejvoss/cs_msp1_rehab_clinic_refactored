@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans|Montserrat&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!-- LINK TO MY CSS -->
-  <link rel="stylesheet" href="css/style2.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -39,42 +39,31 @@
           <a class="nav-link my-nav-link" href="#recommendation">Recommendations</a>
         </li>
         <li class="nav-item my-nav-item">
-          <a class="nav-link my-nav-link" href="#address">Address</a>
+          <a class="nav-link my-nav-link" href="#gallery">Gallery</a>
         </li>
         <li class="nav-item my-nav-item">
-          <a class="nav-link my-nav-link" href="#">Contact</a>
+          <a class="nav-link my-nav-link" href="#contact">Contact</a>
         </li>
 
       </ul>
 
     </div>
   </nav>
-  <div class="div">
-      <a class="link-logo" href="#">
-  
-          <img class="img-logo" src="images/logo-only.png" alt="logo picture shows spin between palms" />
-          <div class="header-headings">
-            <h2>Rehabilitation Clinic</h2>
-            <h1>Ewelina Zaremba</h1>
-            <h2>Manual Therapist</h2>
-          </div>
-        </a>
-      </div>
-      <div class="container-fluid header-container">
+
       <div class="home-captions">
           <h3>Get back your peace and happiness.</h3>
-          <h4>Manual therapy put back you on the track.</h4>
+          <h4>Manual therapy bring back you on the track.</h4>
           <p>Don't wait. Make appointment now!.</p>
-          <button>Make appointment!</button>
+          <button class="btn-appointment">Make appointment!</button>
         </div>
-      </div>
+
   <header class="header">
-    <!-- LOGO -->
-   
-
-    
-  
-
+              <img class="img-logo logo-stickedinheader" src="images/logo-only.png" alt="logo picture shows spin between palms" />
+              <div class="header-headings header-stickedinheader">
+                <h2>Rehabilitation Clinic</h2>
+                <h1>Ewelina Zaremba</h1>
+                <h2>Manual Therapist</h2>
+              </div>
   </header>
 
 
@@ -554,9 +543,10 @@
     </div>
   </section>
 
-  <section class="address" id="address">
-    <h4>Visit me in my clinic today!</h4>
-    
+  <section class="gallery-section" id="gallery">
+    <div class="gallery-header">
+    <h4>Gallery</h4>
+  </div>
     <div class="container-fluid gallery-container">
 
       <div class="row gallery-row1">
@@ -606,15 +596,16 @@
 
       </div>
     </div>
-
+  </section>
+<section id="contact">
     <div class="container-fluid">
       <div class="row">
-          <div class="col-12">
+          <div class="">
               <img class="img-map"
                 src="https://maps.googleapis.com/maps/api/staticmap?scale=1&amp;size=1600x900&amp;style=feature:poi.business|visibility:off&amp;style=feature:water|visibility:simplified&amp;style=feature:road|element:labels.icon|visibility:off&amp;style=feature:road.highway|element:labels|saturation:-90|lightness:25&amp;format=jpg&amp;language=pl&amp;region=PL&amp;markers=color:0x48487f|53.1329181,23.1967525&amp;zoom=16&amp;client=google-presto&amp;signature=61AzFMSc0_mue86SPrYq4C4QAB4"
                 alt="Picture of google maps with marked Ewelina Zaremba rehabilitation clinic" />
             </div>
-        <div class="col-6">
+        <div class="address-col">
           <h3>Ewelina Zaremba</h3>
           <h3>Rehabilitation Clinic</h3>
           <h4>Sybirkaów 11/2</h4>
@@ -682,9 +673,8 @@
           </ul>
         </div>
         <div class="col col-media">
-          <i class="fa fa-facebook-square"></i>
-          <i class="fa fa-google"></i>
-          <i class="fas fa-phone-alt"></i>
+          <a target="_blank" href="https://facebook.com"><i class="fa fa-facebook-square"></i></a>
+          <a target="_blank" href="https://www.google.com/maps/place/Rehabilitacja+Ewelina+Zaremba/@53.1329181,23.1967525,15z/data=!4m5!3m4!1s0x0:0xc8192108a6cfac61!8m2!3d53.1329181!4d23.1967525"><i class="fa fa-google"></i></a>
         </div>
         <div class="col company-name-col">
           <img class="footer-img-logo" src="images/logo-only.png" alt="logo picture shows spin between palms"/>
@@ -702,7 +692,7 @@
           </div>
         </div>
 
-      </div>
+
     </div>
   </footer>
   <!-- LINK TO BOOTSTRAP JAVA -->

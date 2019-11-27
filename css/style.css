@@ -9,346 +9,526 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: #8d8d8d;
-    background-color: white;
 }
 
-h3 {
+
+
+h1, h3, h4, h5, h6 {
     font-family: 'Anton', sans-serif;
-    color: #3d3d3d;
 }
 
+h2 {
+    font-family: "Montserrat", "sans-serif";
+}
+/* 
+.container-fluid {
+    margin: 0;
+    padding: 0;
+} */
 
 /* -------------------------------- General rules -------------------------------- */
 
-/* -------------------------------- Header -------------------------------- */
-header {
-    position: -webkit-sticky;
-    position: sticky;
+/* -------------------------------- HEADER -------------------------------- */
+
+.header {
+    color: #3d3d3d;
+    height: 100vh;
+    background-image: url("../images/physioterapy-spin.jpg");
+    background-size: cover;
+    background-position: top;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
     top: 0;
-    z-index: 20;
-    background-color: white;
-}
-
-/* logo image */
-.img-logo {
-    height: 12vh; 
-} 
-
-/* FONTS IN HEADER */
-.my-col-headings > *{
-    font-size: 3vh;
-    color: #295162;
-    display: inline;
-}
-.web-header-2 {
-    font-family: "Anton", "sans-serif";
-}
-.web-header-3 {
-    font-family: "Open Sans", "sans-serif";
+    left: 0;
+    padding-top: 8vh;
 }
 
 .link-logo:hover {
     text-decoration: none;
+    color: #295162;
 }
 
-/* -------------------------------- Header -------------------------------- */
-
-/* -------------------------------- MENU BUTTON -------------------------------- */
-/* remove border from menu button */
-.navbar-toggler {
-    border: none;
-}
-/* change menu button color  */
-
-.my-menu-icon {
-    color: #3d3d3d;
-    font-size: 4vh;
-}
-/* remove border from menu button after click on it */
-.navbar-toggler:focus {
-    outline: none;
-}
-/* center menu button */
-.my-nav-button {
-    display: block;
-}
-.col-menu-btn {
-    margin: auto;
-}
-/* -------------------------------- MENU BUTTON -------------------------------- */
-
-
-/* -------------------------------- NAVIGATION MENU BAR -------------------------------- */
-/* remove space between header and 1st section by changing size of navigation bar */
-
-.my-nav-bar {
-    padding: 0;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    z-index: 25;
-    background-color: rgba(41,81,98, .8);
+.header-headings >*{ 
+    font-size: 3vh;
+    color: #295162;   
 }
 
-.my-navbar {
-    width: 100vw;
+.header-headings{
+    float: left;
 
 }
-
-/* -------------------------------- NAVIGATION MENU BAR -------------------------------- */
-
-/* -------------------------------- CAROUSEL-SECTION -------------------------------- */
-.section-carousel {
-    /* margin-top: -16vh; */
-
-    
-}
-.img-slide {
-    max-height: 86vh;
-    border-left: 40px solid white;
-    border-right: 40px solid white;
-}
-/* -------------------------------- HOME SECTION -------------------------------- */
-.section-home {
-    /* height: 100vh; */
-    color: #3d3d3d;
-    /* height: 100vh; */
-}
-.col-headings-home{
-    margin: 15vh 0 15vh 0;
-    padding: 30px;
-    position: static;
-    background-color: rgba(250,250,250, .6);
-}
-
-/* -------------------------------- HOME SECTION -------------------------------- */
-
-/* -------------------------------- FOR WHOM SECTION -------------------------------- */
- /* .section-for-whom {
-    background-image: url("../images/man-pain-back.jpg");
-    background-size: 50vw;
-    background-position-x: 50vw;
-    background-repeat: no-repeat;
-    margin-top: 45vh;
-} */
-
-.col-text-for-whom {
-    background-color: #295162;
-    margin-top: 20vh; 
-    position: static;
-    margin-left:20px;
-
+.img-logo {
+    height: 12vh;
+    float: left;
+    margin-top: 1%;
 } 
 
+.home-captions {
+    position: absolute;
+    left: 29%;
+    top: 25vh;
+    width: 45%;
+    color: black;
+    /* background-color: white; */
+    transform: rotate(5deg); 
+}
 
-/* -------------------------------- FOR WHOM SECTION -------------------------------- */
+.logo-stickedinheader, .header-stickedinheader {
+    background-color: white;
+    border-radius: 25%;
 
-/* -------------------------------- SECTION ABOUT -------------------------------- */
+}
+.header-stickedinheader {
+    padding: 1%;
+}
 
+.btn-appointment {
+    background-color: #4da7a5;
+    border: 0;
+    padding: 1%;
+    border-radius: 5%;
+}
+.btn-appointment:hover {
+    background-color: #295162;
+    color: white;
+}
+
+
+/* -------------------------------- HEADER -------------------------------- */
+
+/* -------------------------------- NAVBAR -------------------------------- */
+.navbar-button {
+    z-index: 1;
+    position: sticky;
+    top: 2%;
+    margin-left: 80%;
+    border: 0;
+    background-color: #4da7a5;
+}
+.navbar-button:focus {
+    outline: 0;
+}
+.my-navbar {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    padding-left: 0;
+    padding-right: 0
+
+}
+.my-navbar-collapse {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    margin-right: 0;
+    padding-top: 0;
+}
+
+.nav-list {
+    height: 100%;
+    background-color: rgba(77, 167, 165,.8);
+}
+
+.my-nav-item, .nav-list {
+    margin-right: 0;
+    padding-right: 0;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #295162;
+}
+.my-nav-link:hover {
+    background-color: #295162;
+
+}
+
+/* -------------------------------- NAVBAR -------------------------------- */
+
+/* -------------------------------- SECTION FOR WHO  -------------------------------- */
+
+.section-whom-header {
+    background-image: url("../images/man-pain-back2.jpg");
+    background-size: cover;
+    background-position: top;
+    margin-top: 90vh; 
+    padding-top: 5vh;
+    padding-bottom: 50vh;
+}
+
+.section-header-text{
+    width: 50%;
+    margin:auto;
+    padding-top: 15vh;
+
+}
+.section-header-link {
+    width: 40%;
+    color: #ffffff;
+    display: block;
+    margin:auto;
+    padding-top: 5vh;
+    margin-bottom: 15vh;
+}
+.section-header-link:hover {
+    color: #4da7a5;
+    text-decoration: none;
+
+}
+
+.list-heading {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.pain-description {
+    text-transform: none;
+}
 .list-image {
-    width: 25vw;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+.media-collapse {
+    color: #ffffff;
+}
+.media-collapse:hover {
+    color: #ffffff;
+
+}
+.section-for-whom {
+    background-color: #295162;
+
+    color: white;
+    background-size: cover;
+    background-position: top;
+
+}
+.img-anchor {
+    width: 50%;
+}
+.pain-type-list {
+    margin-bottom: 0;
+
 }
 
 
-.section-about img {
-    width: 50vw;
-    margin-top: 50%;
+
+/* -------------------------------- SECTION FOR WHO  -------------------------------- */
+
+
+
+.section-treatments-header {
+    background-image: url("../images/women-therapy.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-position: top;
 }
 
+.section-treatment-header-link {
+    display: block;
+    padding-top: 25vh;
+    color: #295162;
+    width: 50%;
+    height: 100%;
+}
+.section-treatment-header-link:hover {
+    color: #4da7a5;
+    text-decoration: none;
+}
+
+
+/* -------------------------------- SECTION TREATMENT  -------------------------------- */
+.therapy-card{
+    width: 100%;
+    border: 0;
+}
+
+.card-img-top {
+    margin: 5% 0 5% 0;
+}
+
+/* .threatment-card-body {
+    position: absolute;
+    height: 100%;
+    color: transparent;
+    background-color: transparent;
+    transition: background-color 2s, color 2s;
+    font-weight: bold;
+    padding: 10% ;
+}
+
+.threatment-card-body:hover {
+    color: #3d3d3d;
+    background-color: rgba(255,255,255, .6);
+} */
+
+.card-title {
+    color: black;
+
+}
+/* .text-card-bottom {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    bottom: 2%;
+    color: black;
+} */
+
+
+
+/* -------------------------------- SECTION TREATMENT  -------------------------------- */
+
+/* -------------------------------- SECTION RECOMMENDATIONS  -------------------------------- */
+
+.section-recommendations {
+    height: 235vh;   
+    margin:0;
+    padding: 0;
+    background-image: url("../images/recommendations.jpg");
+    background-size: cover;
+    background-position: top;
+    color: #295162;
+}
+
+
+
+.recom-col1, .recom-col2 {
+    background-color: transparent;
+    margin-top: 120vh;
+    border: 0;
+
+}
+.recom-col-3 {
+
+    background-color: transparent;
+    border: 0;
+}
+
+.recom-header1 {
+    position: absolute;
+    padding-top: 30vh;
+    width: 25%;
+}
+
+.recom-header2 {
+    position: absolute;
+    right: 0;
+    width: 25%;
+    padding-top: 30vh;
+}
+
+.my-rec-card-header {
+    color: green;
+    font-size: 30px;
+    background-color: transparent;
+    border: 0;
+  
+}
+.recom-quote {
+    text-transform: none;
+    font-style: italic;
+    font-size: 1rem;
+}
+.section-recom-link {
+    color: #295162;
+}
+.section-recom-link:hover {
+    color: #4da7a5;
+}
+
+
+/* -------------------------------- SECTION RECOMMENDATIONS  -------------------------------- */
+
+/* -------------------------------- SECTION GALLERY  -------------------------------- */
+.gallery-section{
+    padding-top: 10vh;
+}
+.gallery-header {
+    background-color: #295162;
+    color: #ece8e8;
+    padding: 1%;
+    margin: auto auto 2% auto;
+    width: 50%;
+    border-radius: 10%;
+    
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #295162;
+    padding: 2px;
+    background-color: #ece8e8;
+}
+
+
+.gallery-2nd-row {
+    margin-top: 1%;
+}
+
+/* ADDRESS SECTION */
+#contact {
+    margin-bottom: 5%;
+    }
 
 
 .img-map {
-    width: 50vw;
+    margin-top: 8%;
+    width: 45%;
+    border: 5px solid #295162;
+    transform: rotate(5deg);
 }
-/* -------------------------------- FOOTER -------------------------------- */
-/* .card-img-top {
-    width: 100%;
-} */
 
-/* ------------------------------------------------- SPACE SIZING MARGINS */
-/* 
-.col-menu-btn {
-    height: 12vh;
-    margin: 0;
-    padding: 0;
-}
-.section-carousel, .carouselExampleFade, .carousel-inner, .carousel-item {
-    height: 63vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-}
-.collapse-section {
-    height: 20vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-}
-.row-footer {
-height: 5vh;
-margin: 0;
-padding: 0;
-}
-/* ------------------------------------------------- FONTS */
-
-/* 
-h1 
- {
-    font-family: 'Open Sans', sans-serif;
- 
-}
-h2, h6 {
-    font-family: 'Anton', sans-serif;
-    color: #3d3d3d;
-}
-h3,
-h4,
-h5 {
-    font-family: 'Anton', sans-serif;
-}
-/* ------------------------ MENU FONTS COLOR */
- /* 
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #3d3d3d;
-}
-.navbar-light .navbar-nav .nav-link {
-    color: #8d8d8d;
-}
-/* ------------------------ FONTS SIZES */
-/* 
-h1 {
-    font-size: 3.5vh;
-}
-header h2 {
-    font-size: 2.5vh;
-}
-header p {
-    font-size: 2vh;
-}
-.col-footer-1 
-h5, h6
- {
-    font-size: 3vh;
-    white-space: nowrap;
-    overflow: hidden;
-}
-h3, h4 {
-    font-size: 5vh;
-}
-/* ------------------------------------------------- COLORS */
-/* 
-.col-menu-btn {
-    background-color: #295162;
-}
-.col-footer-1 {
-    background-color: #295162;
-}
-/* ------------------------------------------------- HEADER SIZE AND POSITION*/
-/* 
-header, header .row {
-    text-align: center;
+.address-col {
+    float: left;
+    margin-top: -16%;
+    color: #4da7a5;
     background-color: white;
+    border-radius: 20%;
+    padding: 2%;
 }
-header img {
-    float: left;
-}
-.headings h1{
-    padding-right: 2px;
-}
-.headings h1, h2, p {
-    margin-bottom: .2vh;
-}
-.headings {
-    height: 10vh;
-    margin: auto;
-}
-.img-logo {
-    flex-grow: 0;
-    padding-right: 0;
-    margin: auto;
-}
-.col-menu-btn {
-    border-radius: 2px;
-}
-/* ------------------------------------------------- NAV-BUTTON*/
-/* 
-.navbar-light .navbar-toggler {
-    color: white;
-    border: none;
-    font-size: 5vh;
-    margin: auto;
-}   
-.my-nav-button {
-    height: 100%;
-}
-/* remove button border after click on it */
-/* 
-button:focus {
-    outline: none; 
-}
-/* ------------------------------------------------- NAV-MENU */
-/* 
-.my-nav-bar {
-    text-align: center;
-    position: fixed;
-    top: 12vh;
-    width: 100vw;
-    height: 83vh;
-    z-index: 2;
-    margin: auto;
-    padding: 0;
-}
-.navbar-collapse {
-    height: 83vh;
-    width: 100vw;
-}
-.navbar-nav{
-background-color: rgba(41,81,98, .85);
-height: 83vh;
-font-weight: 800;
-}
-a.nav-link:hover {
-    background-color: #57BDC2;
-}
-/* ------------------------------------------------- FOOTER */
-/* 
-.col-footer-1 {
-    display: inline-flex;
-    float: left;
-}
-footer
-h5, h6, p {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
- */
 
 
- /* ---------------------------------------------------------------- MEDIA -------------------------------- */
- /* -------------------------------- HEADER AND MAIN SECTION -------------------------------- */
- /* change the header color on the small and medium scrrens */
+.footer {
+    background-color: #295162;
+    font-size: 12px;
+}
 
-@media (max-width:600px) {
-    /* header{
-        background-color: #ffffff;
+.footer p {
+    padding: 1px;
+    margin: 1px;
+}
+.company-name-col {
+    float: right;
+}
+.footer-img-logo {
+    height: 12vh;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.montserrat-font {
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+}
+
+.col-media {
+    font-size: 24px;
+    color: #ffffff;
+}
+.footer-nav-list {
+    list-style: none;
+}
+
+
+@media(max-width:420px) {
+    .header-container {
+        padding: 0;
+    }
+
+    .header-stickedinheader {
+        padding: 0;
+        width: 80%;
+    }
+    .home-captions {
+        position: absolute;
+        left:0;
+
+        top: 45vh;
+        width: 99%;
+        color: black;
+        /* background-color: white; */
+        transform: rotate(0); 
+    }
+    .header {
+        right: 0;
+        left: 0;
+    }
+    .navbar-button {
+        width: 100%;
+        margin-left: 0;
+    }
+    .my-navbar-collapse {
+        width: 100%;
+        padding-top: 15%;
+
+    }
+}
+
+@media (max-width:576px) {
+    /* .recom-col-3 {
+        visibility: hidden;
     } */
-    .section-home {
-        background-image: url("../images/women-therapy.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top;
-        height: 100%;
+    .recom-col2 {
+        margin-top: 0;
+
     }
-    .col-headings-home {
-        margin:0;
+    .recom-header1 {
+        position: absolute;
+        padding-top: 2vh;
+        width: 90%;
+        left: 0;
+    }
+    .recom-header2 {
+        visibility: hidden;
+    }
+    
+}
+
+@media (min-width:1100px) {
+    .threatment-card-body {
+        position: absolute;
+        height: 100%;
+        color: transparent;
+        background-color: transparent;
+        transition: background-color 2s, color 2s;
+        font-weight: bold;
+        padding: 10% ;
+    }
+    
+    .threatment-card-body:hover {
+        color: #3d3d3d;
+        background-color: rgba(255,255,255, .6);
+    }
+    .text-card-bottom {
+        position: absolute;
+        width: 50%;
+        left: 25%;
+        bottom: 2%;
+        color: black;
     }
 }
 
-@media (min-width:600px) and (max-width:800px) {
-    .col-headings-home {
-        margin-top: 0 ;
+@media (min-width:700px) {
+    .list-image {
+         width: 50%;
+    }
+    .pain-description {
+        width: 48%;
+        height: 100%;
+        float: right;
+        padding: 1%;
     }
 }
- /* -------------------------------- HEADER AND MAIN SECTION -------------------------------- */
+@media (min-width:859px) {
+    .nav-list {
+        flex-direction: row;
+        margin-right: 2%;
+        margin-left: 5%;
+    }
+
+    .nav-list .my-nav-link {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .nav-list .my-nav-link:hover {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+}
