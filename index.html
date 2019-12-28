@@ -60,7 +60,7 @@
     <h3>Get back your peace and happiness.</h3>
     <h4>Manual therapy bring you back on the track.</h4>
     <p>Don't wait! Make appointment now!</p>
-    <a class="btn-appointment" href="#contact-form" role="button">Make appointment!</a>
+    <a class="btn-appointment" data-toggle="modal" data-target="#pop-up-mes" role="button">Make appointment!</a>
   </div>
 
 
@@ -589,15 +589,20 @@
           alt="Picture of google maps with marked Ewelina Zaremba rehabilitation clinic" />
       </a>
     </div>
-        <a class="btn leave-mes-btn" data-toggle="collapse" href="#contact-form" role="button" aria-expanded="false" aria-controls="contact-form">Or click and leave the message</a>
+        <a class="btn leave-mes-btn" data-toggle="collapse" href="#contact-form" role="button" aria-expanded="false" aria-controls="contact-form">Or leave the message</a>
     
 
   </section>
 
 
-  <!-- contact form -->
-  <div class="form" id="contact-form">
+  <!-- colapsed contact form -->
+  <div class="form collapse" id="contact-form">
+    <button type="button" class="close my-close-btn" aria-label="Close" data-toggle="collapse" href="#contact-form"  aria-expanded="false" aria-controls="contact-form">
+      <span aria-hidden="true">&times;</span>
+    </button>
     <h4>Leave the message</h4>
+
+    
     <div class="form-group">
       <label for="formGroupInput">Name</label>
       <input type="text" class="form-control" id="formGroupInput" placeholder="Name">
@@ -611,19 +616,39 @@
         <option>Ask about appointment</option>
         <option>Other questions</option>
       </select>
-    </div>
     <label for="customRange3">satisfaction level</label>
     <input type="range" class="custom-range" min="0" max="5" step="1" id="customRange3">
-    <div class="form-group">
+  </div>
+    <div class="form-group form-group-message">
       <label for="FormControlTextarea1">Message</label>
       <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
       
     </div>
-    <div class="form-group">
-    <button type="submit" class="btn btn-send-form">Send</button>
+    <div class="form-group form-group-btn">
+    <button type="submit" data-toggle="modal" data-target="#pop-up-mes" class="btn btn-send-form">Send</button>
   </div>
   </div>
-
+<!-- POP-UP MESSAGE FOR NOT WORKING YET BUTTONS -->
+<!-- Modal -->
+<div class="modal fade" id="pop-up-mes" tabindex="-1" role="dialog" aria-labelledby="pop-up-mesLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pop-up-mesLabel">Sorry.</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        This website is maked for school purpose. This button is not making any real action.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container-fluid">

@@ -126,7 +126,7 @@ h2 {
 
 .nav-list {
     height: 100%;
-    background-color: rgba(77, 167, 165,.8);
+    background-color: rgb(77, 167, 165);
 }
 
 .my-nav-item, .nav-list {
@@ -368,7 +368,7 @@ h2 {
 
 .img-map {
     /* margin-top: 8%; */
-    width: 45%;
+    width: 65%;
     border: 5px solid #295162;
     transform: rotate(5deg);
     z-index: -1;
@@ -387,10 +387,19 @@ h2 {
     position: fixed;
     bottom: 0;
     z-index: 25;
-    width:40%;
-    height: 100%;
+    padding-top: 1%;
+    width:50%;
+
     background-color: white;
 
+}
+
+
+.my-close-btn {
+    font-size: 3.5rem;
+    display: block;
+    color: black;
+    border: 0;
 }
 
 .btn-send-form {
@@ -454,26 +463,6 @@ h2 {
 
 /* -------------------------------------- MEDIA ------------------------------------------------------ */
 @media(max-width:420px) {
-    .header-container {
-        padding: 0;
-    }
-
-    .header-headings >*{ 
-         color: black;
-        font-weight: 900;  
-        font-size: 3vh; 
-    }
-    
-    .header-headings{
-        float: none;
-    
-    }
-
-    /* .header-stickedinheader {
-        padding: 0;
-        width: 80%;
-    } */
-
     .header {
         right: 0;
         left: 0;
@@ -492,8 +481,35 @@ h2 {
 @media (max-width:800px) {
     .form {
         width:100%;
-        margin-top: 50%;
+    }
+    .gallery-container {
+        width: 100%;
+        margin-bottom: 10vh;
+    }
+    .header-container {
+        padding: 0;
+    }
+  
+    .header-headings >*{ 
+         color: black;
+        font-weight: 900;  
+        font-size: 3vh; 
+    }
+    
+    .header-headings{
+        float: none;
+    
+    }
+    .img-map {
+        width: 99%;
+        transform: none;
+    }
+    #contact {
+        padding-top: 25vh;
 
+    }
+    .contact-header {
+        transform: none;
     }
 }
 
@@ -557,6 +573,7 @@ h2 {
         flex-direction: row;
         margin-right: 2%;
         margin-left: 5%;
+        background-color: rgba(77, 167, 165,.8);
     }
 
     .nav-list .my-nav-link {
