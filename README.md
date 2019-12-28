@@ -1,5 +1,3 @@
-[link](#Skeleton)
-
 # Rehabilitation Clinic Website
 Stream One Project: User-Centric Frontend Development - Code Institute
 
@@ -48,6 +46,7 @@ This site is a one page site. Sections are splitted by different full height pic
 In the future i would like to add:
 1. Full screen contact form.
 2. Instead of scrolling from section to section i would like make animation which will show each section one by one.
+3. Possibility to make online appointment.
 
 ## Testing
 
