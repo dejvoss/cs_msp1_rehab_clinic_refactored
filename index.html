@@ -12,6 +12,8 @@
   <!-- FONTS FROM GOOGLE FONT -->
   <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans|Montserrat&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- LINK TO LIGHTBOX CSS -->
+  <link href="css/lightbox.css" rel="stylesheet" />
   <!-- LINK TO MY CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -57,7 +59,7 @@
   <div class="home-captions">
     <h3>Get back your peace and happiness.</h3>
     <h4>Manual therapy bring you back on the track.</h4>
-    <p>Don't wait. Make appointment now!.</p>
+    <p>Don't wait! Make appointment now!</p>
     <a class="btn-appointment" href="#contact-form" role="button">Make appointment!</a>
   </div>
 
@@ -547,43 +549,44 @@
       <div class="row gallery-row1">
 
         <div class="col-3 gallery">
-          <a target="_blank" href="images/ez.jpg">
+          <!-- <a target="_blank" href="images/ez.jpg"> -->
+            <a href="images/ez.jpg" data-lightbox="image-gallery" data-title="Ewelina Zaremba">
             <img src="images/ez.jpg" class="gallery-img" alt="Rehabilitation clinic Ewelina Zaremba" width="600"
               height="400"></a>
         </div>
 
         <div class="col-3 gallery">
-          <a target="_blank" href="images/gab-3.jpg">
-            <img src="images/gab-3.jpg" class="gallery-img" alt="Rehabilitation clinic Ewelina Zaremba" width="600"
+          <a href="images/gab-3.jpg" data-lightbox="image-gallery" data-title="Rehabilitation clinic Ewelina Zaremba">
+            <img src="images/gab-3.jpg" class="gallery-img" alt="Front door of the Rehabilitation clinic Ewelina Zaremba" width="600"
               height="400"></a>
 
         </div>
         <div class="col-3 gallery">
-          <a target="_blank" href="images/gab.jpg">
-            <img src="images/gab.jpg" class="gallery-img" alt="Rehabilitation clinic Ewelina Zaremba" width="600"
+          <a href="images/gab.jpg" data-lightbox="image-gallery" data-title="Rehabilitation table">
+            <img src="images/gab.jpg" class="gallery-img" alt="Rehabilitation table inside the clinic" width="600"
               height="400"></a>
         </div>
         <div class="col-3 gallery">
-          <a target="_blank" href="images/tools.jpg">
-            <img src="images/tools.jpg" class="gallery-img" alt="Rehabilitation clinic Ewelina Zaremba" width="600"
+          <a href="images/tools.jpg" data-lightbox="image-gallery" data-title="Rehabilitation tools">
+            <img src="images/tools.jpg" class="gallery-img" alt="Rehabilitation tools like ball, tapes" width="600"
               height="400"></a>
         </div>
 
       </div>
       <div class="row gallery-2nd-row">
         <div class="col-4 gallery">
-          <a target="_blank" href="images/tools2.jpg">
+          <a href="images/tools2.jpg" data-lightbox="image-gallery" data-title="knifes used for some of the therapies">
             <img src="images/tools2.jpg" class="gallery-img" alt="Rehabilitation clinic Ewelina Zaremba" width="600"
               height="400"></a>
         </div>
         <div class="col-4 gallery">
-          <a target="_blank" href="images/gab2.jpg">
+          <a href="images/gab2.jpg" data-lightbox="image-gallery" data-title="Screens inside the clinic">
             <img src="images/gab2.jpg" class="gallery-img" alt="Rehabilitation clinic Ewelina Zaremba" width="600"
               height="400"></a>
         </div>
 
         <div class="col-4 gallery">
-          <a target="_blank" href="images/noze1.jpg">
+          <a href="images/noze1.jpg" data-lightbox="image-gallery" data-title="set of knifes">
             <img src="images/noze1.jpg" class="gallery-img" alt="Rehabilitation clinic Ewelina Zaremba" width="600"
               height="400"></a>
         </div>
@@ -597,7 +600,7 @@
   <!-- CONTACT -->
   <section id="contact">
     <div>
-      <h4 class="contact-header">Found me in google maps.</h4>
+      <h4 class="contact-header">Find me in google maps.</h4>
       <a target="_blank"
         href="https://www.google.com/maps/place/Rehabilitacja+Ewelina+Zaremba/@53.1329181,23.1967525,15z/data=!4m5!3m4!1s0x0:0xc8192108a6cfac61!8m2!3d53.1329181!4d23.1967525">
         <img class="img-map"
@@ -699,7 +702,8 @@
     </div>
   </footer>
 
-
+<!-- LIGHTBOX JAVA SCRIPT -->
+<script src="js/lightbox-plus-jquery.js"></script>
   <!-- LINK TO BOOTSTRAP JAVA -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

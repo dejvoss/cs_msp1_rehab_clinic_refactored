@@ -262,7 +262,6 @@ h2 {
 /* -------------------------------- SECTION RECOMMENDATIONS  -------------------------------- */
 
 .section-recommendations {
-    height: 235vh;   
     margin:0;
     padding: 0;
     background-image: url("../images/recommendations.jpg");
@@ -320,7 +319,7 @@ h2 {
 
 /* -------------------------------- SECTION GALLERY  -------------------------------- */
 .gallery-section{
-    padding-top: 10vh;
+    padding-top: 30vh;
 }
 .gallery-header {
     background-color: #295162;
@@ -333,7 +332,7 @@ h2 {
 }
 .gallery img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border: 2px solid #295162;
     padding: 2px;
     background-color: #ece8e8;

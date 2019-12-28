@@ -1,3 +1,5 @@
+[link](#Skeleton)
+
 # Rehabilitation Clinic Website
 Stream One Project: User-Centric Frontend Development - Code Institute
 
@@ -13,10 +15,10 @@ Website cover 6 sections - for whom, treatments, recommendations, gallery and co
 
 Ewelina: I expect to show for people what treatments i am doing and how to found me in my City.
 
-As a person who is looking for physioterapis i expect to see where to find clinic and how to easy make appointment.
+As a person who is looking for physioterapis i expect to see where to find clinic, what to expect from it and how to easy make appointment.
 
 ### Strategy
-My goal in design was to make a easy, minimalist and user-firendly website.
+My goal in design was to make a easy, minimalist and user-firendly website. I would like to display what ilness can be treated in clinic.
 
 ### Scope
 For future Ewelina clients, I wanted to provide them a overview of treatments and with what issues they can visit her clinic. I also wanted to make visible address of clinic and way of making an appointment.
@@ -34,6 +36,10 @@ Different green color type was choosen due to colors of clinic logo.
 1. HTML
 2. CSS
 3. Bootstrap (4.4.0)
+4. Favicons
+5. Google Fonts
+6. [Lightbox2](https://lokeshdhakar.com/projects/lightbox2/)
+
 
 ### Features
 This site is a one page site. Sections are splitted by different full height pictures. Navigation bar is collapsed and is opened in top in row direction on big screens and column direction in small screens. Main background picture shows the board to which is pasted text in home section and map in contact section.
@@ -47,7 +53,13 @@ In the future i would like to add:
 
 Performance test done in [PageSpeedInsights](https://developers.google.com/speed/pagespeed/insights/) with result of 97 for mobile and 99 for desktop.
 
+1. Mobile version:
+
 User1: Links in footer are different than in navigation bar, Contact link in footer doesn't work.
+User2: White background below logo looks odd. Maybe is good to remove it and change font for bigger instead. - Done and looks really better.
+The address information on white background in contact/map section is to big, could be better without it. - Done and it is better.
+User3: The drop down menu, it’s nice, works lovely.... but the colour scheme is very similar to some of the background images. When you click on the options, moving on the main page, it makes reading the menu options hard and so. 
+User4: Images in gallery are so small.
 
 
 ## Deployment
