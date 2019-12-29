@@ -48,8 +48,10 @@ website contain requirements:
 
 ### Structure
 I wanted to have nice big pictures referring to rehabilitation and all information in one page.
+
 [structure](https://github.com/dejvoss/code-inst-ms1-project/blob/master/structure.JPG)
-[hub_sub_navigation](https://github.com/dejvoss/code-inst-ms1-project/blob/master/hub sub nav.JPG)
+
+[hub_sub_navigation](https://github.com/dejvoss/code-inst-ms1-project/blob/master/hubsubnav.JPG)
 
 ### Skeleton
 [1st view](https://github.com/dejvoss/code-inst-ms1-project/blob/master/skeleton.JPG)
