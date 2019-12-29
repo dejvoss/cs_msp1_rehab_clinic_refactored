@@ -71,6 +71,7 @@ Different green color type was choosen due to colors of clinic logo.
 7. collapse by Bootstrap
 8. Menu by bootstrap.
 
+
 ### Features
 This site is a one page site. Sections are splitted by different full height pictures. Navigation bar is collapsed and is opened in top in row direction on big screens and column direction in small screens. Each section has a background picture or use the picture from home section.
 
@@ -79,7 +80,7 @@ This site is a one page site. Sections are splitted by different full height pic
 ### Features left to Implement
 In the future i would like to add:
 1. Instead of scrolling from section to section i would like make animation which will show each section one by one.
-2. Make possibility to schedule online appointment.
+2. Add posibilities for users to make online appointment and phone appointment.
 
 
 ## Testing
