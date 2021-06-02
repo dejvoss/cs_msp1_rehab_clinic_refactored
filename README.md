@@ -1,3 +1,5 @@
+<div align="center">
+
 # Website for rehabilitation clinic
 
 Originally it was my 1st milestone project done during study software development/full stack web development in [code institute](https://codeinstitute.net/)
@@ -5,6 +7,9 @@ Originally it was my 1st milestone project done during study software developmen
 While studying, my schedule was very tight and I didn't do everything according to my ideas. Now that I have more free time, I decided to go back to my projects and do them according to my vision.
 
 The project is a website for a physiotherapy clinic.
+
+</div>
+
 
 Table of Contents:
 
@@ -17,6 +22,8 @@ Table of Contents:
     *   [Skeleton](###skeleton)
     *   [Surface](###surface)
 3. [Technologies used on webpage](##technologies)
+
+<div align="center">
 
 ## Demo
  A live website can be found [here]().
@@ -41,6 +48,8 @@ My goal in design is to make an minimalist, modern and user-friendly website.
 ### Scope
 Based on the user stories i describe few points of what information needs to be visible on the webpage:
 
+</div>
+
 1.  The information that this is the rehabilitation clinic website and user can solved issue with pain.
 2.  Address and phone number.
 3.  Open hours.
@@ -49,6 +58,7 @@ Based on the user stories i describe few points of what information needs to be 
 5.  Ailments treated in the clinic.
 6.  Patients recommendations.
 
+<div align="center">
 
 ### Structure
 
@@ -61,17 +71,25 @@ Desktop wireframes:
 
 ![2nd-frame](images/refactored/2ndframe.png)
 
+![3rd-frame](images/refactored/3rdframe.png)
+
 Mobile wireframes:
 
 ![1st-page-mobile-frame](images/refactored/1stmobileframe.png)
-
 ![2nd-mobile-frame](images/refactored/2ndmobileframe.png)
+
+![3rd-mobile-frame](images/refactored/3rdmobileframe.png)
+![4th-mobile-frame](images/refactored/4thmobileframe.png)
 
 ### Surface
 Different green color type was choosen due to colors of clinic logo.
 
 
 ## Technologies
+
+</div>
+
+
 1. HTML
 2. CSS
 3. Bootstrap (4.4.0)
@@ -81,17 +99,10 @@ Different green color type was choosen due to colors of clinic logo.
 7. collapse by Bootstrap
 8. Menu by bootstrap.
 
+<div align="center">
 
 ## Features
 This site is a one page site. Sections are splitted by different full height pictures. Navigation bar is collapsed and is opened in top in row direction on big screens and column direction in small screens. Each section has a background picture or use the picture from home section.
-
-
-
-### Features left to Implement
-In the future i would like to add:
-1. Instead of scrolling from section to section i would like make animation which will show each section one by one.
-2. Add posibilities for users to make online appointment and phone appointment.
-
 
 ## Testing
 
@@ -143,3 +154,4 @@ The Lightbox was suggested by my mentor and applied from [here](https://lokeshdh
 
 The navigation bar, collapsed cards in for whom section and cards in treatment section was taken from [here](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
 
+</div>
