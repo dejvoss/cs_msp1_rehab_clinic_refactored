@@ -43,7 +43,7 @@ It is a going to be company/ therapist website for local city clients. The main 
 
 My goal in design is to make an minimalist, modern and user-friendly website. 
 
-
+Project goal is to create a first page for rehabilitation clinic which could be presented to the client for approval.
 
 ### Scope
 Based on the user stories i describe few points of what information needs to be visible on the webpage:
