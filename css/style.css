@@ -67,7 +67,7 @@ h2 {
     /* left: 33%;
     top: 35vh;
     width: 45%; */
-
+    visibility: hidden;
     margin: auto;
     margin-top: 21vh;
     color: black;

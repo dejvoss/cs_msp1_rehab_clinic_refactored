@@ -1,61 +1,71 @@
-# Rehabilitation Clinic Website
-Stream One Project: User-Centric Frontend Development - Code Institute
+# Website for rehabilitation clinic
 
-This is the website for my friend Ewelina who is a manual therapist. She just start running her own rehabilitation clinic and she would like to have own website. I offer her to create a website to practice my skills due to first milestone project during Full Stack Web Developer course.
-Website cover 6 sections - home, for whom, treatments, recommendations, gallery and contact.
+Originally it was my 1st milestone project done during study software development/full stack web development in [code institute](https://codeinstitute.net/)
+
+While studying, my schedule was very tight and I didn't do everything according to my ideas. Now that I have more free time, I decided to go back to my projects and do them according to my vision.
+
+The project is a website for a physiotherapy clinic.
+
+Table of Contents:
+
+1. [Website mockups and demo](#demo)
+2. [UX design](##ux)
+    *   [User Stories](###user-stories)
+    *   [Strategy](###strategy)
+    *   [Scope](###scope)
+    *   [Structure](###structure)
+    *   [Skeleton](###skeleton)
+    *   [Surface](###surface)
+3. [Technologies used on webpage](##technologies)
 
 ## Demo
- A live website can be found [here](https://dejvoss.github.io/code-inst-ms1-project/).
-
+ A live website can be found [here]().
+![website mockups]()
 
 ## UX
-
-
 ### User stories
 
-Ewelina: I expect to show for people what treatments i am doing and how to found me in my City.
+#### Clinic owner: 
+I would like to be visible on the internet so that more people could reach me. I want to make people realize that they do not have to live with pain and I am here to help them.
 
-User2: As a person who is looking for physioterapis i expect to see where to find clinic, what to expect from it and how to easy make appointment.
-
-
+#### Clinic patient: 
+When I visit the website I would like to see that this is the place where I can find help for my ailments. I want the power to quickly find an address and a method of contact. It is important to me whether my problem will be solved, what the therapy looks like and what the prices are.
 ### Strategy
 
-It is a going to be company/ therapist website for local city clients. The main goal of the web is to raise number of patients. They are the local people with back and joint injuries. Audience are mostly the people in age 30-60 from different culture, they do different jobs, but many often time is a sitting position job - drivers, office people. They are suffering for back, spin and muscles pains, but also people with posture defects. Audience are looking for therapy, they want to know what treatments are in the clinic, they want to see good references about. It is important for users to know how to found clinic and how to make a visit, they need to see the possibility for online registration.
-it should be very visible on web what health ailments are being treated in the clinic
+It is a going to be company/ therapist website for local city clients. The main goal of the web is to raise number of patients. They are the local people with back and joint injuries. Audience are mostly the people in age 30-60 from different culture, they do different jobs, but many often time is a sitting position job - drivers, office people. They are suffering for back, spin and muscles pains, but also people with posture defects. Audience are looking for therapy, they want to know what treatments are in the clinic, they want to see good references about. It is important for users to know how to found clinic and how to make a visit.
 
-My goal in design was to make a easy, minimalist and user-firendly website, but also modern and different one. I decide to do one page web with big nice pictures which shows pain, body parts, but also happiness as a result of therapy. I wanted to place pictures which will be familiar to the users.
-I chose to show what ilness can be treated in clinic and what type of therapies are there. I choose to have good quality pictures with not too much text descriptions. 
-It was very important to me to put the recommendation section with picture which show happiness.
-One of the main goal was also to have clear view of the place - so i decide to paste the picture from google map with link to it. 
+My goal in design is to make an minimalist, modern and user-friendly website. 
+
 
 
 ### Scope
-People said they need to see certifications, the person to whom they can trust.
-People actually need to know that the therapy will help them.
-People doesn’t know that they want to see the other people happy from therapy.
-website contain requirements:
- - name of cabinet
- - short description of what we do
- - list of treatments 
- - description of treatments 
- - address with map 
- - make an appointment online
- - reasons for therapy
- - recommendations
- - photo of happy clients
- - photo of people with pain
+Based on the user stories i describe few points of what information needs to be visible on the webpage:
+
+1.  The information that this is the rehabilitation clinic website and user can solved issue with pain.
+2.  Address and phone number.
+3.  Open hours.
+3.  Registration method and diagnosis. 
+4.  Therapies and prices.
+5.  Ailments treated in the clinic.
+6.  Patients recommendations.
 
 
 ### Structure
-I wanted to have nice big pictures referring to rehabilitation and all information in one page.
 
-[structure](https://github.com/dejvoss/code-inst-ms1-project/blob/master/structure.JPG)
-
-[hub_sub_navigation](https://github.com/dejvoss/code-inst-ms1-project/blob/master/hubsubnav.JPG)
+![webpage structure](images/refactored/structure.png)
 
 ### Skeleton
-[1st view](https://github.com/dejvoss/code-inst-ms1-project/blob/master/skeleton.JPG)
+Desktop wireframes:
 
+![1st-page-frame](images/refactored/1stframe.png)
+
+![2nd-frame](images/refactored/2ndframe.png)
+
+Mobile wireframes:
+
+![1st-page-mobile-frame](images/refactored/1stmobileframe.png)
+
+![2nd-mobile-frame](images/refactored/2ndmobileframe.png)
 
 ### Surface
 Different green color type was choosen due to colors of clinic logo.
@@ -72,7 +82,7 @@ Different green color type was choosen due to colors of clinic logo.
 8. Menu by bootstrap.
 
 
-### Features
+## Features
 This site is a one page site. Sections are splitted by different full height pictures. Navigation bar is collapsed and is opened in top in row direction on big screens and column direction in small screens. Each section has a background picture or use the picture from home section.
 
 
@@ -119,16 +129,16 @@ This site is hosted using GitHub pages, deployed directly from the master branch
 
 To run locally, you can clone this repository directly into the editor of your choice by pasting `git clone https://github.com/dejvoss/code-inst-ms1-project.git` into your terminal.
 
-### Content
+## Content
 All content in the "For whom" and "Treatments" sections in this website were taken from google and wikipedia. 
 All content in the "Recommendations" sections were taken from google place recommendation.
 
 
-### Media
+## Media
 All photos were taken from [secret stock 99](https://shop.stockphotosecrets.com/), a stock image library.
 
 
-### Acknowledgements
+## Acknowledgements
 The Lightbox was suggested by my mentor and applied from [here](https://lokeshdhakar.com/projects/lightbox2/)
 
 The navigation bar, collapsed cards in for whom section and cards in treatment section was taken from [here](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
