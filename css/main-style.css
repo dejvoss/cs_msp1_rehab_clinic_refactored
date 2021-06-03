@@ -1,11 +1,20 @@
+/* main classes applied to different elements in document */
 html {
     font-size: 1rem;
+}
+/* anchor with inheritted values from parent */
+.inher-anch {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: inherit;
 }
 
 /* header */
 /* Logo part */
 .logo {
-    display: inline-flex;
+    display: block;
+    align-items: center;
     text-align: center;
 }
 
@@ -29,6 +38,7 @@ html {
     color: #4da7a5;
 }
 
+/* settings for all icons in document */
 .fas {
     font-size: 44px;
     margin-left: 15px;
@@ -41,14 +51,7 @@ html {
     padding: 8px;
 }
 
-
-.inher-anch {
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-    text-decoration: inherit;
-}
-
+/* menu icon  */
 .menu-btn {
     position: fixed;
     right: 3%;
@@ -59,22 +62,40 @@ html {
     font-size: 64px;
 }
 
-/* header main part */
-
-@media(max-width:560px) {
-    .logo {
-        display: block;
-        align-items: center;
-    
-    }
+/* header -center part of the website */
+.main-caption {
+    font-family: 'Nixie One', cursive;
+    padding-left: 3%;
+    margin-top: 130px;
+    text-align: center;
 }
 
+.main-sub-heading {
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+}
+
+.main-picture {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    height: 100vh;
+    background-image: url("../images/refactored/two-woman-main-img-1920.jpg");
+    background-position-y: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 /* media queries for different size of screen */
 
 @media (min-width: 576px) { 
     html {
         font-size: 1rem;
+    }
+    .logo {
+        display: inline-flex;
     }
  }
 
