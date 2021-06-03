@@ -1,8 +1,12 @@
 /* main classes applied to different elements in document */
+
 html {
     font-size: 1rem;
+    scroll-behavior: smooth;
 }
+
 /* anchor with inheritted values from parent */
+
 .inher-anch {
     color: inherit;
     font-family: inherit;
@@ -10,8 +14,47 @@ html {
     text-decoration: inherit;
 }
 
+.inher-anch:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.blink-link {
+    color:#295162;
+    animation: blink-animation 3s linear infinite alternate-reverse;
+    -webkit-animation: blink-animation 3s linear infinite alternate-reverse;
+}
+
+.blink-link:hover {
+    color: #295162;
+}
+
+@keyframes blink-animation {
+    to {
+        color: #fefefe;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    
+    to {
+        color: #fefefe;
+    }
+}
+
+/* settings for all icons in document */
+
+.fas {
+    font-size: 44px;
+    margin-left: 15px;
+}
+
+/* style aplied to specific part of document */
+
 /* header */
+
 /* Logo part */
+
 header {
     height: 100vh;
 }
@@ -42,24 +85,23 @@ header {
     color: #4da7a5;
 }
 
-/* settings for all icons in document */
-.fas {
-    font-size: 44px;
-    margin-left: 15px;
-}
+
 
 .fa-my-border {
     border: solid #4da7a5 2px;
-    font-size: 40px; /* icon font size - 2*border size */
-    border-radius: 100%;    
+    font-size: 40px;
+    /* icon font size - 2*border size */
+    border-radius: 100%;
     padding: 8px;
 }
 
 /* menu icon  */
+
 .menu-btn {
     position: fixed;
     right: 3%;
-    top:0;
+    top: 0;
+    z-index: 99;
 }
 
 .menu-btn .fas {
@@ -67,6 +109,7 @@ header {
 }
 
 /* header -center part of the website */
+
 .main-caption {
     font-family: 'Nixie One', cursive;
     padding-left: 3%;
@@ -93,11 +136,24 @@ header {
     background-repeat: no-repeat;
 }
 
+/* header end */
+
+/* section begin */
+
+.feature-section {
+    margin-top: -6px;
+}
+
+.feature-display {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 0;
+    background-color: #fefefe;
+}
 
 /* media queries for different size of screen */
 
-
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
     html {
         font-size: 1rem;
     }
@@ -106,22 +162,21 @@ header {
     }
     .main-picture {
         background-image: url("../images/refactored/two-woman-main-img-1920.jpg");
-        
     }
     .main-caption {
         margin-top: 130px;
-        background-color: rgba(77, 167, 165,.3);
+        background-color: rgba(77, 167, 165, .3);
         padding-top: 25px;
         padding-bottom: 25px;
     }
-
- }
+}
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+
+@media (min-width: 768px) {
     html {
-    font-size:1rem;
-    } 
+        font-size: 1rem;
+    }
     .company-1st-caption {
         letter-spacing: .2em;
     }
@@ -132,18 +187,20 @@ header {
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+
+@media (min-width: 992px) {
     html {
-    font-size:1rem;
+        font-size: 1rem;
     }
     .contact-info {
         padding-left: 10%;
-    } 
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+
+@media (min-width: 1200px) {
     html {
-        font-size:1.2rem;
-    } 
+        font-size: 1.2rem;
+    }
 }
