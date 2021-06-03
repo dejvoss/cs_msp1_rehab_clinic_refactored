@@ -12,6 +12,10 @@ html {
 
 /* header */
 /* Logo part */
+header {
+    height: 100vh;
+}
+
 .logo {
     display: block;
     align-items: center;
@@ -66,7 +70,7 @@ html {
 .main-caption {
     font-family: 'Nixie One', cursive;
     padding-left: 3%;
-    margin-top: 130px;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -77,18 +81,21 @@ html {
 }
 
 .main-picture {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
-    height: 100vh;
-    background-image: url("../images/refactored/two-woman-main-img-1920.jpg");
-    background-position-y: top;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #f5f7f8, #f4f8f98c), url(../images/refactored/two-woman-main-img-1920.jpg);
+    background-position-y: center;
+    background-position-x: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+
 /* media queries for different size of screen */
+
 
 @media (min-width: 576px) { 
     html {
@@ -97,6 +104,17 @@ html {
     .logo {
         display: inline-flex;
     }
+    .main-picture {
+        background-image: url("../images/refactored/two-woman-main-img-1920.jpg");
+        
+    }
+    .main-caption {
+        margin-top: 130px;
+        background-color: rgba(77, 167, 165,.3);
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
  }
 
 /* Medium devices (tablets, 768px and up) */
@@ -107,7 +125,10 @@ html {
     .company-1st-caption {
         letter-spacing: .2em;
     }
-    
+    .main-caption {
+        background-color: transparent;
+        padding-top: 0;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
