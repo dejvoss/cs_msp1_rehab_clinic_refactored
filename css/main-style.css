@@ -1,33 +1,28 @@
+html {
+    font-size: 1rem;
+}
+
 /* header */
 /* Logo part */
 .logo {
     display: inline-flex;
     align-items: center;
     text-align: center;
-
-}
-
-.logo-caption-col {
-    text-align: center;
-}
-
-.logo h2, .logo h4 {
-    font-family: 'Libre Baskerville', serif;
-    text-transform: uppercase;
 }
 
 .company-1st-caption {
     font-style: italic;
-    margin: 0.5em;
+    margin: 0.2em;
     color: #000;
-    font-size: 3.8vw;
-    letter-spacing: 2vw;
+    word-spacing: .2em;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
 }
 
 .company-2nd-caption {
     color: #b2887c;
-    font-size: 0.8vw;
-    letter-spacing: 0.5vw;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
 }
 
 /* contact info part */
@@ -38,3 +33,44 @@
 
 /* header main part */
 
+@media(max-width:560px) {
+    .logo {
+        display: block;
+        align-items: center;
+    
+    }
+}
+
+
+/* media queries for different size of screen */
+
+@media (min-width: 576px) { 
+    html {
+        font-size: 1rem;
+    }
+
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    html {
+    font-size:1rem;
+    } 
+    .company-1st-caption {
+        letter-spacing: .2em;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    html {
+    font-size:1.2rem;
+    } 
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    html {
+    font-size: 1.6rem;
+    } 
+}
