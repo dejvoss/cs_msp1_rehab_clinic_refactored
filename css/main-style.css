@@ -41,8 +41,12 @@ html {
     padding: 8px;
 }
 
+
 .inher-anch {
     color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: inherit;
 }
 
 .menu-btn {
