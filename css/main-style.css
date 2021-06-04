@@ -140,15 +140,44 @@ header {
 
 /* section begin */
 
-.feature-section {
-    margin-top: -6px;
+.feature-col {
+    margin-top: 6.25vh;
+    padding-left: 10%;
+}
+
+.feature-col button {
+    width: 150px;
+    height: 40px;
+    margin-left: 80px;
+}
+
+.feature-img {
+    max-height: 25vh;
+    width: auto;
+    border: solid 3px #4da7a5;
 }
 
 .feature-display {
     height: 100vh;
     width: 100vw;
     padding-top: 0;
-    background-color: #fefefe;
+    background-color: #f5f6f8;
+}
+
+.display-img {
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10%;
+}
+
+.display-text {
+    width: 70%;
+    height: auto;
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
 }
 
 /* media queries for different size of screen */
