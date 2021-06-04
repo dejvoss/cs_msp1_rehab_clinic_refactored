@@ -146,15 +146,19 @@ header {
 }
 
 .feature-col button {
-    width: 150px;
+    width: 205px;
     height: 40px;
     margin-left: 80px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-transform: uppercase;
 }
 
 .feature-img {
-    max-height: 25vh;
-    width: auto;
-    border: solid 3px #4da7a5;
+    max-width: 370px;
+
 }
 
 .feature-display {
