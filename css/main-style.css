@@ -182,7 +182,6 @@ header {
 }
 
 .feature-display {
-    height: 100vh;
     width: 100vw;
     padding-top: 0;
     background-color: #f5f6f8;
@@ -203,6 +202,46 @@ header {
     margin-right: 15%;
     margin-top: 5%;
     padding: 1.5rem;
+}
+
+
+/* section recommendation */
+
+.recommendation-section {
+    background-color:#4da7a5;
+}
+
+.card {
+    width: 100%;
+    border: none;
+    background-color:#4da7a5;
+}
+
+.card-header {
+    border: none;
+}
+
+.card-img-top {
+    border-radius: 50%;
+    width: 75%;
+    margin: auto;
+}
+
+/* contact map section */
+.address-col {
+    text-align: center;
+    margin: auto;
+}
+
+.map-frame {
+    border-radius: 15%;
+}
+
+.footer {
+    background-color: #295162;
+    font-size: 0.6rem;
+    padding: 0.1rem;
+    text-align: center;
 }
 
 /* media queries for different size of screen */
