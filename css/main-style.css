@@ -29,6 +29,10 @@ html {
     color: #295162;
 }
 
+.z-highest {
+    z-index: 99999;
+}
+
 @keyframes blink-animation {
     to {
         color: #fefefe;
@@ -102,7 +106,19 @@ header {
     position: fixed;
     right: 3%;
     top: 0;
-    z-index: 99;
+    border: none;
+    background-color: transparent;
+}
+
+.menu-btn:focus {
+    outline: none;
+}
+
+.menu-btn-span {
+    position: fixed;
+    right: 3%;
+    top: 0;
+    color: #4da7a5;
 }
 
 .menu-btn .fas {
