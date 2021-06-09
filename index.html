@@ -29,8 +29,17 @@
 
 
   <header>
-
-
+<nav>
+    <div id="myNav" class="overlay">
+      
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </nav>
     <div class="container-fluid">
       <div class="row company-info mt-1">
 
@@ -56,10 +65,10 @@
               <small class="d-none d-lg-inline">+00 123 456 789</small>
             </a>
           </span>
-          <span class="d-sm-block d-md-inline text-center mt-sm-3"><i class="fas fa-map-marker "></i><small
-              class="d-none d-lg-inline">ul. serotast 20</small></span>
-          <button class="menu-btn z-highest" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="d-sm-block d-md-inline text-center mt-sm-3">
+            <a class="inher-anch" href="#address"><i class="fas fa-map-marker "></i><small
+              class="d-none d-lg-inline">ul. serotast 20</small></a></span>
+          <button id="menu-btn" class="menu-btn z-highest" type="button" onclick="openNav()">
             <span class="menu-btn-span"><i class="fas fa-bars"></i></span>
           </button>
           <!-- <span class="menu-btn"><i class="fas fa-bars"></i></span> -->
@@ -166,7 +175,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <section id="address">
     <div class="container address-map mt-5">
       <div class="row">
         <div class="col-12 col-md-8 col-lg-6 ">
@@ -187,8 +196,18 @@
   <footer class="footer mt-5">
     <p>© Maken for your health</p>
   </footer>
-
-
+<!-- navigation js code -->
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "50%";
+      document.getElementById("menu-btn").setAttribute( "onClick", "javascript: closeNav();" );
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+      document.getElementById("menu-btn").setAttribute( "onClick", "javascript: openNav();" );
+    }
+    </script>
   <!-- LINK TO BOOTSTRAP JAVA -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
