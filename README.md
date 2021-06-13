@@ -27,6 +27,7 @@ Table of Contents:
 
 ## Demo
  A live website can be found [here](https://dejvoss.github.io/cs_msp1_rehab_clinic_refactored/).
+ 
 ![website mockups](readme_purpose/mockups.jpg)
 
 ## UX
