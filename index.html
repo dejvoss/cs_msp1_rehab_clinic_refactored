@@ -29,17 +29,17 @@
 
 
   <header>
-<nav>
-    <div id="myNav" class="overlay">
-      
-      <div class="overlay-content">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+    <nav>
+      <div id="myNav" class="overlay">
+
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
     <div class="container-fluid">
       <div class="row company-info mt-1">
 
@@ -60,18 +60,17 @@
 
         <div class="col-12 col-sm-2 col-md-4 col-lg-6  order-1 order-sm-2 contact-info ">
           <span class="d-sm-block d-md-inline text-center mt-sm-5 pt-sm-3">
-            <a class="inher-anch" href="callto:+4800012312">
+            <a class="inher-anch" href="tel:+4800012312">
               <i class="fas fa-phone fa-my-border"></i>
               <small class="d-none d-lg-inline">+00 123 456 789</small>
             </a>
           </span>
           <span class="d-sm-block d-md-inline text-center mt-sm-3">
             <a class="inher-anch" href="#address"><i class="fas fa-map-marker "></i><small
-              class="d-none d-lg-inline">ul. serotast 20</small></a></span>
+                class="d-none d-lg-inline">ul. serotast 20</small></a></span>
           <button id="menu-btn" class="menu-btn z-highest" type="button" onclick="openNav()">
             <span class="menu-btn-span"><i class="fas fa-bars"></i></span>
           </button>
-          <!-- <span class="menu-btn"><i class="fas fa-bars"></i></span> -->
 
 
         </div>
@@ -95,14 +94,18 @@
         <div class="col-12 col-md-6 features">
           <div class="col-12 feature-col">
             <img class="feature-img" src="images/posture-defecs.jpg" alt="image with pain palm on mouse">
-            <button class="btn btn-primary btn-feature active" type="button">Diagnoza</button>
+            <button class="btn btn-primary btn-feature" type="button" data-toggle="collapse" data-target=".multi-collapse"
+              aria-expanded="false" aria-controls="Diagnose-display Terapie-display">Diagnoza</button>
+            <!-- <button class="btn btn-primary btn-feature active" type="button">Diagnoza</button> -->
           </div>
           <div class="col-12 feature-col">
             <video class="feature-img" autoplay loop>
               <source src="images/refactored/pexels-kampus-production-6111071.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
-            <button class="btn btn-primary btn-feature" type="button">Terapie</button>
+            <button class="btn btn-primary btn-feature" type="button" data-toggle="collapse" data-target=".multi-collapse"
+            aria-expanded="false" aria-controls="Diagnose-display Terapie-display">Terapie</button>
+            <!-- <button class="btn btn-primary btn-feature" type="button">Terapie</button> -->
           </div>
           <div class="col-12 feature-col">
             <img class="feature-img" src="images/scar-therapy.jpg" alt="image with pain palm on mouse">
@@ -110,8 +113,9 @@
           </div>
         </div>
         <div class="col-12 col-md-6 feature-display">
-          <img class="display-img" src="images/join-injuries.jpg" alt="image with pain palm on mouse">
-          <div class="display-text">DIAGNOZA Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          <div class="collapse multi-collapse show" id="Diagnose-display">
+          <img class="display-img" src="images/posture-defecs.jpg" alt="image with pain palm on mouse">
+            <div class="display-text">DIAGNOZA Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem
             Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
             galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
@@ -120,6 +124,21 @@
             with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
             publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
         </div>
+        <div class="collapse multi-collapse" id="Terapie-display">
+          <video class="display-img" autoplay loop controls>
+            <source src="images/refactored/pexels-kampus-production-6111071.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+            <div class="display-text">TERAPIE Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+            also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+            1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        </div>
+      </div>
       </div>
     </div>
     </div>
@@ -184,10 +203,9 @@
             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="col-12 col-md-4 col-lg-6 address-col">
-          <p>Rehabilitacja Ewelina Zaremba</p>
-          <p>
-            Sybiraków 11/lok.2</p>
-          <p> 15-204 Białystok</p>
+          <p>address line 1</p>
+          <p>address line 2</p>
+          <p>address line 3</p>
         </div>
       </div>
     </div>
@@ -196,18 +214,18 @@
   <footer class="footer mt-5">
     <p>© Maken for your health</p>
   </footer>
-<!-- navigation js code -->
+  <!-- navigation js code -->
   <script>
     function openNav() {
       document.getElementById("myNav").style.width = "50%";
-      document.getElementById("menu-btn").setAttribute( "onClick", "javascript: closeNav();" );
+      document.getElementById("menu-btn").setAttribute("onClick", "javascript: closeNav();");
     }
-    
+
     function closeNav() {
       document.getElementById("myNav").style.width = "0%";
-      document.getElementById("menu-btn").setAttribute( "onClick", "javascript: openNav();" );
+      document.getElementById("menu-btn").setAttribute("onClick", "javascript: openNav();");
     }
-    </script>
+  </script>
   <!-- LINK TO BOOTSTRAP JAVA -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
