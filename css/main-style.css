@@ -205,29 +205,20 @@ header {
 
 .feature-col {
     margin-bottom: 6.25vh;
-    padding-left: 10%;
 }
 
-.feature-col button {
-    width: 205px;
-    height: 40px;
-    margin-left: 2rem;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    text-transform: uppercase;
-}
 
 .feature-img {
-    max-width: 370px;
+    width: 100%;
 }
 
 .btn-feature {
     background-color:#295162;
     color: #ffff;
-    padding: 0;
     border: none;
+    width: 150px;
+    height: 40px;
+    text-transform: uppercase;
 }
 
 .btn-feature:hover {
@@ -349,6 +340,9 @@ header {
         background-color: transparent;
         padding-top: 0;
     }
+    .btn-feature {
+        width: 105px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -359,6 +353,9 @@ header {
     }
     .contact-info {
         padding-left: 10%;
+    }
+    .btn-feature {
+        width: 150px;
     }
 }
 
