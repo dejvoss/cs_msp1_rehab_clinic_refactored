@@ -26,8 +26,8 @@ Table of Contents:
 <div align="center">
 
 ## Demo
- A live website can be found [here]().
-![website mockups]()
+ A live website can be found [here](https://dejvoss.github.io/cs_msp1_rehab_clinic_refactored/).
+![website mockups](readme_purpose/mockups.jpg)
 
 ## UX
 ### User stories
@@ -95,14 +95,11 @@ Different green color type was choosen due to colors of clinic logo.
 3. Bootstrap (4.4.0)
 4. Favicons
 5. Google Fonts
-6. [Lightbox2](https://lokeshdhakar.com/projects/lightbox2/)
-7. collapse by Bootstrap
-8. Menu by bootstrap.
 
 <div align="center">
 
 ## Features
-This site is a one page site. Sections are splitted by different full height pictures. Navigation bar is collapsed and is opened in top in row direction on big screens and column direction in small screens. Each section has a background picture or use the picture from home section.
+Website is a full page wthh tope full screen height header and 3 sections - features, recomenndation and contact map.
 
 ## Testing
 
@@ -110,48 +107,11 @@ Performance test done in [PageSpeedInsights](https://developers.google.com/speed
 
 I test all links by myself.
 
-Using of website was tested by Ewelina, my wife and people in slack. I've got good feedback which shows me issues to solve. Some of the comments and solutions i place below. Due to lack of hardware i couldn't test it on the very big screen.
-Mobile tests was done in Android 9.
-Desktop tests was done in google chrome 79.0.3945.88, firefox 71.0, microsoft edge 10, and safari 5.1.7. 
-Test in safari browser was failed. 
-Microsoft Edge test result: If menu is open in section it is stay there, is not moving to the section above, but is moving to the section below.
-
-1. Mobile version:
-
-User1: Links in footer are different than in navigation bar, Contact link in footer doesn't work.
-
-User2: White background below logo looks odd. Maybe is good to remove it and change font for bigger instead. - Done and looks really better.
-The address information on white background in contact/map section is to big, could be better without it. - Done and it is better.
-
-User3: The drop down menu, it’s nice, works lovely.... but the colour scheme is very similar to some of the background images. When you click on the options, moving on the main page, it makes reading the menu options hard and so. - solution implemented - change the menu color for not transparent and it is looks better.
-
-User4: Images in gallery are so small. - implemented the lightbox to solve it.
-
-2. Desktop version:
-
-User1: In recommandation section is a lot of empty space. - solved by remove restriction of section height.
-
-User2: Map picture is small if compare to the gallery pictures.
-
-User3: Types of treatments in for who section are opened all ugly, maybe will be better to have close one when other is opening. - solved.
-
 ## Deployment
 This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named `index.html`.
 
-To run locally, you can clone this repository directly into the editor of your choice by pasting `git clone https://github.com/dejvoss/code-inst-ms1-project.git` into your terminal.
-
-## Content
-All content in the "For whom" and "Treatments" sections in this website were taken from google and wikipedia. 
-All content in the "Recommendations" sections were taken from google place recommendation.
+To run locally, you can clone this repository directly into the editor of your choice by pasting `git clone https://github.com/dejvoss/cs_msp1_rehab_clinic_refactored.git` into your terminal.
 
 
-## Media
-All photos were taken from [secret stock 99](https://shop.stockphotosecrets.com/), a stock image library.
-
-
-## Acknowledgements
-The Lightbox was suggested by my mentor and applied from [here](https://lokeshdhakar.com/projects/lightbox2/)
-
-The navigation bar, collapsed cards in for whom section and cards in treatment section was taken from [here](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
 
 </div>
