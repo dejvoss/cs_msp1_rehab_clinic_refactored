@@ -5,6 +5,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
 /* anchor with inheritted values from parent */
 
 .inher-anch {
@@ -241,18 +245,14 @@ header {
 }
 
 .display-img {
-    max-width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    max-width: 100%;
     margin-top: 10%;
 }
 
 .display-text {
-    width: 70%;
+    width: 100%;
     height: auto;
     background-color: white;
-    margin-left: 15%;
-    margin-right: 15%;
     margin-top: 5%;
     padding: 1.5rem;
 }
@@ -324,6 +324,22 @@ header {
         background-color: rgba(77, 167, 165, .3);
         padding-top: 25px;
         padding-bottom: 25px;
+    }
+    .display-img {
+        max-width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 10%;
+    }
+    
+    .display-text {
+        width: 70%;
+        height: auto;
+        background-color: white;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 5%;
+        padding: 1.5rem;
     }
 }
 
