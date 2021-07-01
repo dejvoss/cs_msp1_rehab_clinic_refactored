@@ -33,9 +33,6 @@ body {
     color: #295162;
 }
 
-.z-highest {
-    z-index: 99999;
-}
 
 @keyframes blink-animation {
     to {
@@ -158,6 +155,7 @@ header {
     top: 0;
     border: none;
     background-color: transparent;
+    z-index: 1040
 }
 
 .menu-btn:focus {
@@ -297,6 +295,12 @@ header {
     text-align: center;
 }
 
+/* modal form dialog */
+
+.modal-dialog {
+    max-width: 800px;
+}
+
 /* media queries for different size of screen */
 
 /* navigation for small screens */
@@ -320,7 +324,7 @@ header {
         background-image: url("../images/refactored/two-woman-main-img-1920.jpg");
     }
     .main-caption {
-        margin-top: 3rem;
+        margin-top: 6rem;
         background-color: rgba(77, 167, 165, .3);
         padding-top: 25px;
         padding-bottom: 25px;
