@@ -34,9 +34,9 @@
 
         <div class="overlay-content">
           <a href="#">Home</a>
-          <a href="#">Registration (Contact)</a>
-          <a href="#">Threatments</a>
-          <a href="#">Our Staff</a>
+          <a data-toggle="modal" data-target="#registrationModal">Registration (Contact)</a>
+          <a href="#feature">What we do</a>
+          <a href="#therapists">Our Staff</a>
         </div>
       </div>
     </nav>
@@ -69,7 +69,7 @@
             <a class="inher-anch" href="#address"><i class="fas fa-map-marker "></i><small
                 class="d-none d-lg-inline">street, nr</small></a></span>
           <button id="menu-btn" class="menu-btn" type="button" onclick="openNav()">
-            <span class="menu-btn-span"><i class="fas fa-bars"></i></span>
+            <span class="menu-btn-span" id="menu-btn-span" style="color:#4da7a5"><i class="fas fa-bars"></i></span>
           </button>
 
 
@@ -94,15 +94,15 @@
   </header>
 
   <section id="feature">
-    <div class="container-fluid feature-section mb-5">
+    <div class="container-fluid feature-section">
       <div class="row">
         <div class="col-12 col-md-6 features">
           <div class="col-12 feature-col">
             <div class="row">
-              <div class="col-12 col-sm-6 col-md-8">
+              <div class="col-12 col-lg-8">
                 <img class="feature-img" src="images/posture-defecs.jpg" alt="image with pain palm on mouse">
               </div>
-              <div class="col-12 col-sm-6 col-md-4 m-auto text-center">
+              <div class="col-12 col-lg-4 m-auto text-center">
                 <button class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
                   data-target=".multi-collapse" aria-expanded="false"
                   aria-controls="Diagnose-display Terapie-display"><a class="inher-anch"
@@ -112,13 +112,13 @@
           </div>
           <div class="col-12 feature-col">
             <div class="row">
-              <div class="col-12 col-sm-6 col-md-8">
+              <div class="col-12 col-lg-8">
                 <video class="feature-img" autoplay loop>
                   <source src="images/refactored/pexels-kampus-production-6111071.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
               </div>
-              <div class="col-12 col-sm-6 col-md-4 m-auto text-center">
+              <div class="col-12 col-lg-4 m-auto text-center">
                 <button class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
                   data-target=".multi-collapse" aria-expanded="false"
                   aria-controls="Diagnose-display Terapie-display"><a class="inher-anch"
@@ -128,11 +128,12 @@
           </div>
           <div class="col-12 feature-col">
             <div class="row">
-              <div class="col-12 col-sm-6 col-md-8">
+              <div class="col-12 col-lg-8">
                 <img class="feature-img" src="images/scar-therapy.jpg" alt="image with pain palm on mouse">
               </div>
-              <div class="col-12 col-sm-6 col-md-4 m-auto text-center">
-                <button class="btn btn-primary btn-feature">Therapists</button>
+              <div class="col-12 col-lg-4 m-auto text-center">
+                <button class="btn btn-primary btn-feature"><a class="inher-anch"
+                  href="#therapists">Therapists</a></button>
               </div>
             </div>
           </div>
@@ -186,7 +187,7 @@
     </div>
   </section>
   <section>
-    <div class="container-fluid recommendation-section pt-3 mt-5">
+    <div class="container-fluid recommendation-section pt-3">
       <div class="row">
         <div class="col-12 col-sm-6 col-md-4">
           <div class="card text-center">
@@ -236,23 +237,37 @@
       </div>
     </div>
   </section>
-  <section id="address">
-
-  </section>
-  <footer class="footer mt-5">
-
-    <div class="container address-map pt-3 pb-3">
+  <section id="therapists">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-12 col-md-8 col-lg-6 ">
-          <iframe class="map-frame"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.7339505124655!2d23.194563815641732!3d53.13292129837713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471fff040e8bf8f7%3A0xc8192108a6cfac61!2sRehabilitacja%20Ewelina%20Zaremba!5e0!3m2!1sen!2spl!4v1623143007524!5m2!1sen!2spl"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="col-12 col-md-6 therapist-photo">
+          <img class="img-fluid" src="images/main-therapist.jpg" alt="photo of woman physiotherapist">
         </div>
+        <div class="col-12 col-md-6 therapist-description">
+          <h3>Your therapist</h3>
+          <p>I am a physiotherapist by education. I have been working in the profession for 10 years.</p>
+          <p>Completed master's studies at the Medical University and completed numerous courses and
+            trainings are the basis for providing comprehensive care for my patients!</p>
+          <p>Work has become my passion and gives me great satisfaction!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+
+    <div class="container-fluid address-map pt-5 pb-3">
+      <div class="row">
         <div class="col-12 col-md-4 col-lg-6 address-col">
           <p>address line 1</p>
           <p>address line 2</p>
           <p>address line 3</p>
         </div>
+        <div class="col-12 col-md-8 col-lg-6" id="address">
+          <iframe class="map-frame"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.7339505124655!2d23.194563815641732!3d53.13292129837713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471fff040e8bf8f7%3A0xc8192108a6cfac61!2sRehabilitacja%20Ewelina%20Zaremba!5e0!3m2!1sen!2spl!4v1623143007524!5m2!1sen!2spl"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
       </div>
     </div>
     </div>
@@ -337,16 +352,25 @@
     </div>
   </div>
   <!-- registration pop-up modal -->
+
   <!-- navigation js code -->
   <script>
     function openNav() {
+      if (window.innerWidth < 768){
+        document.getElementById("myNav").style.width = "100%";
+        document.getElementById("menu-btn").setAttribute("onClick", "javascript: closeNav();");
+        document.getElementById("menu-btn-span").style.color = "#fff";
+      } else {
       document.getElementById("myNav").style.width = "50%";
       document.getElementById("menu-btn").setAttribute("onClick", "javascript: closeNav();");
+      
+    }
     }
 
     function closeNav() {
       document.getElementById("myNav").style.width = "0%";
       document.getElementById("menu-btn").setAttribute("onClick", "javascript: openNav();");
+      document.getElementById("menu-btn-span").style.color = "#4da7a5";
     }
   </script>
   <!-- LINK TO BOOTSTRAP JAVA -->

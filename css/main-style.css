@@ -33,19 +33,10 @@ body {
     color: #295162;
 }
 
-
-@keyframes blink-animation {
-    to {
-        color: #fefefe;
-    }
+a:not([href]):hover {
+    cursor: pointer
 }
 
-@-webkit-keyframes blink-animation {
-    
-    to {
-        color: #fefefe;
-    }
-}
 
 /* settings for all icons in document */
 
@@ -85,13 +76,12 @@ body {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #fff;
+    color: #000;
     display: block;
     transition: 0.3s;
   }
   
   .overlay a:hover, .overlay a:focus {
-    color:#4da7a5;
     background-color: #fff;
   }
   
@@ -107,7 +97,7 @@ body {
 /* Logo part */
 
 header {
-    min-height: 100vh;
+    min-height: 99vh;
 
 }
 
@@ -166,7 +156,7 @@ header {
     position: fixed;
     right: 3%;
     top: 0;
-    color: #4da7a5;
+    /* color: #4da7a5; */
 }
 
 .menu-btn .fas {
@@ -284,10 +274,6 @@ header {
     margin: auto;
 }
 
-.map-frame {
-    border-radius: 15%;
-}
-
 .footer {
     background-color: #295162;
     font-size: 0.6rem;
@@ -301,17 +287,18 @@ header {
     max-width: 800px;
 }
 
-/* media queries for different size of screen */
+/* section therapist */
+.therapist-photo {
+    padding-left: 0;
+}
 
-/* navigation for small screens */
-@media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
-  }
+.therapist-description {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+/* media queries for different size of screen */
 
 @media (min-width: 576px) {
     html {
@@ -329,22 +316,7 @@ header {
         padding-top: 25px;
         padding-bottom: 25px;
     }
-    .display-img {
-        max-width: 70%;
-        margin-left: 15%;
-        margin-right: 15%;
-        margin-top: 10%;
-    }
-    
-    .display-text {
-        width: 70%;
-        height: auto;
-        background-color: white;
-        margin-left: 15%;
-        margin-right: 15%;
-        margin-top: 5%;
-        padding: 1.5rem;
-    }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -361,7 +333,7 @@ header {
         padding-top: 0;
     }
     .btn-feature {
-        width: 105px;
+        width: 125px;
     }
 }
 
@@ -376,6 +348,22 @@ header {
     }
     .btn-feature {
         width: 150px;
+    }
+    .display-img {
+        max-width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 10%;
+    }
+    
+    .display-text {
+        width: 70%;
+        height: auto;
+        background-color: white;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 5%;
+        padding: 1.5rem;
     }
 }
 
