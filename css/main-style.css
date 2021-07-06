@@ -189,7 +189,7 @@ header {
     right: 0;
     z-index: -1;
     height: 100%;
-    background-image: linear-gradient(to bottom, #f5f7f8, #f4f8f98c), url(../images/refactored/two-woman-main-img-1920.jpg);
+    background-image: linear-gradient(to bottom, #f5f7f8, #f4f8f98c), url("../images/two-woman-main-img-1920.webp");
     background-position-y: center;
     background-position-x: center;
     background-size: cover;
@@ -323,7 +323,7 @@ header {
         display: inline-flex;
     }
     .main-picture {
-        background-image: url("../images/refactored/two-woman-main-img-1920.jpg");
+        background-image: url("../images/two-woman-main-img-1920.webp");
     }
     .main-caption {
         margin-top: 6rem;

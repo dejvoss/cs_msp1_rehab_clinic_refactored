@@ -63,24 +63,24 @@ Based on the user stories i describe few points of what information needs to be 
 
 ### Structure
 
-![webpage structure](images/refactored/structure.png)
+![webpage structure](readme_purpose/structure.png)
 
 ### Skeleton
 Desktop wireframes:
 
-![1st-page-frame](images/refactored/1stframe.png)
+![1st-page-frame](readme_purpose/1stframe.png)
 
-![2nd-frame](images/refactored/2ndframe.png)
+![2nd-frame](readme_purpose/2ndframe.png)
 
-![3rd-frame](images/refactored/3rdframe.png)
+![3rd-frame](readme_purpose/3rdframe.png)
 
 Mobile wireframes:
 
-![1st-page-mobile-frame](images/refactored/1stmobileframe.png)
-![2nd-mobile-frame](images/refactored/2ndmobileframe.png)
+![1st-page-mobile-frame](readme_purpose/1stmobileframe.png)
+![2nd-mobile-frame](readme_purpose/2ndmobileframe.png)
 
-![3rd-mobile-frame](images/refactored/3rdmobileframe.png)
-![4th-mobile-frame](images/refactored/4thmobileframe.png)
+![3rd-mobile-frame](readme_purpose/3rdmobileframe.png)
+![4th-mobile-frame](readme_purpose/4thmobileframe.png)
 
 ### Surface
 Different green color type was choosen due to colors of clinic logo.
@@ -94,13 +94,12 @@ Different green color type was choosen due to colors of clinic logo.
 1. HTML
 2. CSS
 3. Bootstrap (4.4.0)
-4. Favicons
 5. Google Fonts
 
 <div align="center">
 
 ## Features
-Website is a full page wthh tope full screen height header and 3 sections - features, recomenndation and contact map.
+Website is a full page site with top full screen height header and 3 sections - features, recomenndation and therapist.
 
 ## Testing
 
