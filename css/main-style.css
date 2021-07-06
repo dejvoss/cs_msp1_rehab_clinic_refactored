@@ -312,6 +312,10 @@ header {
     background-color: #f5f6f8;
 }
 
+.feature-list {
+    list-style-position: inside;
+}
+
 .display-img {
     max-width: 100%;
     margin-top: 10%;
