@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* anchor with inheritted values from parent */
@@ -26,15 +26,9 @@ body {
 .blink-link {
     color:#295162;
     animation: blink-animation 3s linear infinite alternate-reverse;
-    -webkit-animation: blink-animation 3s linear infinite alternate-reverse;
 }
 
 @keyframes blink-animation {
-    to {
-        color: #fff;
-    }
-  }
-  @-webkit-keyframes blink-animation {
     to {
         color: #fff;
     }
@@ -252,10 +246,15 @@ header {
 .display-text {
     width: 100%;
     height: auto;
-    background-color: white;
+    background-color: #f5f6f8;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 5%;
     padding: 1.5rem;
+    text-align: center;
+    line-height: 2.5rem;
 }
+
 
 
 /* section recommendation */
@@ -373,13 +372,14 @@ header {
     }
     
     .display-text {
-        width: 70%;
         height: auto;
-        background-color: white;
-        margin-left: 15%;
-        margin-right: 15%;
+        background-color: #f5f6f8;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 5%;
         padding: 1.5rem;
+        text-align: center;
+        line-height: 2.5rem;
     }
 }
 
