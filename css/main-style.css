@@ -173,7 +173,7 @@ header {
 }
 
 .main-sub-heading {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Nixie One', cursive;
     text-transform: uppercase;
     letter-spacing: .5em;
 }
@@ -280,6 +280,10 @@ header {
     font-size: 0.6rem;
     padding: 0.1rem;
     text-align: center;
+}
+
+.map-frame {
+    width: 100%;
 }
 
 /* modal form dialog */

@@ -10,7 +10,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
   <!-- FONTS FROM GOOGLE FONT -->
-  <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans|Montserrat&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Anton%7COpen+Sans%7CMontserrat&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <!-- <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet"> -->
   <link
@@ -47,7 +47,7 @@
           <div class="logo-img-div">
             <a class="inher-anch" href="#">
               <img class="logo-img" src="images/logo-only.png" alt="company logo">
-
+              </a>
           </div>
           <div class="logo-caption-col">
             <a class="inher-anch" href="#">
@@ -132,8 +132,9 @@
                 <img class="feature-img" src="images/scar-therapy.jpg" alt="image with pain palm on mouse">
               </div>
               <div class="col-12 col-lg-4 m-auto text-center">
-                <button class="btn btn-primary btn-feature"><a class="inher-anch"
-                  href="#therapists">Therapists</a></button>
+                <a class="btn btn-primary btn-feature"
+                    href="#therapists">Therapists</a>
+                    
               </div>
             </div>
           </div>
@@ -184,11 +185,13 @@
         </div>
       </div>
     </div>
-    </div>
+
   </section>
   <section>
     <div class="container-fluid recommendation-section pt-3">
+      <h3 class="text-center pb-2">Healthy patients are happy patients</h3>
       <div class="row">
+        
         <div class="col-12 col-sm-6 col-md-4">
           <div class="card text-center">
             <img class="card-img-top" src="images/refactored/happy-old-man.jpg" alt="Card image cap">
@@ -265,11 +268,10 @@
         <div class="col-12 col-md-8 col-lg-6" id="address">
           <iframe class="map-frame"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.7339505124655!2d23.194563815641732!3d53.13292129837713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471fff040e8bf8f7%3A0xc8192108a6cfac61!2sRehabilitacja%20Ewelina%20Zaremba!5e0!3m2!1sen!2spl!4v1623143007524!5m2!1sen!2spl"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        
+
       </div>
-    </div>
     </div>
     <p>© Maken for your health</p>
   </footer>
@@ -279,7 +281,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Online registration</h5>
+          <h5 class="modal-title" id="registrationModalLabel">Online registration</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -311,10 +313,12 @@
             </div>
             <div class="form-group">
               <label for="InputPhone">Phone number</label>
-              <input type="phone" class="form-control" id="InputPhone" aria-describedby="phoneHelp">
-              <small id="emailHelp" class="form-text text-muted">We use your number only for the visit purposes</small>
+              <input type="tel" class="form-control" id="InputPhone" aria-describedby="phoneHelp">
+              <small id="phoneHelp" class="form-text text-muted">We use your number only for the visit purposes</small>
             </div>
-            <div class="form-group row">
+            <fieldset class="form-group">
+              
+            <div class="row">
               <legend class="col-form-label col-sm-12 float-sm-left pt-0">Preffered visit time:</legend>
               <div class="col-sm-12">
                 <div class="form-check">
@@ -337,6 +341,7 @@
                 </div>
               </div>
             </div>
+          </fieldset>
             <div class="form-group">
               <label for="validationTextarea">Message</label>
               <textarea class="form-control" id="validationTextarea"
@@ -356,15 +361,15 @@
   <!-- navigation js code -->
   <script>
     function openNav() {
-      if (window.innerWidth < 768){
+      if (window.innerWidth < 768) {
         document.getElementById("myNav").style.width = "100%";
         document.getElementById("menu-btn").setAttribute("onClick", "javascript: closeNav();");
         document.getElementById("menu-btn-span").style.color = "#fff";
       } else {
-      document.getElementById("myNav").style.width = "50%";
-      document.getElementById("menu-btn").setAttribute("onClick", "javascript: closeNav();");
-      
-    }
+        document.getElementById("myNav").style.width = "50%";
+        document.getElementById("menu-btn").setAttribute("onClick", "javascript: closeNav();");
+
+      }
     }
 
     function closeNav() {
