@@ -29,6 +29,17 @@ body {
     -webkit-animation: blink-animation 3s linear infinite alternate-reverse;
 }
 
+@keyframes blink-animation {
+    to {
+        color: #fff;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+        color: #fff;
+    }
+  }
+
 .blink-link:hover {
     color: #295162;
 }
