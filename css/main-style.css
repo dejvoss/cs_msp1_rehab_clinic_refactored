@@ -272,15 +272,38 @@ header {
 
 /* header end */
 
-/* section features begin */
+/* section features */
 
-.feature-col {
-    margin-bottom: 6.25vh;
+.feature-col, .carousel-inner {
+    margin-top: auto;
+    margin-bottom: auto;
+    max-height: 340px;
+    overflow: hidden;
 }
+
 
 
 .feature-img {
     width: 100%;
+}
+
+
+.center-overlay {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(77,167,165, 0.8);
+    padding: 3rem;
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    min-height: 50%;
+    width: calc(100% - 30px);
+
+}
+
+.center-overlay h5 {
+    font-family: 'Nixie One', cursive;
 }
 
 .btn-feature {
@@ -307,9 +330,9 @@ header {
 
 
 .feature-display {
-    width: 100vw;
+    
     padding-top: 0;
-    background-color: #f5f6f8;
+    
 }
 
 .feature-list {

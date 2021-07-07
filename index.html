@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" SameSite=Strict or SameSite=Lax>
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Rehabilitation Clinic name</title>
   <!-- LINK TO CSS BOOTSTRAP -->
-    <link rel="stylesheet" href="css/bootstrap.min.css"
+  <link rel="stylesheet" href="css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
   <!-- font-awesome-icons-CDN-->
@@ -88,50 +88,91 @@
 
   <section id="feature">
     <div class="container-fluid feature-section">
-      <div class="row">
-        <div class="col-12 col-md-6 features">
-          <div class="col-12 feature-col">
-            <div class="row">
-              <div class="col-12 col-lg-8">
-                <img class="feature-img" src="images/posture-defecs.webp" alt="image with pain palm on mouse">
-              </div>
-              <div class="col-12 col-lg-4 m-auto text-center">
+      <div id="mobile-carousel" class="carousel slide d-md-none mt-5" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="">
+
+              <img class="feature-img" src="images/posture-defecs.webp" alt="image with pain palm on mouse">
+              <div class="center-overlay">
+                <h5>We believe that correct diagnose is the 1st step to pain relief</h5>
                 <button id="diagnose-btn" class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
                   data-target=".multi-collapse" aria-expanded="false"
-                  aria-controls="Diagnose-display Terapie-display"><a class="inher-anch"
-                    href="#feature-display">Diagnose</a></button>
+                  aria-controls="Diagnose-display Terapie-display">See more</button>
               </div>
             </div>
           </div>
-          <div class="col-12 feature-col">
-            <div class="row">
-              <div class="col-12 col-lg-8">
-                <video class="feature-img" autoplay loop>
-                  <source src="images/pexels-kampus-production-6111071.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="col-12 col-lg-4 m-auto text-center">
+          <div class="carousel-item">
+            <div class="">
+
+              <video class="feature-img" autoplay loop>
+                <source src="images/pexels-kampus-production-6111071.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="center-overlay">
+                <h5>After finding the cause of the pain, we choose one of many treatments</h5>
                 <button id="therapie-btn" class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
                   data-target=".multi-collapse" aria-expanded="false"
-                  aria-controls="Diagnose-display Terapie-display"><a class="inher-anch"
-                    href="#feature-display">Therapies</a></button>
+                  aria-controls="Diagnose-display Terapie-display">See more</button>
               </div>
             </div>
           </div>
-          <div class="col-12 feature-col">
-            <div class="row">
-              <div class="col-12 col-lg-8">
-                <img class="feature-img" src="images/scar-therapy.webp" alt="image with pain palm on mouse">
-              </div>
-              <div class="col-12 col-lg-4 m-auto text-center">
-                <a class="btn btn-primary btn-feature" href="#therapists">Therapists</a>
+          <div class="carousel-item">
+            <div class="">
 
+              <img class="feature-img img-fluid" src="images/women-therapy.webp" alt="image with pain palm on mouse">
+              <div class="center-overlay">
+                <h5>The same person looks after you during treatment</h5>
+                <a class="btn btn-primary btn-feature" href="#therapists">Meet me</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 feature-display" id="feature-display">
+        <a class="carousel-control-prev" href="#mobile-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#mobile-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="row mt-5 d-none d-md-flex">
+
+        <div class="col-4  feature-col">
+
+          <img class="feature-img" src="images/posture-defecs.webp" alt="image with pain palm on mouse">
+          <div class="center-overlay">
+            <h5>We believe that correct diagnose is the 1st step to pain relief</h5>
+            <button id="diagnose-btn" class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
+              data-target=".multi-collapse" aria-expanded="false" aria-controls="Diagnose-display Terapie-display">See
+              more</button>
+          </div>
+        </div>
+        <div class="col-4 feature-col">
+          <video class="feature-img" autoplay loop>
+            <source src="images/pexels-kampus-production-6111071.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="center-overlay">
+            <h5>After finding the cause of the pain, we choose one of many treatments</h5>
+            <button id="therapie-btn" class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
+              data-target=".multi-collapse" aria-expanded="false" aria-controls="Diagnose-display Terapie-display">See
+              more</button>
+          </div>
+        </div>
+        <div class="col-4  feature-col">
+          <img class="feature-img img-fluid" src="images/women-therapy.webp" alt="image with pain palm on mouse">
+          <div class="center-overlay">
+            <h5>The same person looks after you during treatment</h5>
+                <a class="btn btn-primary btn-feature" href="#therapists">Meet me</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-12 col-md-6 col-lg-8 feature-display" id="feature-display">
           <div class="collapse multi-collapse show" id="Diagnose-display">
             <img class="display-img" src="images/posture-defecs.webp" alt="image with pain palm on mouse">
             <div class="display-text">
@@ -175,13 +216,15 @@
             </div>
           </div>
         </div>
+
+
       </div>
     </div>
 
   </section>
   <section>
     <div class="container-fluid recommendation-section pt-3">
-      <h3 class="text-center pb-2 text-white">Healthy patients are happy patients</h3>
+      <h3 class="text-center pb-2 text-white">Our patients says:</h3>
       <div class="row">
 
         <div class="col-12 col-sm-6 col-md-4">
