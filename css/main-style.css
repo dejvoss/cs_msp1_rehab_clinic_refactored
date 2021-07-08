@@ -328,26 +328,31 @@ header {
     background-color:#4da7a5;
 }
 
-
-.feature-display {
-    
-    padding-top: 0;
+.features-1stpart {
     background-color: #f5f6f8;
-    
-    
+    padding: 1rem;
 }
+
+/* .feature-display {
+    padding-top: 0;   
+} */
 
 .feature-list {
     list-style-position: inside;
 }
 
-.display-img {
+.display-img-wrap {
     max-width: 100%;
+    background-color: #f5f6f8;
+}
 
+.display-img {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .display-text {
-    background-color: #f5f6f8;
+    background-color: #fff;
     line-height: 2.5rem;
 }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" SameSite=Strict or SameSite=Lax>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -87,7 +87,8 @@
   </header>
 
   <section id="feature">
-    <div class="container-fluid feature-section">
+    <div class= "container-fluid features-1stpart"> 
+    <div class="container feature-section">
       <!-- Carousel visible on small and medium devices -->
       <div id="mobile-carousel" class="carousel slide d-md-none mt-5" data-ride="carousel">
         <div class="carousel-inner">
@@ -97,7 +98,7 @@
               <img class="feature-img" src="images/posture-defecs.webp" alt="image with pain palm on mouse">
               <div class="center-overlay">
                 <h5>We believe that correct diagnose is the 1st step to pain relief</h5>
-                <button id="diagnose-btn" class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
+                <button class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
                   data-target=".multi-collapse" aria-expanded="false"
                   aria-controls="Diagnose-display Terapie-display">See more</button>
               </div>
@@ -107,12 +108,12 @@
             <div class="">
 
               <video class="feature-img" autoplay loop>
-                <source src="images/pexels-kampus-production-6111071.mp4" type="video/mp4">
+                <source src="images/pexels-kampus-production-resized.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
               <div class="center-overlay">
                 <h5>After finding the cause of the pain, we choose one of many treatments</h5>
-                <button id="therapie-btn" class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
+                <button class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
                   data-target=".multi-collapse" aria-expanded="false"
                   aria-controls="Diagnose-display Terapie-display">See more</button>
               </div>
@@ -139,26 +140,26 @@
         </a>
       </div>
       <!-- carousel content fully visible on large screen -->
-      <div class="row mt-5 d-none d-md-flex">
+      <div class="row d-none d-md-flex">
 
-        <div class="col-4  feature-col">
+        <div class="col-4 feature-col">
 
           <img class="feature-img" src="images/posture-defecs.webp" alt="image with pain palm on mouse">
           <div class="center-overlay">
             <h5>We believe that correct diagnose is the 1st step to pain relief</h5>
-            <button id="diagnose-btn" class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
+            <button class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
               data-target=".multi-collapse" aria-expanded="false" aria-controls="Diagnose-display Terapie-display">See
               more</button>
           </div>
         </div>
         <div class="col-4 feature-col">
           <video class="feature-img" autoplay loop>
-            <source src="images/pexels-kampus-production-6111071.mp4" type="video/mp4">
+            <source src="images/pexels-kampus-production-resized.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
           <div class="center-overlay">
             <h5>After finding the cause of the pain, we choose one of many treatments</h5>
-            <button id="therapie-btn" class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
+            <button class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
               data-target=".multi-collapse" aria-expanded="false" aria-controls="Diagnose-display Terapie-display">See
               more</button>
           </div>
@@ -171,50 +172,64 @@
           </div>
         </div>
       </div>
-
+    </div> 
+  </div>
+    <div class="container-fluid">
       <div class="row">
         <!-- more detailed features opened by clicking on button in each feature img  -->
         <div class="col-12 feature-display text-center" id="feature-display">
           <div class="collapse multi-collapse show" id="Diagnose-display">
-            <img class="img-fluid display-img" src="images/posture-defecs.webp" alt="image with pain palm on mouse">
-            <div class="display-text">
-              <h3>Diagnose</h3>
-              <ul class="feature-list">
-                <li>individual approach to each patient</li>
-                <li>therapy adapted to the patient's ailments and physical condition</li>
-                <li>in-depth interview before starting treatment</li>
-                <li>online registration process</li>
-              </ul>
-              <p>
-                Our registration and diagnosis process consists of a few easy steps:
-              </p>
-              <ol class="feature-list">
-                <li>Online registration with a form relating to your physical health</li>
-                <li>Make an appointment</li>
-                <li>A thorough interview with a specialist</li>
-                <li>Choosing the right treatment</li>
-                <li>Arranging subsequent visits</li>
-              </ol>
+            <div class="row">
+              <div class="col-12 col-md-6 display-img-wrap"> 
+              <div class=" display-img">
+                <img class="img-fluid " src="images/posture-defecs.webp" alt="image with pain palm on mouse">
+              </div>
+</div>
+              <div class="display-text col-12 col-md-6">
+                <h3>Diagnose</h3>
+                <ul class="feature-list">
+                  <li>individual approach to each patient</li>
+                  <li>therapy adapted to the patient's ailments and physical condition</li>
+                  <li>in-depth interview before starting treatment</li>
+                  <li>online registration process</li>
+                </ul>
+                <p>
+                  Our registration and diagnosis process consists of a few easy steps:
+                </p>
+                <ol class="feature-list">
+                  <li>Online registration with a form relating to your physical health</li>
+                  <li>Make an appointment</li>
+                  <li>A thorough interview with a specialist</li>
+                  <li>Choosing the right treatment</li>
+                  <li>Arranging subsequent visits</li>
+                </ol>
+              </div>
             </div>
           </div>
           <div class="collapse multi-collapse" id="Terapie-display">
-            <video class="display-img" autoplay loop controls width="800px">
-              <source src="images/pexels-kampus-production-6111071.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <div class="display-text">
-              <h3>Therapies</h3>
-              <p>We are specializing with below therapies:</p>
-              <ul class="feature-list">
-                <li>Kinesiotaping</li>
-                <li>Scar therapy</li>
-                <li>Trigger needle therapy</li>
-                <li>Sports massage</li>
-                <li>Relaxing massage</li>
-                <li>Massage</li>
-                <li>Lymphatic drainage</li>
-                <li>Manual therapy</li>
-              </ul>
+            <div class="row">
+              <div class="display-img-wrap"> 
+              <div class="col-12 col-md-6 display-img">
+                <video class="" autoplay loop controls width="800">
+                  <source src="images/pexels-kampus-production-resized.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+              <div class="col-12 col-md-6 display-text">
+                <h3>Therapies</h3>
+                <p>We are specializing with below therapies:</p>
+                <ul class="feature-list">
+                  <li>Kinesiotaping</li>
+                  <li>Scar therapy</li>
+                  <li>Trigger needle therapy</li>
+                  <li>Sports massage</li>
+                  <li>Relaxing massage</li>
+                  <li>Massage</li>
+                  <li>Lymphatic drainage</li>
+                  <li>Manual therapy</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -222,55 +237,57 @@
 
       </div>
     </div>
-
+  
   </section>
   <section>
     <div class="container-fluid recommendation-section pt-3">
-      <h3 class="text-center pb-2 text-white">Our patients says:</h3>
-      <div class="row">
+      <div class="container">
+        <h3 class="text-center pb-2 text-white">Our patients says:</h3>
+        <div class="row">
 
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="card text-center">
-            <img class="card-img-top" src="images/happy-old-man.webp" alt="Card image cap">
-            <div class="card-header text-center">
-              Quote
-            </div>
-            <div class="card-body">
-              <blockquote class="blockquote mb-0">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
-                </footer>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 d-none d-sm-block">
-          <div class="card text-center">
-            <img class="card-img-top" src="images/happy-old-man.webp" alt="Card image cap">
-            <div class="card-header text-center">
-              Quote
-            </div>
-            <div class="card-body">
-              <blockquote class="blockquote mb-0">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
-                </footer>
-              </blockquote>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card text-center">
+              <img class="card-img-top" src="images/happy-old-man.webp" alt="Card image cap">
+              <div class="card-header text-center">
+                Quote
+              </div>
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
+                  </footer>
+                </blockquote>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 d-none d-md-block">
-          <div class="card text-center">
-            <img class="card-img-top" src="images/happy-old-man.webp" alt="Card image cap">
-            <div class="card-header text-center">
-              Quote
+          <div class="col-12 col-sm-6 col-md-4 d-none d-sm-block">
+            <div class="card text-center">
+              <img class="card-img-top" src="images/happy-old-man.webp" alt="Card image cap">
+              <div class="card-header text-center">
+                Quote
+              </div>
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
+                  </footer>
+                </blockquote>
+              </div>
             </div>
-            <div class="card-body">
-              <blockquote class="blockquote mb-0">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
-                </footer>
-              </blockquote>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 d-none d-md-block">
+            <div class="card text-center">
+              <img class="card-img-top" src="images/happy-old-man.webp" alt="Card image cap">
+              <div class="card-header text-center">
+                Quote
+              </div>
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
+                  </footer>
+                </blockquote>
+              </div>
             </div>
           </div>
         </div>
