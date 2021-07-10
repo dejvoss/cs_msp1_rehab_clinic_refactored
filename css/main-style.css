@@ -151,18 +151,20 @@ a:not([href]):hover {
     margin-top: 30px;
   }
   
-  .overlay a {
+  .overlay a, .menu-link {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #000;
+    color: #fff;
     display: block;
     transition: 0.3s;
   }
   
-  .overlay a:hover, .overlay a:focus {
+  .overlay a:hover, .overlay a:focus, .menu-link:hover, .menu-link:focus {
     background-color: #fff;
+    color: rgb(0, 0, 0);
   }
+
   
   .overlay .closebtn {
     position: absolute;
