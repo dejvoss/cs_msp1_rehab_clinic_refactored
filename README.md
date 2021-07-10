@@ -103,7 +103,7 @@ Website is a full page site with top full screen height header and 3 sections - 
 
 ## Testing
 
-Performance test done in [PageSpeedInsights](https://developers.google.com/speed/pagespeed/insights/) with result of 97 for mobile and 99 for desktop.
+Performance test done in [PageSpeedInsights](https://developers.google.com/speed/pagespeed/insights/) with result of 84 for mobile and 99 for desktop.
 
 I test all links by myself.
 
@@ -111,7 +111,5 @@ I test all links by myself.
 This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named `index.html`.
 
 To run locally, you can clone this repository directly into the editor of your choice by pasting `git clone https://github.com/dejvoss/cs_msp1_rehab_clinic_refactored.git` into your terminal.
-
-
 
 </div>
