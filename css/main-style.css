@@ -341,8 +341,7 @@ header {
     list-style-position: inside;
 }
 
-.display-img-wrap {
-    max-width: 100%;
+.display-feature-row {
     background-color: #f5f6f8;
 }
 
@@ -354,6 +353,7 @@ header {
 .display-text {
     background-color: #fff;
     line-height: 2.5rem;
+    padding-top: 2rem;
 }
 
 
