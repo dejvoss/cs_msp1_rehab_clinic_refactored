@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Rehabilitation Clinic name</title>
+  <title>Brighter Future - Gateway Rehabilitation Clinic</title>
   <!-- LINK TO CSS BOOTSTRAP -->
   <link rel="stylesheet" href="css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -24,7 +24,7 @@
   <header>
     <nav>
       <div id="myNav" class="overlay">
-
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
           <a href="#">Home</a>
           <a data-toggle="modal" data-target="#registrationModal">Registration (Contact)</a>
@@ -44,9 +44,9 @@
           </div>
           <div class="logo-caption-col">
             <a class="inher-anch" href="#">
-              <h5 class="h6 text-center company-2nd-caption">Clinic name</h5>
+              <h5 class="h6 text-center company-2nd-caption">Gateway</h5>
               <h2 class="h3 text-center company-1st-caption mt-3 mb-1">Rehabilitation</h2>
-              <h5 class="h6 text-center company-2nd-caption">City</h5>
+              <h5 class="h6 text-center company-2nd-caption">Chinc City</h5>
             </a>
           </div>
         </div>
@@ -64,7 +64,6 @@
           <button id="menu-btn" class="menu-btn" type="button" onclick="openNav()">
             <span class="menu-btn-span" id="menu-btn-span" style="color:#4da7a5"><i class="fas fa-bars"></i></span>
           </button>
-
 
         </div>
       </div>
@@ -87,87 +86,87 @@
   </header>
 
   <section id="feature">
-    <div class= "container-fluid features-1stpart"> 
-    <div class="container feature-section">
-      <!-- Carousel visible on small and medium devices -->
-      <div id="mobile-carousel" class="carousel slide d-md-none mt-5" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="">
+    <div class="container-fluid features-1stpart">
+      <div class="container feature-section">
+        <!-- Carousel visible on small and medium devices -->
+        <div id="mobile-carousel" class="carousel slide d-md-none mt-5" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="">
 
-              <img class="feature-img" src="images/posture-defecs.webp" alt="image with pain palm on mouse">
-              <div class="center-overlay">
-                <h5>We believe that correct diagnose is the 1st step to pain relief</h5>
-                <button class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
-                  data-target=".multi-collapse" aria-expanded="false"
-                  aria-controls="Diagnose-display Terapie-display">See more</button>
+                <img class="feature-img" src="images/posture-defecs.webp" alt="image with pain palm on mouse">
+                <div class="center-sm-overlay">
+                  <p>We believe that correct diagnose is the 1st step to pain relief</p>
+                  <button class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
+                    data-target=".multi-collapse" aria-expanded="false"
+                    aria-controls="Diagnose-display Terapie-display">See more</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="">
+
+                <img class="feature-img" src="images/therapies-min.webp" alt="photo of woman palm on man back">
+                <div class="center-sm-overlay">
+                  <p>After finding the cause of the pain, we choose one of many treatments</p>
+                  <button class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
+                    data-target=".multi-collapse" aria-expanded="false"
+                    aria-controls="Diagnose-display Terapie-display">See more</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="">
+
+                <img class="feature-img img-fluid" src="images/women-therapy.webp" alt="image with pain palm on mouse">
+                <div class="center-sm-overlay">
+                  <p>The same person looks after you during all treatment</p>
+                  <a class="btn btn-primary btn-feature" href="#therapists">Meet me</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="">
+          <a class="carousel-control-prev" href="#mobile-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#mobile-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!-- carousel content fully visible on large screen -->
+        <div class="row d-none d-md-flex">
 
-              <img class="feature-img" src="images/therapies-min.JPG" alt="photo of woman palm on man back">
-              <div class="center-overlay">
-                <h5>After finding the cause of the pain, we choose one of many treatments</h5>
-                <button class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
-                  data-target=".multi-collapse" aria-expanded="false"
-                  aria-controls="Diagnose-display Terapie-display">See more</button>
-              </div>
+          <div class="col-4 feature-col">
+
+            <img class="feature-img" src="images/posture-defecs.webp" alt="image with pain palm on mouse">
+            <div class="center-sm-overlay">
+              <p>We believe that correct diagnose is the 1st step to pain relief</p>
+              <button class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
+                data-target=".multi-collapse" aria-expanded="false" aria-controls="Diagnose-display Terapie-display">See
+                more</button>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="">
-
-              <img class="feature-img img-fluid" src="images/women-therapy.webp" alt="image with pain palm on mouse">
-              <div class="center-overlay">
-                <h5>The same person looks after you during all treatment</h5>
-                <a class="btn btn-primary btn-feature" href="#therapists">Meet me</a>
-              </div>
+          <div class="col-4 feature-col">
+            <img class="feature-img" src="images/therapies-min.webp" alt="photo of woman palm on man back">
+            <div class="center-sm-overlay">
+              <p>After finding the cause of the pain, we choose one of many treatments</p>
+              <button class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
+                data-target=".multi-collapse" aria-expanded="false" aria-controls="Diagnose-display Terapie-display">See
+                more</button>
+            </div>
+          </div>
+          <div class="col-4  feature-col">
+            <img class="feature-img img-fluid" src="images/women-therapy.webp" alt="image with pain palm on mouse">
+            <div class="center-sm-overlay">
+              <p>The same person looks after you during all treatment</p>
+              <a class="btn btn-primary btn-feature" href="#therapists">Meet me</a>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#mobile-carousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#mobile-carousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
-      <!-- carousel content fully visible on large screen -->
-      <div class="row d-none d-md-flex">
-
-        <div class="col-4 feature-col">
-
-          <img class="feature-img" src="images/posture-defecs.webp" alt="image with pain palm on mouse">
-          <div class="center-overlay">
-            <h5>We believe that correct diagnose is the 1st step to pain relief</h5>
-            <button class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
-              data-target=".multi-collapse" aria-expanded="false" aria-controls="Diagnose-display Terapie-display">See
-              more</button>
-          </div>
-        </div>
-        <div class="col-4 feature-col">
-          <img class="feature-img" src="images/therapies-min.JPG" alt="photo of woman palm on man back">
-          <div class="center-overlay">
-            <h5>After finding the cause of the pain, we choose one of many treatments</h5>
-            <button class="btn btn-primary btn-feature" type="button" data-toggle="collapse"
-              data-target=".multi-collapse" aria-expanded="false" aria-controls="Diagnose-display Terapie-display">See
-              more</button>
-          </div>
-        </div>
-        <div class="col-4  feature-col">
-          <img class="feature-img img-fluid" src="images/women-therapy.webp" alt="image with pain palm on mouse">
-          <div class="center-overlay">
-            <h5>The same person looks after you during all treatment</h5>
-            <a class="btn btn-primary btn-feature" href="#therapists">Meet me</a>
-          </div>
-        </div>
-      </div>
-    </div> 
-  </div>
+    </div>
     <div class="container-fluid">
       <div class="row">
         <!-- more detailed features opened by clicking on button in each feature img  -->
@@ -177,7 +176,7 @@
               <div class="col-12 col-md-6 display-img">
                 <img class="img-fluid " src="images/posture-defecs.webp" alt="image with pain palm on mouse">
               </div>
-         
+
               <div class="display-text col-12 col-md-6">
                 <h3>Diagnose</h3>
                 <ul class="feature-list">
@@ -190,7 +189,8 @@
                   Our registration and diagnosis process consists of a few easy steps:
                 </p>
                 <ol class="feature-list">
-                  <li>Online registration with a form relating to your physical health</li>
+                  <li>Register <a class="in-text-link" data-toggle="modal" href="#registrationModal">
+                      online</a> or via <a class="in-text-link" href="tel:+4800012312">phone</a></li>
                   <li>Make an appointment</li>
                   <li>A thorough interview with a specialist</li>
                   <li>Choosing the right treatment</li>
@@ -228,7 +228,7 @@
 
       </div>
     </div>
-  
+
   </section>
   <section>
     <div class="container-fluid recommendation-section pt-3">
@@ -303,17 +303,32 @@
   </section>
   <footer class="footer">
 
-    <div class="container-fluid address-map pt-5 pb-3">
+    <div class="container-fluid address-map pt-3 pb-3">
       <div class="row">
         <div class="col-12 col-md-4 col-lg-6 address-col">
-          <p>address line 1</p>
-          <p>address line 2</p>
-          <p>address line 3</p>
+          <div class="row">
+            <div class="col-6">
+              <nav class="nav flex-column">
+                <a class="nav-link active footer-anch" href="#">Home</a>
+                <a class="nav-link footer-anch" data-toggle="modal" data-target="#registrationModal">Registration</a>
+                <a class="nav-link footer-anch" href="#feature">What we do</a>
+                <a class="nav-link footer-anch" href="#therapists">Our Staff</a>
+              </nav>
+            </div>
+            <div class="col-6">
+              <h5>Gateway Rehabilitation Clinic</h5>
+              <p>Cirtonel 23</p>
+              <p>3233 Chinc City</p>
+              <p>Green Country</p>
+            </div>
+          </div>
+
         </div>
         <div class="col-12 col-md-8 col-lg-6" id="address">
           <iframe class="map-frame"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.7339505124655!2d23.194563815641732!3d53.13292129837713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471fff040e8bf8f7%3A0xc8192108a6cfac61!2sRehabilitacja%20Ewelina%20Zaremba!5e0!3m2!1sen!2spl!4v1623143007524!5m2!1sen!2spl"
-            width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63102.492048259286!2d106.58032371664208!3d8.700499944106877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3198ac1d7ff747d1%3A0xfe70abdd479846!2sCon%20Son%20Island!5e0!3m2!1sen!2snl!4v1625921235619!5m2!1sen!2snl"
+            width="400" height="300" style="border:0;" allowfullscreen="true" loading="lazy"></iframe>
+
         </div>
 
       </div>
