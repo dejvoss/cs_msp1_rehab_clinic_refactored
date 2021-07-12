@@ -260,7 +260,7 @@ header {
 }
 
 .main-picture {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     z-index: -1;
@@ -280,9 +280,8 @@ header {
     margin-top: auto;
     margin-bottom: auto;
     padding-top: 15px;
-    height: 340px;
+    height: 395px;
     overflow: hidden;
-    background-color: rgba(77,167,165, 0.8);
 }
 
 .carousel-inner {
@@ -344,8 +343,11 @@ header {
 
 
 .features-1stpart {
-    background-color: #f5f6f8;
-    padding: 1rem;
+    background-color: #fff;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .feature-list {
@@ -500,6 +502,11 @@ header {
         padding-right: 0;
         padding-top: 0;
     }
+    .features-1stpart {
+    background-color:rgba(77,167,165, 0.9);
+    padding: 1rem;
+    margin-bottom: 0;
+}
 
 }
 

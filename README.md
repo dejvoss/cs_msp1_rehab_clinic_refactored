@@ -53,10 +53,8 @@ Based on the user stories i describe few points of what information needs to be 
 
 1.  The information that this is the rehabilitation clinic website and user can solved issue with pain.
 2.  Address and phone number.
-3.  Open hours.
 3.  Registration method and diagnosis. 
 4.  Therapies and prices.
-5.  Ailments treated in the clinic.
 6.  Patients recommendations.
 
 <div align="center">
@@ -106,6 +104,12 @@ Website is a full page site with top full screen height header and 3 sections - 
 Performance test done in [PageSpeedInsights](https://developers.google.com/speed/pagespeed/insights/) with result of 84 for mobile and 99 for desktop.
 
 I test all links by myself.
+I tested the website on different devices and different web browser:
+    -   Desktop, 17", google chrome, mozilla firefox,
+    -   Desktop 24", google chrome, mozilla firefox,
+    -   Android 10 6", google chrome, brave,
+
+I used CSS and HTML validator to validate the code and find errors. 
 
 ## Deployment
 This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named `index.html`.
